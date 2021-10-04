@@ -1,3 +1,7 @@
+html{
+    cursor:none;
+    scroll-behavior: smooth;
+}
 body{
     background: #f8f2e7;
     margin:0;
@@ -42,6 +46,7 @@ body{
     z-index: 2;
 }
 
+
 h1{
     color: #E45F61;
     z-index: 30;
@@ -51,10 +56,99 @@ h1{
 }
 
 @keyframes bars {
-	from {
-		transform: translateX(1480px);
-	}
-	to {
-		transform: translateX(-1280px);
-	}
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: calc(-1835px + 608px);
+  }
 }
+.circle {
+	position: absolute;
+    background-color: black;
+	width: 100px; 
+	height: 100px; 
+    border-radius: 50%;  
+}
+
+.Marquee{
+    background: black;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .Marquee-content{
+      display: flex;
+      animation: marquee 20s linear infinite running;
+  }
+  .Marquee-tag{
+      color: white;
+      font-size: 28px;
+      width: 250px;
+      margin: 0 .5em;
+      padding: .5em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .5s ease;
+   } 
+      
+      
+  @keyframes marquee{
+    0%{
+      transform: translateX(0);}
+    100%{
+      transform: translate(-50%);}
+  }
+
+  .verinavbar {
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transform: translate3d(50%, 50%, 0) rotate(90deg);
+    transform: translate3d(50%, 50%, 0) rotate(90deg);
+    top: 180px;
+    margin-top: 12vw;
+  }
+  .verinavbar ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+  }
+  .verinavbar li {
+    padding: 0 10px;
+  }
+  .verinavbar a {
+    display: block;
+    font-family: "GothamBold";
+    font-size: 10px;
+    color: #000;
+    white-space: nowrap;
+    transition: color .15s ease;
+  }
+  #menu li {
+      list-style: none;
+  }
+  
+  #menu a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+  }
+  
+  #menu a:hover {
+      color: pink;
+  }
+  
+  #menu li.active a {
+      color: #f88b00;
+  }
+

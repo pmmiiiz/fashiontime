@@ -7,87 +7,76 @@
     <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
     <meta name="ProgId" content="FrontPage.Editor.Document">
     <title>𝘿𝙧𝙚𝙨𝙨 𝙏𝙞𝙢𝙚𝙢𝙖𝙘𝙝𝙞𝙣𝙚 🕰</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/RY3ME8S.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <script language="JavaScript1.2">
-    
-    //configure shake degree (where larger # equals greater shake)
-    
     var rector=3
-    
-    ///////DONE EDITTING///////////
-    
     var stopit=0
-    
     var a=1
-    
     function init(which){
-    
-    stopit=0
-    
-    shake=which
-    
-    shake.style.left=0
-    
-    shake.style.top=0
-    
+        stopit=0
+        shake=which
+        shake.style.left=0
+        shake.style.top=0
     }
     
     function rattleimage(){
-    
-    if ((!document.all&&!document.getElementById)||stopit==1)
-    
-    return
-    
-    if (a==1){
-    
-    shake.style.top=parseInt(shake.style.top)+rector
-    
-    }
-    
-    else if (a==2){
-    
-    shake.style.left=parseInt(shake.style.left)+rector
-    
-    }
-    
-    else if (a==3){
-    
-    shake.style.top=parseInt(shake.style.top)-rector
-    
-    }
-    
-    else{
-    
-    shake.style.left=parseInt(shake.style.left)-rector
-    
-    }
-    
-    if (a<4)
-    
-    a++
-    
-    else
-    
-    a=1
-    
-    setTimeout("rattleimage()",50)
-    
+        if ((!document.all&&!document.getElementById)||stopit==1)
+        return
+        if (a==1){
+            shake.style.top=parseInt(shake.style.top)+rector
+        }
+        
+        else if (a==2){
+            shake.style.left=parseInt(shake.style.left)+rector
+        }
+        
+        else if (a==3){
+            shake.style.top=parseInt(shake.style.top)-rector
+        }
+        else{
+            shake.style.left=parseInt(shake.style.left)-rector
+        }
+        if (a<4)
+            a++
+        else
+            a=1
+            setTimeout("rattleimage()",50)
     }
     
     function stoprattle(which){
-    
-    stopit=1
-    
-    which.style.left=0
-    
-    which.style.top=0
-    
+        stopit=1
+        which.style.left=0
+        which.style.top=0
     }
     
+    
+
+    jQuery(document).ready(function() {
+
+    var mouseX = 0, mouseY = 0;
+    var xp = 0, yp = 0;
+    
+    $(document).mousemove(function(e){
+    mouseX = e.pageX - 30;
+    mouseY = e.pageY - 30; 
+    });
+    
+    setInterval(function(){
+    xp += ((mouseX - xp)/6);
+    yp += ((mouseY - yp)/6);
+    $("#circle").css({left: xp +'px', top: yp +'px'});
+    }, 20);
+
+    });
+
     </script>
     </head>
 <body>
+    <span id="circle" class="circle"></span>
     <div class="fullscreen flex-center-parent">
         <img src="https://i.imgur.com/kUoeRXi.jpg" class="fullwidth" style="z-index: -4;">
         <div style="position: absolute; z-index: 1;">
@@ -107,17 +96,45 @@
         </div>
     </div>
 
-    <div class="bar">
-        <h1>REGENCY&emsp;ROMANTIC&emsp;READY-TO-WEAR&emsp;VICTORIA&emsp;ART NOUVEAU&emsp;FLAPPER</h1>
-        <h1></h1>
-        <h1></h1>
-        <h1></h1>
+    <div class="Marquee">
+        <div class="Marquee-content">
+            <div class="Marquee-tag"><b>REGENCY</b></div>
+            <div class="Marquee-tag"><b>ROMANTIC</b></div>
+            <div class="Marquee-tag"><b>VICTORIA</b></div>
+            <div class="Marquee-tag"><b>ART NOUVEAU</b></div>
+            <div class="Marquee-tag"><b>WWI</b></div>
+            <div class="Marquee-tag"><b>FLAPPER</b></div>
+            <div class="Marquee-tag"><b>READY-TO-WEAR</b></div>
+            <div class="Marquee-tag"><b>1940s</b></div>
+            <div class="Marquee-tag"><b>1950s</b></div>
+            <div class="Marquee-tag"><b>1960s</b></div>
+            <div class="Marquee-tag"><b>REGENCY</b></div>
+            <div class="Marquee-tag"><b>ROMANTIC</b></div>
+            <div class="Marquee-tag"><b>VICTORIA</b></div>
+            <div class="Marquee-tag"><b>ART NOUVEAU</b></div>
+            <div class="Marquee-tag"><b>WWI</b></div>
+            <div class="Marquee-tag"><b>FLAPPER</b></div>
+            <div class="Marquee-tag"><b>READY-TO-WEAR</b></div>
+            <div class="Marquee-tag"><b>1940s</b></div>
+            <div class="Marquee-tag"><b>1950s</b></div>
+            <div class="Marquee-tag"><b>1960s</b></div>
+        </div>
     </div>
-
     <div class="fullscreen flex-center-parent intro"></div>
     <div class="flex-center-parent" style="position: relative; top: -135%; z-index: -2;">
         <img src="https://i.imgur.com/VBWbBrm.png" width="60%">
     </div>
+
+    <nav class="verinavbar">
+        <ul id="menu">
+            <li><a href="#sec1"  data-id="#regency" class="is-active"><b style="font-size: 100px; "
+                id="GothamBold" >•</b></a></li>
+            <li><a href="#sec2" data-id="#romantic" class="is-active"><b style="font-size: 100px;"
+                id="GothamBold">•</b></a></li>
+            <li><a href="#sec3"  data-id="#victoria" class="is-active"><b style="font-size: 100px;"
+                id="GothamBold">•</b></a></li>
+        </ul>
+    </nav>
     
 </body>
 </html>
