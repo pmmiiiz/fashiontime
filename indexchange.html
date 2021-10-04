@@ -5,7 +5,7 @@
 </head>
 <style>
     html {
-        cursor: none;
+        /* cursor: none; */
         scroll-behavior: smooth;
     }
     
@@ -66,7 +66,7 @@
         border-radius: 50%;
         /* margin: -60% auto; */
         position: absolute;
-        top: 605%;
+        top: 615%;
         left: 40%;
         text-align: center;
     }
@@ -84,7 +84,7 @@
     .romanyear {
         position: absolute;
         z-index: 1;
-        color: rgb(255, 208, 0);
+        color: rgb(255, 56, 146);
         text-shadow: 2px 2px #000000;
         top: 470%;
         left: 40%;
@@ -94,9 +94,9 @@
     .victoryear {
         position: absolute;
         z-index: 1;
-        color: rgb(255, 208, 0);
+        color: #4C7AEF;
         text-shadow: 2px 2px #000000;
-        top: 615%;
+        top: 625%;
         left: 40%;
         font-size: 70px;
     }
@@ -288,6 +288,43 @@
             transform: translate(-50%);
         }
     }
+
+    .ans1{
+      width:500px;
+      height: 450px;
+      background-color: #000000;
+      position: absolute;
+      left : 8%;
+      top:365%;
+      border-radius: 40px;
+      opacity: 0.7;
+  }
+
+  .ans2{
+      width:500px;
+      height: 450px;
+      background-color: #000000;
+      position: absolute;
+      left : 8%;
+      top:500%;
+      border-radius: 40px;
+      opacity: 0.7;
+  }
+  .ans3{
+      width:500px;
+      height: 450px;
+      background-color: #000000;
+      position: absolute;
+      left : 8%;
+      top:655%;
+      border-radius: 40px;
+      opacity: 0.7;
+  }
+  .line1{
+      width: 1920px;
+      height: 30px;
+      background-color: #000000;
+  }
 </style>
 
 <body>
@@ -350,7 +387,7 @@
         </ul>
     </nav>
 
-
+     
     <div id="regency">
         <div>
             <img class="bgregen" src="https://cdn.discordapp.com/attachments/887196698840039484/894280972676259900/regensy.png">
@@ -399,7 +436,7 @@
                 </div>
             </center>
         </div>
-
+        <div class="ans1"></div>
     </div>
 
 
@@ -408,7 +445,7 @@
 
     </div>
 
-
+    <div class="line1"></div>
     <div id="romantic">
 
         <div>
@@ -460,9 +497,9 @@
             </center>
 
         </div>
-
+        <div class="ans2"></div>
     </div>
-
+    <div class="line1"></div>
     <div id="victoria">
 
         <div>
@@ -514,7 +551,7 @@
             </center>
 
         </div>
-
+        <div class="ans3"></div>
     </div>
 </body>
 
