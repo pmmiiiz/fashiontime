@@ -413,6 +413,58 @@
 .scene3{
     padding: 50px;
 }
+/* The Modal (background) */
+.modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        background-image: url("https://cdn.discordapp.com/attachments/877540375655510078/894186657400627240/vintage-textured-watercolor-paper-background_53876-103939.jpg");
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 40%;
+      height: 60%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button7 {
+        width: 100px;
+        height: 50px;
+        background-color: #000000;
+        color: white;
+        font-size: 20px;
+}
+    .button7:hover {
+       background-color: white;
+       color: black;
+       border: 2px solid #000000;
+       transition: 1s;
+}
 </style>
 
 <body>
@@ -491,6 +543,7 @@
 
      
     <div id="regency">
+        
         <div>
             <img class="bgregen" src="https://cdn.discordapp.com/attachments/887196698840039484/894280972676259900/regensy.png">
         </div>
@@ -536,11 +589,30 @@
                     <button class="dress_left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="dress_right" onclick="plusDivs(1)">&#10095;</button>
                     <button class="button button5" onclick="send()" >FINISH</button>
+                    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="button button7" style="left: 20px;">Hint</button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="text-align: center; font-size: 18px; margin-top: 80px; color: black; text-shadow: 0px 0px #000000; z-index: 50;">    เสื้อผ้าของผู้หญิงสมัยนั้น นิยมใสเสื้อผ้ามีลักษณะเป็นชุดกระโปรง<br>
+            ทรงเอวสูง เสื้อผ้าบางๆ เรียบง่าย มีรูปร่างตรงไม่บานออกและไม่หนัก<br>
+            ภาพยนตร์ที่นำเสนอเรื่องราวในยุครีเจนซี่<br>
+            <b>-Pride & Prejudice (2005)<br>
+            -Becoming Jane (2007)</b></p>
+      </div>
+    
+    </div>
                 </div>
             
             </center>
             
         </div>
+            
+       
         <div class="ans1">
             <p class="scene" style="opacity: 0; color: white; text-align: center;">เป็นยุคของการเปลี่ยนแปลง  มีการปฏิวัติในอเมริกาและฝรั่งเศส<br>  สาวในยุคนี้จึงได้รีบอิทธิพลการแต่งกายแบบกรีกโบราณ<br>  เพราะเชื่อว่าเป็นภาพลักษณ์ที่แสดงให้เห็นถึงประชาธิปไตย<br>
                 นิยมใส่ชุดยาวๆ กรอมพื้น  ไม่ใส่คอร์เซ็ต ใส่เอวสูงแบบรัดใต้อก  ชนชั้นสูงจะใส่ชุดสีขาวตลอด  ชนชั้นฐานะต่ำลงมาจะใส่<br>ชุดสีพาสเทลและใส่ชุดสีขาวเฉพาะงานเลี้ยง นิยมผ้านุ่มๆ บางๆ พริ้วๆ 
@@ -821,6 +893,33 @@
     }
     function send3(){
     document.querySelector(".scene3").style.opacity = 1;
+    }
+
+
+     // Get the modal
+     var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
     }
 </script>
 
