@@ -325,6 +325,20 @@
       height: 30px;
       background-color: #000000;
   }
+  .button{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+  }
 </style>
 
 <body>
@@ -433,10 +447,17 @@
 
                     <button class="dress_left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="dress_right" onclick="plusDivs(1)">&#10095;</button>
+                    <button class="button" onclick="send()" >FINISH</button>
                 </div>
+            
             </center>
+            
         </div>
-        <div class="ans1"></div>
+        <div class="ans1">
+            <p class="scene" style="opacity: 0; color: red;">เป็นยุคของการเปลี่ยนแปลง  มีการปฏิวัติในอเมริกาและฝรั่งเศส  สาวในยุคนี้จึงได้รีบอิทธิพลการแต่งกายแบบกรีกโบราณ  เพราะเชื่อว่าเป็นภาพลักษณ์ที่แสดงให้เห็นถึงประชาธิปไตย
+                นิยมใส่ชุดยาวๆ กรอมพื้น  ไม่ใส่คอร์เซ็ต ใส่เอวสูงแบบรัดใต้อก  ชนชั้นสูงจะใส่ชุดสีขาวตลอด  ชนชั้นฐานะต่ำลงมาจะใส่ชุดสีพาสเทลและใส่ชุดสีขาวเฉพาะงานเลี้ยง นิยมผ้านุ่มๆ บางๆ พริ้วๆ 
+                เป็นผ้าฝ้าย มัสลิน หรือผ้าไหม มักใส่ผ้าคลุมไหล่หรือถุงมือยาว  ผมสั้น  ใส่หมวก</p>
+        </div>
     </div>
 
 
@@ -695,6 +716,12 @@
             x[i].style.display = "none";
         }
         x[slideIndex - 1].style.display = "block";
+    }
+    function send(){
+  document.querySelector(".scene").style.opacity = 1;
+    }
+    function send2(){
+    document.querySelector(".scene").style.opacity = 0;
     }
 </script>
 
