@@ -44,6 +44,11 @@ body {
     margin-left: -4px;
     top: 0;
 }
+.gallery_romantic{
+    display: inline-flex;
+    margin-left: -4px;
+    top: 0;
+}
 
 .cover{
   width: 100vw;
@@ -94,6 +99,7 @@ body {
 
 }
 
+
 .topicw{
   position: absolute;
   width: 60vw;
@@ -140,6 +146,8 @@ body {
   font-size: 1.6vw;
   text-align: center;
 }
+
+
 
 .intro_check{
   position: absolute;
@@ -421,6 +429,30 @@ body {
   
   }
 
+  .button2 {
+    background-color: hsl(0, 77%, 50%);
+    color: rgb(0, 0, 0); 
+    top: 70vh;
+    margin-left: 80vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button2:hover {
+    background-color: transparent;
+    color: hsl(0, 77%, 50%);;
+    border: 2px solid hsl(0, 77%, 50%);
+    transition: 0.5s;
+    cursor: pointer;
+
+  
+  }
+
 .answerroman{
     width:35vw;
     height:15vw;
@@ -458,3 +490,23 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     color: hsl(0, 77%, 50%);
     }
+    .bggallery1{
+        width: 30vw;
+        height: 100vh;
+        background: url(img/black\ 2.png);
+      }
+      .bggallery2{
+          width: 20vw;
+          height: 100vh;
+          background: url(img/red\ 1.png);
+          font-family: 'Rubik Mono One', sans-serif;
+          font-size:6vw;
+          line-height: 87%;
+          
+          
+        }
+        .galltxtroman{
+            padding-top: 11vh;
+            position:absolute;
+            margin-left: 7vw;
+        }
