@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝘿𝙧𝙚𝙨𝙨 𝙏𝙞𝙢𝙚𝙢𝙖𝙘𝙝𝙞𝙣𝙚 🕰</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/RY3ME8S.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="run"></div>
+    <div class="navbar"></div>
+    <div class="content">
+        <div class="content_cover">
+            <div class="cover">
+                <div class="cover_time">
+                    <img src="img/time.png">
+                </div>
+                <div class="cover_girl">
+                    <img src="img/girlcover.png" width="90%">
+                </div>
+            </div>
+        </div>
+        <div class="content_intro">
+            <div class="intro">
+                <div class="intro_check">
+                    <img src="img/checkmate.png"  id="checkm">
+                </div>
+            </div>
+        </div>
+        <div class="content_regency">
+            <div class="intro">
+
+            </div>
+        </div>
+        <div class="content_romantic">
+            <div class="intro">
+
+            </div>
+        </div>  
+    </div>
+
+</body>
+<script>
+
+    let body = document.body;
+
+    document.body.onscroll = function(){
+    let scrollY = window.scrollY;
+    console.log("yeah")
+    body.style.setProperty("--x", window.scrollX);
+
+    if (scrollY <= 3000) {
+        body.style.setProperty("--bg", scrollY);
+    }
+    };
+
+
+    function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    var scrollSpeed = 60; // Janky jank <<<<<<<<<<<<<<
+    document.documentElement.scrollLeft -= (delta * scrollSpeed);
+    document.body.scrollLeft -= (delta * scrollSpeed);
+    // document.body.style.setProperty("--x", body.scrollLeft);
+    console.log("yea")
+    // e.preventDefault();
+    }
+
+    if (window.addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    window.addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+    // IE 6/7/8
+    window.attachEvent("onmousewheel", scrollHorizontally);
+    }
+</script>
+</html>

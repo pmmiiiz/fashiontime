@@ -1,0 +1,89 @@
+/* *{
+    mar
+} */
+html,
+body {
+  /* height: 100%; */
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  --bg: 0;
+  --x: 0;
+  width: 6000px;
+  height: 100%;
+  background: hotpink;
+  margin: 0;
+  min-width: 1200px;
+  /* background-size: 210% auto; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.run{
+    position:fixed;
+    background-color: black;
+    left: 0;
+    top: 0;
+    height: 6px;
+    width: calc((var(--x)/4300)*100%);
+    background: hsl(0,0%,13%);
+    z-index: 6;
+}
+
+.content_cover, .content_intro, .content_regency,
+.content_romantic{
+    display: inline-flex;
+    margin-left: -4px;
+    top: 0;
+}
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/bgw.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 90px;
+    height: 100vh;
+    position: fixed;
+    background: url(img/bgw.png);
+    border-right: 3px solid black;
+    z-index: 5;
+}
+
+.cover_girl{
+    display: inline-block;
+    position: absolute;
+    transform: translate(20%, 0%);
+}
+
+.cover_time{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/bgw.png);
+
+}
+
+.intro_check{
+    position: absolute;
+    bottom: 0;
+}
+
+#checkm{
+    position: absolute;
+    bottom: 50%;
+    width: 100vw;
+}
