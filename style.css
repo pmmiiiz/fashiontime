@@ -33,6 +33,12 @@ body {
     z-index: 6;
 }
 
+.content_cover, .content_intro{
+    display: inline-flex;
+    margin-left: -4px;
+    top: 0;
+}
+
 .cover{
     width: 100vw;
     height: 100vh;
@@ -61,4 +67,25 @@ body {
     display: inline-block;
     position: absolute;
     top: 50%;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/bgw.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_check{
+    position: absolute;
+    z-index: 6;
+    bottom: 50%;
+}
+
+#checkm{
+    position: absolute;
+    z-index: 6;
+    bottom: 50%;
 }
