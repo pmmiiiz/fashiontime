@@ -1,140 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
-    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
-    <meta name="ProgId" content="FrontPage.Editor.Document">
     <title>𝘿𝙧𝙚𝙨𝙨 𝙏𝙞𝙢𝙚𝙢𝙖𝙘𝙝𝙞𝙣𝙚 🕰</title>
     <link rel="shortcut icon" href="https://i.imgur.com/RY3ME8S.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<script language="JavaScript1.2">
-    var rector=3
-    var stopit=0
-    var a=1
-    function init(which){
-        stopit=0
-        shake=which
-        shake.style.left=0
-        shake.style.top=0
-    }
-    
-    function rattleimage(){
-        if ((!document.all&&!document.getElementById)||stopit==1)
-        return
-        if (a==1){
-            shake.style.top=parseInt(shake.style.top)+rector
-        }
-        
-        else if (a==2){
-            shake.style.left=parseInt(shake.style.left)+rector
-        }
-        
-        else if (a==3){
-            shake.style.top=parseInt(shake.style.top)-rector
-        }
-        else{
-            shake.style.left=parseInt(shake.style.left)-rector
-        }
-        if (a<4)
-            a++
-        else
-            a=1
-            setTimeout("rattleimage()",50)
-    }
-    
-    function stoprattle(which){
-        stopit=1
-        which.style.left=0
-        which.style.top=0
-    }
-    
-    
-
-    jQuery(document).ready(function() {
-
-    var mouseX = 0, mouseY = 0;
-    var xp = 0, yp = 0;
-    
-    $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-    });
-    
-    setInterval(function(){
-    xp += ((mouseX - xp)/6);
-    yp += ((mouseY - yp)/6);
-    $("#circle").css({left: xp +'px', top: yp +'px'});
-    }, 20);
-
-    });
-
-    </script>
-    </head>
 <body>
-    <span id="circle" class="circle"></span>
-    <div class="fullscreen flex-center-parent">
-        <img src="https://i.imgur.com/kUoeRXi.jpg" class="fullwidth" style="z-index: -4;">
-        <div style="position: absolute; z-index: 1;">
-            <img src="https://i.imgur.com/WjzNICy.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
+    <div class="run"></div>
+    <div class="navbar"></div>
+    <div class="cover">
+        <div class="cover_time">
+            <img src="img/time.png">
         </div>
-        <div style="position: absolute; z-index: 1; right: -30px; top: 350px;">
-            <img src="https://i.imgur.com/19ZzK4C.png" width="60%" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
+        <div class="cover_girl">
+            <img src="img/girlcover.png" width="90%">
         </div>
-        <div style="position: absolute; z-index: 1; left: 330px; top: 300px;">
-            <img src="https://i.imgur.com/BCIvwUE.png" width="20%" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
-        </div>
-        <div style="position: absolute; z-index: 1; left: 600px; top: 20px;">
-            <img src="https://i.imgur.com/qC6co8V.png" width="50%" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
-        </div>
-        <div style="position: absolute; z-index: 1; left: -200px; top: 500px;">
-            <img src="https://i.imgur.com/oM5WWlA.png" width="60%" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
-        </div>
+        
     </div>
 
-    <div class="Marquee">
-        <div class="Marquee-content">
-            <div class="Marquee-tag"><b>REGENCY</b></div>
-            <div class="Marquee-tag"><b>ROMANTIC</b></div>
-            <div class="Marquee-tag"><b>VICTORIA</b></div>
-            <div class="Marquee-tag"><b>ART NOUVEAU</b></div>
-            <div class="Marquee-tag"><b>WWI</b></div>
-            <div class="Marquee-tag"><b>FLAPPER</b></div>
-            <div class="Marquee-tag"><b>READY-TO-WEAR</b></div>
-            <div class="Marquee-tag"><b>1940s</b></div>
-            <div class="Marquee-tag"><b>1950s</b></div>
-            <div class="Marquee-tag"><b>1960s</b></div>
-            <div class="Marquee-tag"><b>REGENCY</b></div>
-            <div class="Marquee-tag"><b>ROMANTIC</b></div>
-            <div class="Marquee-tag"><b>VICTORIA</b></div>
-            <div class="Marquee-tag"><b>ART NOUVEAU</b></div>
-            <div class="Marquee-tag"><b>WWI</b></div>
-            <div class="Marquee-tag"><b>FLAPPER</b></div>
-            <div class="Marquee-tag"><b>READY-TO-WEAR</b></div>
-            <div class="Marquee-tag"><b>1940s</b></div>
-            <div class="Marquee-tag"><b>1950s</b></div>
-            <div class="Marquee-tag"><b>1960s</b></div>
-        </div>
-    </div>
-    <div class="fullscreen flex-center-parent intro"></div>
-    <div class="flex-center-parent" style="position: relative; top: -135%; z-index: -2;">
-        <img src="https://i.imgur.com/VBWbBrm.png" width="60%">
-    </div>
-
-    <nav class="verinavbar">
-        <ul id="menu">
-            <li><a href="#sec1"  data-id="#regency" class="is-active"><b style="font-size: 100px; "
-                id="GothamBold" >•</b></a></li>
-            <li><a href="#sec2" data-id="#romantic" class="is-active"><b style="font-size: 100px;"
-                id="GothamBold">•</b></a></li>
-            <li><a href="#sec3"  data-id="#victoria" class="is-active"><b style="font-size: 100px;"
-                id="GothamBold">•</b></a></li>
-        </ul>
-    </nav>
-    
 </body>
+<script>
+
+    let body = document.body;
+
+    document.body.onscroll = function(){
+    let scrollY = window.scrollY;
+    console.log("yeah")
+    body.style.setProperty("--x", window.scrollX);
+
+    if (scrollY <= 3000) {
+        body.style.setProperty("--bg", scrollY);
+    }
+    };
+
+
+    function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    var scrollSpeed = 60; // Janky jank <<<<<<<<<<<<<<
+    document.documentElement.scrollLeft -= (delta * scrollSpeed);
+    document.body.scrollLeft -= (delta * scrollSpeed);
+    // document.body.style.setProperty("--x", body.scrollLeft);
+    console.log("yea")
+    // e.preventDefault();
+    }
+
+    if (window.addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    window.addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+    // IE 6/7/8
+    window.attachEvent("onmousewheel", scrollHorizontally);
+    }
+</script>
 </html>
