@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𝘿𝙧𝙚𝙨𝙨 𝙏𝙞𝙢𝙚𝙢𝙖𝙘𝙝𝙞𝙣𝙚 🕰</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://i.imgur.com/RY3ME8S.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="run"></div>
@@ -36,6 +44,95 @@
         </div>
         <div class="content_romantic">
             <div class="intro">
+                <div class="topicromantic">
+                    <img src="img/1.png" id="bgroman">
+                </div>
+                <div class="nameroman" style="position: absolute;"> 
+                    <p class="romantic">ROMANTIC</p>
+                    <p class="romanticyear">1810–1910</p>
+                </div>
+                <div class="bganswerroman">
+                    <img src="img/2.png" id="bgansroman">
+                </div>
+                <div class="answerroman">
+                    เมื่อสงครามผ่านพ้นไป คนในยุคนั้นก็หันมาแต่งกายแบบอังกฤษ<br> (Anglomania)<br> 
+                    ยุคนี้ผู้หญิงถูกเน้นให้เห็นว่าเป็นเพศที่อ่อนแอกว่า <br> และสวยงามชอบการแต่งตัว ชุดยุคนี้มีลักษณะพิเศษ คือ ไหล่ลู่ลง<br>  เอวคอด ผายออกที่สะโพกเพื่อเน้นความเป็นสตรีเพศ<br> 
+                    ส่วนของเอวจะใส่ในระดับปกติไม่สูงและไม่ต่ำไป รัดติ้วด้วยคอร์เซ็ต<br>  กระโปรงค่อยๆ พองขึ้นแบบอลังการ<br> 
+                    ตกแต่งประดับประดาหรูหรา<br> 
+                </div>
+                <div class="wink1">
+                    <img src="img/wink.png" id="picwink1">
+                </div>
+                <div class="wink2">
+                    <img src="img/wink.png" id="picwink2">
+                </div>
+                <div class="wink3">
+                    <img src="img/wink.png" id="picwink3">
+                </div>
+                
+
+
+
+                <button id="left">❰</button>
+                <div id="slideshow">
+                  <div class="image" >
+                    <img src="img/fa1.png" id="pic1">
+                  </div>
+                  <div class="image" >
+                    <img src="img/fa2.png" id="pic1">
+                  </div>
+                  <div class="image" >
+                    <img src="IMG/fa3.png"  id="pic1">
+                  </div>
+                  <div class="image">
+                    <img src="IMG/fa4.png"  id="pic1">
+                  </div>
+                </div>
+                <button id="right">❱</button>
+                
+                
+                
+                <button id="left1">❰</button>
+                <div id="slideshow1">
+                  <div class="image1">
+                    น้องคิว
+                  </div>
+                  <div class="image1">
+                    น่ารัก
+                  </div>
+                  <div class="image1">
+                    เท้
+                  </div>
+                  <div class="image1">
+                    แส้บ
+                  </div>
+                </div>
+                <button id="right1">❱</button>
+                
+                
+                <button class="button1" onclick="susu()"><U><i>FINISH</i></U></button>
+                <div class="whatroman">
+                    WHAT IS <br>DRESS?
+            </div>
+                
+                <div class="tryroman">
+                        Try Agian<br>(┬┬﹏┬┬)
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
         </div>  
@@ -76,6 +173,76 @@
     } else {
     // IE 6/7/8
     window.attachEvent("onmousewheel", scrollHorizontally);
-    }
+    };
+
+
+    let inc = 0;
+let endinc = 4;
+let inc1 = 0;
+
+let endinc1 = 4;
+const image = document.querySelectorAll(".image");
+const image1 = document.querySelectorAll(".image1");
+
+right.addEventListener("click", function () {
+  image[inc].style.opacity = "0";
+  inc++;
+  
+  if (inc < endinc) {
+    image[inc].style.opacity = "1";
+  } else {
+    inc = 0;
+    image[inc].style.opacity = "1";
+  }
+});
+left.addEventListener("click", function () {
+  image[inc].style.opacity = "0";
+  inc--;
+
+  if (inc > -1) {
+    image[inc].style.opacity = "1";
+  } else {
+    inc = endinc - 1;
+    image[inc].style.opacity = "1";
+  }
+});
+
+right1.addEventListener("click", function () {
+  image1[inc1].style.opacity = "0";
+  inc1++;
+  if (inc1 < endinc1) {
+    image1[inc1].style.opacity = "1";
+  } else {
+    inc1 = 0;
+    image1[inc1].style.opacity = "1";
+  }
+});
+left1.addEventListener("click", function () {
+  image1[inc1].style.opacity = "0";
+  inc1--;
+  if (inc1 > -1) {
+    image1[inc1].style.opacity = "1";
+  } else {
+    inc1 = endinc1 - 1;
+    image1[inc1].style.opacity = "1";
+  }
+});
+
+function susu(){
+  if(inc == 1 && inc1 == 2){
+    document.querySelector(".answerroman").style.display="block";
+    document.querySelector(".whatroman").style.display="none";
+    document.querySelector(".tryroman").style.display="none";
+    document.querySelector(".button1").style.display="none";
+    
+  }
+  else{
+    document.querySelector(".tryroman").style.display="block";
+    document.querySelector(".whatroman").style.display="none";
+    document.querySelector(".answerroman").style.display="none";
+
+  }
+}
+
 </script>
 </html>
