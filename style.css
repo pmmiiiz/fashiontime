@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* *{
     mar
 } */
@@ -43,53 +46,183 @@ body {
 }
 
 .cover{
-    width: 100vw;
-    height: 100vh;
-    background: url(img/bgw.png);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(img/bgw.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar{
-    width: 90px;
-    height: 100vh;
-    position: fixed;
-    background: url(img/bgw.png);
-    border-right: 3px solid black;
-    z-index: 5;
+  width: 90px;
+  height: 100vh;
+  position: fixed;
+  background: url(img/bgw.png);
+  border-right: 3px solid black;
+  z-index: 5;
 }
 
+.clock{
+  margin-top: 2vh;
+  text-align: center;
+}
 .cover_girl{
-    display: inline-block;
-    position: absolute;
-    transform: translate(20%, 0%);
+  display: inline-block;
+  position: absolute;
+  bottom: 10vh;
 }
 
+.cover_scroll{
+  display: inline-block;
+  position: absolute;
+  left: 80%;
+  rotate: 180deg;
+  bottom: 10vh;
+}
 .cover_time{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
 }
 
 .intro{
-    width: 100vw;
-    height: 100vh;
-    background: url(img/bgw.png);
-    border-right: 3px solid black;
+  width: 100vw;
+  height: 100vh;
+  background: url(img/bgw.png);
+  
 
+}
+
+.topicw{
+  position: absolute;
+  width: 60vw;
+  color: #3C71C7;
+  transform: translate(14vw, 4vh);
+  font-size: 5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+.topici{
+  position: absolute;
+  width: 60vw;
+  color: black;
+  transform: translate(28vw, 8vh);
+  font-size: 3.5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+.topicf{
+  position: absolute;
+  width: 60vw;
+  transform: translate(20vw, 10vh);
+  font-size: 6vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+.yellow{
+  position: absolute;
+  background-color: #EEB53D;
+  border-radius: 50%;
+  width: 9vw;
+  height: 14vh;
+  transform: translate(53.5vw, 11vh);
+}
+
+.info{
+  font-family: 'Prompt', sans-serif;
+  position: absolute;
+  width: 60vw;
+  transform: translate(20vw, 35vh);
+  font-size: 1.6vw;
+  text-align: center;
 }
 
 .intro_check{
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 #checkm{
-    position: absolute;
-    bottom: 50%;
-    width: 100vw;
+  position: absolute;
+  bottom: 50%;
+  width: 100vw;
 }
+
+.line{
+  width: 50vw;
+  height: 2px;
+  background-color: black;
+  transform: translate(25vw, 35vh);
+}
+
+
+
+.li {
+  display: flex;
+  float: left;
+  border-radius: 5em;
+}
+
+.marquee {
+  font-size: 1.5vw;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-color: #EEB53D;
+  position: relative;
+  width: 50vw;
+  height: 6vh;
+  transform: translate(25vw, 65vh);
+  border-radius: 20px;
+}
+.marquee div {
+  white-space: nowrap;
+  padding: 1.5vh;
+  display: block;
+  width: fit-content;
+  position: absolute; 
+  overflow: hidden;
+  animation: marquee 19s linear infinite;
+}
+
+@keyframes marquee {
+  0% { left: 100%; }
+  100% { left: -200%; }
+}
+
+.intro_car{
+    position: absolute;
+    bottom: 0;
+    transform: translate(75vw, 0vh);
+}
+.intro_velvet{
+  position: absolute;
+  left: 110vw;
+  top: 10vh;
+  animation: rot 10s infinite linear;
+}
+.intro_velvet2{
+  position: absolute;
+  left: 185vw;
+  top: 40vh;
+  animation: rot 10s infinite linear;
+}
+
+@keyframes rot {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+
+
+
+
+
+/*romantic*/
 .topicromantic{
     position: absolute;
     margin-left: 34%;
