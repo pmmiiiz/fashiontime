@@ -33,7 +33,8 @@ body {
     z-index: 6;
 }
 
-.content_cover, .content_intro{
+.content_cover, .content_intro, .content_regency,
+.content_romantic{
     display: inline-flex;
     margin-left: -4px;
     top: 0;
@@ -78,13 +79,11 @@ body {
 
 .intro_check{
     position: absolute;
-    z-index: 6;
     bottom: 0;
 }
 
 #checkm{
     position: absolute;
-    z-index: 6;
     bottom: 50%;
     width: 100vw;
 }
