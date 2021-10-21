@@ -571,8 +571,8 @@ body {
   .hintroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0); 
-    top: 25vh;
-    margin-left: 0vw;
+    top: 67vh;
+    margin-left: 80vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -592,7 +592,7 @@ body {
 
   
   }
-  .closehimtroman{
+  .closehintroman{
     background-color: hsl(0, 77%, 50%);
     color: rgb(255, 255, 255); 
     top: 50vh;
@@ -605,7 +605,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
   }
-  .closehimtroman:hover {
+  .closehintroman:hover {
     background-color: transparent;
     color: hsl(0, 77%, 50%);;
     border: 2px solid hsl(0, 77%, 50%);

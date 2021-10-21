@@ -255,15 +255,15 @@
                     <p>      นิยมการแต่งกายแบบอังกฤษโดยมีลักษณะไหล่ลู่ลง เอวคอดด้วยคอร์เซต <br> 
                       กระโปรงพองอลังการณ์  มีทรงผมและหมวก ใหญ่โต ติดดอกไม้</p>
                     </div>
-                    <button class="closehimtroman" onclick="closehintroman()"><U><i>close</i></U></button>
+                    <button class="closehintroman" onclick="closehintroman()"><U><i>close</i></U></button>
                 </div>
                 <div class="whatroman">
                     WHAT IS <br>DRESS?<br>
-                    <button class="hintroman" onclick="hintroman()"><U><i>HINT</i></U></button>
                 </div>
                 <div class="tryroman">
                         Try Agian<br>
                 </div>
+                <button class="hintroman" onclick="hintroman()"><U><i>HINT</i></U></button>
             </div>
           </div>
            <!-- หน้าคั่นแต่ละยุค -->
@@ -395,8 +395,8 @@ function finishroman(){
     document.querySelector("#rightdressroman").style.display="none";
     document.querySelector("#leftdressroman").style.display="none";
     document.querySelector("#rightvocabroman").style.display="none";
-    document.querySelector("#leftvocabroman").style.display="none";
-    
+    document.querySelector("#leftvocabroman").style.display="none"; 
+    document.querySelector(".hintroman").style.display="none";
     
   }
   else{
