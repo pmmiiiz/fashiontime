@@ -200,19 +200,19 @@
 </body>
 <script>
 
+    //scrollprogressbar//
     let body = document.body;
 
     document.body.onscroll = function(){
     let scrollY = window.scrollY;
     console.log("yeah")
     body.style.setProperty("--x", window.scrollX);
-
     if (scrollY <= 3000) {
         body.style.setProperty("--bg", scrollY);
     }
     };
 
-
+    //เลื่อนหน้าจอ//
     function scrollHorizontally(e) {
     e = window.event || e;
     var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
@@ -225,14 +225,11 @@
     }
 
     if (window.addEventListener) {
-    // IE9, Chrome, Safari, Opera
-    window.addEventListener("mousewheel", scrollHorizontally, false);
-    // Firefox
-    window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        window.addEventListener("mousewheel", scrollHorizontally, false);
+        window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
     } else {
-    // IE 6/7/8
-    window.attachEvent("onmousewheel", scrollHorizontally);
-    };
+        window.attachEvent("onmousewheel", scrollHorizontally);
+    }
 
 
 
