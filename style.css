@@ -322,6 +322,33 @@ body {
 }
 
 /*regency*/
+.nameregen{
+  width: 100vw;
+  position: absolute;
+}
+.regency{
+  position: absolute;
+  width: 30vw;
+  transform: translate(67vw, -5vh);
+  font-size: 5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+  color: #4185F3;
+}
+.regencyyear{
+  position: absolute;
+  width: 50vw;
+  transform: translate(53vw, 4vh);
+  font-size: 5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
 .bggalleryblack{
   width: 30vw;
   height: 100vh;
