@@ -292,10 +292,10 @@
         <div class="content_victoria">
           <div class="intro">
             <div class="sandclockvictor">
-              <img src="img/sandclock.png" id="bgsandclockvictor">
+              <img src="img/sandclockyell.png" id="bgsandclockvictor">
             </div>
             <div class="bgflowervictor">
-                <img src="img/flower.png" id="bgpicflower">
+                <img src="img/floweryellow.png" id="bgpicflower">
             </div>
             <div class="bganswervictor">
               <img src="img/3.png" id="bgansvictor">
@@ -396,7 +396,50 @@
                 <button class="finishvictor" onclick="finishvictor()"><U><i>FINISH</i></U></button>
                 
           </div>
-        </div> 
+
+
+          <div class="gallery_romantic">
+            <div class="bggalleryvictor1">
+              <div class="blackvictor1">
+                <img src="img/vic1.png" id="picvic1">
+              </div>
+              <div class="yelvictor1">
+              </div>
+              <div class="blackvictor2">
+                <img src="img/vic2.png" id="picvic2">
+              </div>
+              <div class="yelvictor2">
+              </div>
+            </div>
+            <div class="bggalleryvictor2">
+              <div class="yelvictor3">
+              </div>
+              <div class="blackvictor3">
+                <p class="galname">VIC<br>TORIA</p>
+              </div>
+              <div class="yelvictor4">
+                <p class="galdress">DRESS</p>
+              </div>
+              <div class="blackvictor4">
+                <img src="img/vic3.png" id="picvic3">
+              </div>
+            </div>
+            <div class="bggalleryvictor3">
+              <div class="blackvictor5">
+                <img src="img/vic4.png" id="picvic4">
+              </div>
+              <div class="yelvictor5">
+              </div>
+              <div class="blackvictor6">
+                <img src="img/vic5.png" id="picvic5">
+              </div>
+              <div class="yelvictor6">
+              </div>
+            </div>
+              
+            </div>
+          </div> 
+        
 
 
 
@@ -593,6 +636,14 @@ function finishvictor(){
     document.querySelector("#rightvocabvictor").style.display="none";
     document.querySelector("#leftvocabvictor").style.display="none"; 
     document.querySelector(".hintvictor").style.display="none";
+    document.querySelector("#bgpicflower").style.filter="brightness(1)";
+    document.querySelector("#bgsandclockvictor").style.filter="brightness(1)";
+    document.querySelector("#picvic1").style.opacity="1";
+    document.querySelector("#picvic2").style.opacity="1";
+    document.querySelector("#picvic3").style.opacity="1";
+    document.querySelector("#picvic4").style.opacity="1";
+    document.querySelector("#picvic5").style.opacity="1";
+    
     
   }
   else{
