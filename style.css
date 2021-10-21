@@ -40,7 +40,7 @@ body {
     display: inline-flex;
     margin-left: -4px;
 }
-.gallery_romantic, .gallery_victoria{
+.gallery_regency, .gallery_romantic, .gallery_victoria{
     display: inline-flex;
     margin-left: -4px;
 }
@@ -291,6 +291,13 @@ body {
   100% { left: -200%; }
 }
 
+.marquee div:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 .intro_car{
     position: absolute;
     bottom: 0;
@@ -314,6 +321,90 @@ body {
   to {transform: rotate(360deg);}
 }
 
+/*regency*/
+.bggalleryblack{
+  width: 30vw;
+  height: 100vh;
+  background: url(img/black\ 2.png);
+}
+.bggallerycream{
+  width: 30vw;
+  height: 100vh;
+  background: url(img/bw.png);
+  background-size: 100%;
+}
+.film1{
+  display: inline-block;
+  position: absolute;
+  width: 4vw;
+}
+.film2{
+  display: inline-block;
+  position: absolute;
+  width: 4vw;
+  transform: translate(26vw);
+}
+.galfilm {
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  transform: translate(5vw);
+}
+
+.galfilm .picfilm {
+  height: 350vh;;
+  display: inline-block;
+  animation: marqueegal 20s linear infinite;
+}
+.re1, .re2, .re3, .re4, .re5, .re6{
+  filter: grayscale(100%);
+}
+.re1:hover, .re2:hover, .re3:hover, .re4:hover, .re5:hover, .re6:hover{
+    filter: grayscale(0%);
+}
+@keyframes marqueegal {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: calc(-2935px + 508px);
+  }
+}
+
+.galfilm .picfilm:hover{
+      -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.heart{
+  transform: translate(2.5vw, 30vh);
+  display: inline-block;
+  position: absolute;
+  width: 25vw;
+}
+.texth{
+  position: absolute;
+  width: 25vw;
+  color: #4185F3;
+  transform: translate(2.5vw, 30vh);
+  font-size: 4.2vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+  letter-spacing: -0.5vw;
+}
+.textd{
+  position: absolute;
+  width: 25vw;
+  color: #4185F3;
+  transform: translate(2.5vw, 40vh);
+  font-size: 4.2vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+  letter-spacing: -0.5vw;
+}
 
 
 
