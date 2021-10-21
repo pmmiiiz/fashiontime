@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 /* *{
     mar
@@ -20,13 +21,9 @@ body {
   background: hotpink;
   margin: 0;
   min-width: 1200px;
-  /* background-size: 210% auto; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
-
+/*progressbar*/
 .run{
     position:fixed;
     background-color: black;
@@ -42,14 +39,31 @@ body {
 .content_romantic{
     display: inline-flex;
     margin-left: -4px;
-    top: 0;
 }
 .gallery_romantic{
     display: inline-flex;
     margin-left: -4px;
-    top: 0;
 }
 
+/*navbar*/
+.navbar{
+  width: 90px;
+  height: 100vh;
+  position: fixed;
+  background: url(img/bgw.png);
+  border-right: 3px solid black;
+  z-index: 5;
+}
+.clock{
+  margin-top: 2vh;
+  text-align: center;
+}
+#clockrot{
+  --deg:0;
+  transform:rotate(calc(var(--deg) * 1deg));
+}
+
+/*หน้าแรก*/
 .cover{
   width: 100vw;
   height: 100vh;
@@ -59,19 +73,99 @@ body {
   justify-content: center;
 }
 
-.navbar{
-  width: 90px;
-  height: 100vh;
-  position: fixed;
-  background: url(img/bgw.png);
-  border-right: 3px solid black;
-  z-index: 5;
+.textcover {
+  position: absolute;
+  /* transform: translate(25vw, 25vh); */
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
-.clock{
-  margin-top: 2vh;
-  text-align: center;
+.textwave {
+  display: flex;
+  flex-direction: row;
 }
+.letter {
+  font-size: 6vw;;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  color: #fec468;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: .2vw;
+  -webkit-text-stroke-color: black;
+  animation: wave 4s infinite;
+}
+
+.letter:hover {
+  animation-play-state: paused;
+ 
+}
+
+
+.letter:nth-child(2) {
+  animation-delay: .1s;	
+}
+.letter:nth-child(3) {
+  animation-delay: .2s;
+}
+.letter:nth-child(4) {
+  animation-delay: .3s;	
+}
+.letter:nth-child(5) {
+  animation-delay: .4s;
+}
+.letter:nth-child(6) {
+  animation-delay: .5s;	
+}
+.letter:nth-child(7) {
+  animation-delay: .6s;
+}
+.letter:nth-child(8) {
+  animation-delay: .8s;
+}
+.letter:nth-child(9) {
+  animation-delay: 1s;
+}
+.letter:nth-child(10) {
+  animation-delay: 1.2s;
+}
+.letter:nth-child(11) {
+  animation-delay: 1.4s;
+}
+.letter:nth-child(12) {
+  animation-delay: 1.6s;
+}
+.letter:nth-child(13) {
+  animation-delay: 1.8s;
+}
+.letter:nth-child(14) {
+  animation-delay: 2s;
+}
+.letter:nth-child(15) {
+  animation-delay: 2.2s;
+}
+.letter:nth-child(16) {
+  animation-delay: 2.4s;
+}
+.letter:nth-child(17) {
+  animation-delay: 2.6s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0px)
+  }
+  40% {
+    transform: translateY(-70px);
+  }
+  80%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .cover_girl{
   display: inline-block;
   position: absolute;
@@ -91,14 +185,12 @@ body {
   bottom: 0%;
 }
 
+/*intro*/
 .intro{
   width: 100vw;
   height: 100vh;
   background: url(img/bgw.png);
-  
-
 }
-
 
 .topicw{
   position: absolute;
@@ -147,8 +239,6 @@ body {
   text-align: center;
 }
 
-
-
 .intro_check{
   position: absolute;
   bottom: 0;
@@ -166,8 +256,6 @@ body {
   background-color: black;
   transform: translate(25vw, 35vh);
 }
-
-
 
 .li {
   display: flex;

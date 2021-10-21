@@ -20,22 +20,100 @@
     <div class="run"></div>
     <div class="navbar">
       <div class="clock">
-          <img src="img/icon_cl.png" width="60vw">
+          <img src="img/icon_cl.png" width="60vw" id="clockrot">
       </div>
     </div>
     <div class="content">
       <div class="content_cover">
-          <div class="cover">
-              <div class="cover_time">
-                  <img src="img/time.png">
-              </div>
-              <div class="cover_girl">
-                  <img src="img/girlcover.png">
-              </div>
-              <div class="cover_scroll">
-                  <img src="img/scroll.png" width="50%">
-              </div>
+        <div class="cover">
+          <div class="textcover">
+            <div class="textwave">
+              <div class="letter">D</div>
+              <div class="letter">R</div>
+              <div class="letter">E</div>
+              <div class="letter">S</div>
+              <div class="letter">S</div>
+              <div class="letter">&nbsp;</div>
+              <div class="letter">T</div>
+              <div class="letter">I</div>
+              <div class="letter">M</div>
+              <div class="letter">E</div>
+              <div class="letter">M</div>
+              <div class="letter">A</div>
+              <div class="letter">C</div>
+              <div class="letter">H</div>
+              <div class="letter">I</div>
+              <div class="letter">N</div>
+              <div class="letter">E</div>
+            </div>
+            <div class="textwave">
+              <div class="letter">D</div>
+              <div class="letter">R</div>
+              <div class="letter">E</div>
+              <div class="letter">S</div>
+              <div class="letter">S</div>
+              <div class="letter">&nbsp;</div>
+              <div class="letter">T</div>
+              <div class="letter">I</div>
+              <div class="letter">M</div>
+              <div class="letter">E</div>
+              <div class="letter">M</div>
+              <div class="letter">A</div>
+              <div class="letter">C</div>
+              <div class="letter">H</div>
+              <div class="letter">I</div>
+              <div class="letter">N</div>
+              <div class="letter">E</div>
+            </div>
+            <div class="textwave">
+              <div class="letter">D</div>
+              <div class="letter">R</div>
+              <div class="letter">E</div>
+              <div class="letter">S</div>
+              <div class="letter">S</div>
+              <div class="letter">&nbsp;</div>
+              <div class="letter">T</div>
+              <div class="letter">I</div>
+              <div class="letter">M</div>
+              <div class="letter">E</div>
+              <div class="letter">M</div>
+              <div class="letter">A</div>
+              <div class="letter">C</div>
+              <div class="letter">H</div>
+              <div class="letter">I</div>
+              <div class="letter">N</div>
+              <div class="letter">E</div>
+            </div>
+            <div class="textwave">
+              <div class="letter">D</div>
+              <div class="letter">R</div>
+              <div class="letter">E</div>
+              <div class="letter">S</div>
+              <div class="letter">S</div>
+              <div class="letter">&nbsp;</div>
+              <div class="letter">T</div>
+              <div class="letter">I</div>
+              <div class="letter">M</div>
+              <div class="letter">E</div>
+              <div class="letter">M</div>
+              <div class="letter">A</div>
+              <div class="letter">C</div>
+              <div class="letter">H</div>
+              <div class="letter">I</div>
+              <div class="letter">N</div>
+              <div class="letter">E</div>
+            </div>
           </div>
+            <div class="cover_time">
+                <img src="img/time.png">
+            </div>
+            <div class="cover_girl">
+                <img src="img/girlcover.png">
+            </div>
+            <div class="cover_scroll">
+                <img src="img/scroll.png" width="50%">
+            </div>
+        </div>
       </div>
       <div class="content_intro">
           <div class="intro">
@@ -217,9 +295,13 @@
     let body = document.body;
 
     document.body.onscroll = function(){
+    newY = window.scrollX;
     let scrollY = window.scrollY;
-    console.log("yeah")
+
+    clockrot.style.setProperty('--deg',newY);
+
     body.style.setProperty("--x", window.scrollX);
+
     if (scrollY <= 3000) {
         body.style.setProperty("--bg", scrollY);
     }
