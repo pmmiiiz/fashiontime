@@ -359,6 +359,7 @@ body {
   animation: marqueegal 20s linear infinite;
 }
 .re1, .re2, .re3, .re4, .re5, .re6{
+  transition: 2s;
   filter: grayscale(100%);
 }
 .re1:hover, .re2:hover, .re3:hover, .re4:hover, .re5:hover, .re6:hover{
