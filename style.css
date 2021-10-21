@@ -403,7 +403,7 @@ body {
   }
 
 
-  #slideshow1 {
+  #gamevocabroman {
     position: absolute;
     top: 85vh;
     margin-left: 16vw;
@@ -411,7 +411,7 @@ body {
 
   }
 
-  #slideshow1 > .vocabdressroman {
+  #gamevocabroman > .vocabdressroman {
     position: absolute;
 
     
@@ -446,6 +446,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
+    font-family: 'Prompt', sans-serif;
   }
   .vocabdressroman:nth-child(1) {
     opacity: 1;
