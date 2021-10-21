@@ -99,8 +99,9 @@ body {
 }
 
 .letter:hover {
-  animation-play-state: paused;
- 
+  -webkit-text-fill-color: #fec468; 
+  -webkit-text-stroke-width: .2vw;
+  -webkit-text-stroke-color: black;
 }
 
 
