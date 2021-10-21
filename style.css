@@ -273,28 +273,63 @@ body {
     position: absolute;
     top: 5vw;
     margin-left: 10vw;
+    animation-name: wink1;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
+@keyframes wink1 {
+  from {transform: rotate(-10deg);}
+  to {transform: rotate(20deg);}
+}
+
 #picwink1{
     width: 10vw;
     transform: rotate(-31.58deg);
+    filter: brightness(0);
 }
 .wink2{
     position: absolute;
     top: 30vw;
     margin-left: 38vw;
+    animation-name: wink2;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes wink2 {
+  from {transform: rotate(-10deg);}
+  to {transform: rotate(20deg);}
 }
 #picwink2{
     width: 7vw;
     transform: rotate(6.75deg);
+    filter: brightness(0);
 }
 .wink3{
     position: absolute;
     top: 3vw;
     margin-left: 88vw;
+    animation-name: wink3;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes wink3 {
+  from {transform: rotate(-20deg);}
+  to {transform: rotate(10deg);}
 }
 #picwink3{
     width: 8.5vw;
     transform:rotate(17.48deg);
+    filter: brightness(0);
 }
 
 .showhint{
@@ -317,6 +352,7 @@ body {
   font-size:1.5vw;
   font-family: 'Prompt', sans-serif;
   color: white;
+  
 }
 
 #gamedressroman {
@@ -356,7 +392,7 @@ body {
     z-index: 4;
   }
   #romandresspic{
-      width: 20vw;
+      width: 40vh;
   }
   .dressroman {
     opacity: 0;
@@ -544,4 +580,180 @@ body {
             padding-top: 11vh;
             position:absolute;
             margin-left: 7vw;
+        }
+
+        .bbroman1{
+          position: absolute;
+          width: 7vw;
+          animation: bbroman1 10s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman1:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman1 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(5vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-15vh) translateX(8vw);
+          }
+        }
+        .bbroman2{
+          position: absolute;
+          width: 7vw;
+          animation: bbroman2 11s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman2:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman2 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(1vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-10vh) translateX(15vw);
+          }
+        }
+        .bbroman3{
+          position: absolute;
+          width: 5vw;
+          animation: bbroman3 12s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman3:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman3 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(1vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-14vh) translateX(8vw);
+          }
+        }
+        .bbroman4{
+          position: absolute;
+          width: 6vw;
+          animation: bbroman4 13s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman4:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman4 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(25vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-13vh) translateX(19vw);
+          }
+        }
+        .bbroman5{
+          position: absolute;
+          width: 5vw;
+          animation: bbroman1 14s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman5:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman5 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(19vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-12vh) translateX(30vw);
+          }
+        }
+        .bbroman6{
+          position: absolute;
+          width: 7vw;
+          animation: bbroman6 15s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman6:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman6 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(40vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-11vh) translateX(10vw);
+          }
+        }
+        .bbroman7{
+          position: absolute;
+          width: 5vw;
+          animation: bbroman7 9s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman7:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman7 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(1vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-10vh) translateX(9vw);
+          }
+        }
+        .bbroman8{
+          position: absolute;
+          width: 6vw;
+          animation: bbroman8 16s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman8:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman8 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(26vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-13vh) translateX(1vw);
+          }
+        }
+        .bbroman9{
+          position: absolute;
+          width: 5vw;
+          animation: bbroman9 9s infinite;
+          filter: grayscale(100%);
+        }
+        .bbroman9:hover{
+          filter: grayscale(0%);
+        }
+        
+        @keyframes bbroman9 {
+          0% { 
+            transform: scale(0.5) translateY(200vh) translateX(10vw);
+          }
+        
+          100% { 
+            transform: scale(1) translateY(-14vh) translateX(25vw);
+          }
+        }
+
+        .albbroman{
+          opacity: 0;
         }
