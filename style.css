@@ -343,11 +343,216 @@ body {
   font-family: 'Rubik Mono One', sans-serif;
   text-align: center;
 }
+.bganswerregen{
+  position: absolute;
+  bottom: 0;
+  width: 55vw;
+}
+.whatregen{
+  width:30vw;
+  height:10vw;
+  transform: translate(10vw, 50vh);
+  position:absolute;
+  text-align: center;
+  font-size:5vw;
+  display:block;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #4185F3;
+}
+.hintregen {
+  background-color: #4185F3;
+  color: rgb(0, 0, 0); 
+  transform: translate(20vw, 80vh);
+  position: absolute;
+  width: 10vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hintregen:hover {
+  background-color: transparent;
+  color: #4185F3;
+  border: 2px solid #4185F3;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.showhintregen{
+  width: 60vw;
+  height: 85vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  margin-left: 25vw;
+  top: 8vh;
+  display: none;
+  
+}
+.infohintregen{
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  margin-left: 8vw;
+  font-size:1.5vw;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
+.closehintregen{
+  background-color: #4185F3;
+  color: rgb(255, 255, 255); 
+  top: 68vh;
+  margin-left: 35vw;
+  position: absolute;
+  width: 10vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.closehintregen:hover {
+  background-color: transparent;
+  color: #4185F3;;
+  border: 2px solid #4185F3;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.tryregen{
+  width:30vw;
+  height:10vw;
+  transform: translate(10vw, 50vh);
+  position:absolute;
+  text-align: center;
+  font-size:5vw;
+  display:none;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #4185F3;
+}
+.answerregen{
+  width:40vw;
+  height:18vw;
+  top: 27vw;
+  margin-left: 6vw;
+  position:absolute;
+  text-align: center;
+  font-size:1.2vw;
+  display:none;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
+.finishregen {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255); 
+  transform: translate(85vw, 90vh);
+  position: absolute;
+  width: 10vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+.finishregen:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#leftdressregen {
+  position: absolute;
+  transform: translate(55vw, 50vh);
+  background: transparent;
+  color: #4185F3;
+  font-size: 2.5vw;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 4;
+  display: block;
+}
+#rightdressregen {
+  position: absolute;
+  transform: translate(80vw, 50vh);
+  background: transparent;
+  color: #4185F3;
+  font-size: 2.5vw;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+#leftvocabregen{
+  position: absolute;
+  transform: translate(55vw, 90vh);
+  background: transparent;
+  color: #4185F3;
+  font-size: 2.5vw;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+#rightvocabregen{
+  position: absolute;
+  transform: translate(80vw, 90vh);
+  background: transparent;
+  color: #4185F3;
+  font-size: 2.5vw;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+#gamedressregen {
+  position: absolute;
+  transform: translate(58vw, 30vh);
+}
 
+#gamedressregen > .dressregen {
+  position: absolute; 
+}
+#gamevocabregen {
+  position: absolute;
+  transform: translate(58vw, 90vh);
+  font-size: 2.5vw;
+}
 
-
-
+#gamevocabregen > .vocabdressregen {
+  position: absolute;
+}
+.dressregen {
+  opacity: 0;
+  text-align: center;
+}
+.dressregen:nth-child(1) {
+  opacity: 1;
+}
+#regendresspic{
+  width: 40vh;
+}
+.vocabdressregen {
+  opacity: 0;
+  text-align: center;
+  width: 20vw;
+  font-family: 'Prompt', sans-serif;
+}
+.vocabdressregen:nth-child(1) {
+  opacity: 1;
+}
+.slat{
+  position: absolute;
+  transform: translate(0vw, 15vh);
+  width: 25vw;
+}
+.butterfly{
+  position: absolute;
+  transform: translate(25vw, 20vh);
+  width: 25vw;
+}
 
 .bggalleryblack{
   width: 30vw;
@@ -378,6 +583,7 @@ body {
   margin: 0;
   overflow: hidden;
   transform: translate(5vw);
+  opacity: 0;
 }
 
 .galfilm .picfilm {
@@ -433,6 +639,7 @@ body {
   text-align: center;
   letter-spacing: -0.5vw;
 }
+
 
 
 

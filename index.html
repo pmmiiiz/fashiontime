@@ -150,14 +150,109 @@
           </div>
       </div>
         
-      <!-- รีเจนซี่ -->
-      <div class="content_regency">
+       <!-- รีเจนซี่ -->
+       <div class="content_regency">
         <div class="intro">
+          <div class="slat">
+            <img src="img/slat.png" width="100%">
+          </div>
+          <div class="bganswerregen">
+            <img src="img/bgregen.png" width="100%"><!--id="bgansregen"-->
+          </div>
           <div class="nameregen"> 
             <div class="regency"><p>REGENCY</p></div>
             <div class="regencyyear"><p>1795-1815</p></div>
           </div>
+          <div class="butterfly">
+            <img src="img/Butterfly.gif" width="100%">
+          </div>
+          <div class="answerregen">
+            เป็นยุคของการเปลี่ยนแปลง มีการปฏิวัติในอเมริกาและฝรั่งเศส<br>
+            สาวในยุคนี้จึงได้รีบอิทธิพลการแต่งกายแบบกรีกโบราณ<br>
+            เพราะเชื่อว่าเป็นภาพลักษณ์ที่แสดงให้เห็นถึงประชาธิปไตย <br>
+            นิยมใส่ชุดยาวๆ กรอมพื้น ไม่ใส่คอร์เซ็ต ใส่เอวสูงแบบรัดใต้อก <br>
+            ชนชั้นสูงจะใส่ชุดสีขาวตลอด ชนชั้นฐานะต่ำลงมาจะใส่ชุดสีพาสเทล<br>
+            และใส่ชุดสีขาวเฉพาะงานเลี้ยง นิยมผ้านุ่มๆ บางๆ พริ้วๆ <br>
+            เป็นผ้าฝ้าย มัสลิน หรือผ้าไหม มักใส่ผ้าคลุมไหล่หรือถุงมือยาว ผมสั้น ใส่หมวก
         </div>
+          <div class="showhintregen">
+            <div class="infohintregen">
+              <h1>ยุครีเจนซี่</h1>
+              <p>เสื้อผ้าของผู้หญิงสมัยนั้น นิยมใสเสื้อผ้ามีลักษณะเป็นชุดกระโปรง<br>
+                ทรงเอวสูง เสื้อผ้าบางๆ เรียบง่าย มีรูปร่างตรงไม่บานออกและไม่หนัก</p><br>
+              <p>ภาพยนตร์ที่นำเสนอเรื่องราวในยุครีเจนซี่<br>
+                  -Pride & Prejudice (2005)<br>
+                  -Becoming Jane (2007)</p>
+            </div>
+            <button class="closehintregen" onclick="closehintregen()"><U><i>close</i></U></button>
+          </div>
+          <div class="whatregen">
+            WHAT IS <br>DRESS?<br>
+          </div>
+          <div class="tryregen">
+            Try Agian<br>
+          </div>
+          <button class="hintregen" onclick="hintregen()"><U><i>HINT</i></U></button>
+        </div>
+
+        <!-- เกมเปลี่ยนชุด -->
+        <button id="leftdressregen">❰</button>
+        <div id="gamedressregen">
+              <div class="dressregen" >
+                <img src="img/fa1.png" id="regendresspic">
+              </div>
+              <div class="dressregen" >
+                  <img src="img/fa2.png" id="regendresspic">
+              </div>
+              <div class="dressregen" >
+                  <img src="IMG/fa3.png"  id="regendresspic">
+              </div>
+              <div class="dressregen">
+                  <img src="IMG/fa4.png"  id="regendresspic">
+              </div>
+        </div>
+        <button id="rightdressregen">❱</button>
+              
+              
+        <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
+        <button id="leftvocabregen">❰</button>
+              <div id="gamevocabregen">
+                <div class="vocabdressregen">
+                  โดยอง
+                </div>
+                <div class="vocabdressregen">
+                  พี่น้องเตนล์
+                </div>
+                <div class="vocabdressregen">
+                  น้องแจมิน
+                </div>
+                <div class="vocabdressregen">
+                  มาร์คลี
+                </div>
+                <div class="vocabdressregen">
+                  เจโน่
+                </div>
+                <div class="vocabdressregen">
+                  แฮชาน
+                </div>
+                <div class="vocabdressregen">
+                  น้องอินจุน
+                </div>
+                <div class="vocabdressregen">
+                  เฉินเล่อ
+                </div>
+                <div class="vocabdressregen">
+                  น้องจีซอง
+                </div>
+                <div class="vocabdressregen">
+                  วินวิน
+                </div>
+                <div class="vocabdressregen">
+                  พี่จอนนี่เทอขา
+                </div>
+              </div>
+        <button id="rightvocabregen">❱</button>
+        <button class="finishregen" onclick="finishregen()"><U><i>FINISH</i></U></button>
       </div>
       <!-- แกลลอรี่รีเจนซี่ -->
       <div class="gallery_regency">
@@ -544,6 +639,87 @@
         window.attachEvent("onmousewheel", scrollHorizontally);
     }
 
+
+// เปลี่ยนชุดและคำยุครีเจนซี่
+let numdressregen = 0;
+let endnumdressregen = 4;
+let numvocabregen = 0;
+let endnumvocabregen = 11;
+const dressregen = document.querySelectorAll(".dressregen");
+const vocabdressregen = document.querySelectorAll(".vocabdressregen");
+
+rightdressregen.addEventListener("click", function () {
+  dressregen[numdressregen].style.opacity = "0";
+  numdressregen++;
+  
+  if (numdressregen < endnumdressregen) {
+    dressregen[numdressregen].style.opacity = "1";
+  } else {
+    numdressregen = 0;
+    dressregen[numdressregen].style.opacity = "1";
+  }
+});
+leftdressregen.addEventListener("click", function () {
+  dressregen[numdressregen].style.opacity = "0";
+  numdressregen--;
+
+  if (numdressregen > -1) {
+    dressregen[numdressregen].style.opacity = "1";
+  } else {
+    numdressregen = endnumdressregen - 1;
+    dressregen[numdressregen].style.opacity = "1";
+  }
+});
+
+rightvocabregen.addEventListener("click", function () {
+  vocabdressregen[numvocabregen].style.opacity = "0";
+  numvocabregen++;
+  if (numvocabregen < endnumvocabregen) {
+    vocabdressregen[numvocabregen].style.opacity = "1";
+  } else {
+    numvocabregen = 0;
+    vocabdressregen[numvocabregen].style.opacity = "1";
+  }
+});
+leftvocabregen.addEventListener("click", function () {
+  vocabdressregen[numvocabregen].style.opacity = "0";
+  numvocabregen--;
+  if (numvocabregen > -1) {
+    vocabdressregen[numvocabregen].style.opacity = "1";
+  } else {
+    numvocabregen = endnumvocabregen - 1;
+    vocabdressregen[numvocabregen].style.opacity = "1";
+  }
+});
+
+// ปุ่มfinish
+function finishregen(){
+  if(numdressregen == 0 && numvocabregen == 9){
+    document.querySelector(".answerregen").style.display="block";
+    document.querySelector(".whatregen").style.display="none";
+    document.querySelector(".tryregen").style.display="none";
+    document.querySelector(".finishregen").style.display="none";
+    document.querySelector("#rightdressregen").style.display="none";
+    document.querySelector("#leftdressregen").style.display="none";
+    document.querySelector("#rightvocabregen").style.display="none";
+    document.querySelector("#leftvocabregen").style.display="none"; 
+    document.querySelector(".hintregen").style.display="none";
+    document.querySelector(".galfilm").style.opacity="1";
+    
+    
+  }
+  else{
+    document.querySelector(".tryregen").style.display="block";
+    document.querySelector(".whatregen").style.display="none";
+    document.querySelector(".answerregen").style.display="none";
+  }
+}
+function hintregen(){
+  document.querySelector(".showhintregen").style.display="block";
+}
+function closehintregen(){
+  document.querySelector(".showhintregen").style.display="none";
+}
 
 
 
