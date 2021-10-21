@@ -106,57 +106,87 @@
                 
 
 
-
-                <button id="left">❰</button>
-                <div id="slideshow">
-                  <div class="image" >
-                    <img src="img/fa1.png" id="pic1">
+                <!-- เกมเปลี่ยนชุด -->
+                <button id="leftdressroman">❰</button>
+                <div id="gamedressroman">
+                  <div class="dressroman" >
+                    <img src="img/fa1.png" id="romandresspic">
                   </div>
-                  <div class="image" >
-                    <img src="img/fa2.png" id="pic1">
+                  <div class="dressroman" >
+                    <img src="img/fa2.png" id="romandresspic">
                   </div>
-                  <div class="image" >
-                    <img src="IMG/fa3.png"  id="pic1">
+                  <div class="dressroman" >
+                    <img src="IMG/fa3.png"  id="romandresspic">
                   </div>
-                  <div class="image">
-                    <img src="IMG/fa4.png"  id="pic1">
+                  <div class="dressroman">
+                    <img src="IMG/fa4.png"  id="romandresspic">
                   </div>
                 </div>
-                <button id="right">❱</button>
+                <button id="rightdressroman">❱</button>
                 
                 
-                
-                <button id="left1">❰</button>
+                <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
+                <button id="leftvocabroman">❰</button>
                 <div id="slideshow1">
-                  <div class="image1">
+                  <div class="vocabdressroman">
                     น้องคิว
                   </div>
-                  <div class="image1">
-                    น่ารัก
+                  <div class="vocabdressroman">
+                    จุยอน
                   </div>
-                  <div class="image1">
-                    เท้
+                  <div class="vocabdressroman">
+                    เควิน
                   </div>
-                  <div class="image1">
-                    แส้บ
+                  <div class="vocabdressroman">
+                    ซอนอู
                   </div>
-                </div>
-                <button id="right1">❱</button>
-                
-                
-                <button class="button1" onclick="susu()"><U><i>FINISH</i></U></button>
-                <button class="button2" onclick="HINTROMAN()"><U><i>HINT</i></U></button>
-                <div class="whatroman">
-                    WHAT IS <br>DRESS?
-                </div>
-                
-                <div class="tryroman">
-                        Try Agian<br>(┬┬﹏┬┬)
-                </div>
+                  <div class="vocabdressroman">
+                    น้องนิว
+                  </div>
+                  <div class="vocabdressroman">
+                    พิซังยอร
+                  </div>
+                  <div class="vocabdressroman">
+                    พิเจคอบ
+                  </div>
+                  <div class="vocabdressroman">
+                    จูฮัก
+                  </div>
+                  <div class="vocabdressroman">
+                    น้องปัง
+                  </div>
+                  <div class="vocabdressroman">
+                    เอริค
+                  </div>
+                  <div class="vocabdressroman">
+                    พี่มิล
+                  </div>
 
+                </div>
+                <button id="rightvocabroman">❱</button>
+
+                
+                <button class="finishroman" onclick="finishroman()"><U><i>FINISH</i></U></button>
+                
+                <div class="showhint">
+                  <div class="infohintroman">
+                    <h1>ยุคโรแมนติก</h1>
+                    <p>      นิยมการแต่งกายแบบอังกฤษโดยมีลักษณะไหล่ลู่ลง เอวคอดด้วยคอร์เซต <br> 
+                      กระโปรงพองอลังการณ์  มีทรงผมและหมวก ใหญ่โต ติดดอกไม้</p>
+                    </div>
+                    <button class="closehimtroman" onclick="closehintroman()"><U><i>close</i></U></button>
+                </div>
+                <div class="whatroman">
+                    WHAT IS <br>DRESS?<br>
+                    <button class="hintroman" onclick="hintroman()"><U><i>HINT</i></U></button>
+                </div>
+                <div class="tryroman">
+                        Try Agian<br>
+                </div>
             </div>
-        </div>
-        <div class="gallery_romantic">
+          </div>
+           <!-- หน้าคั่นแต่ละยุค -->
+          <div class="gallery_romantic">
             <div class="bggallery1">
 
             </div>
@@ -205,72 +235,79 @@
     };
 
 
-    let inc = 0;
-let endinc = 4;
-let inc1 = 0;
 
-let endinc1 = 4;
-const image = document.querySelectorAll(".image");
-const image1 = document.querySelectorAll(".image1");
 
-right.addEventListener("click", function () {
-  image[inc].style.opacity = "0";
-  inc++;
+// เปลี่ยนชุดและคำยุคโรแมนติก
+let numdressroman = 0;
+let endnumdressroman = 4;
+let numvocabroman = 0;
+let endnumvocabroman = 11;
+const dressroman = document.querySelectorAll(".dressroman");
+const vocabdressroman = document.querySelectorAll(".vocabdressroman");
+
+rightdressroman.addEventListener("click", function () {
+  dressroman[numdressroman].style.opacity = "0";
+  numdressroman++;
   
-  if (inc < endinc) {
-    image[inc].style.opacity = "1";
+  if (numdressroman < endnumdressroman) {
+    dressroman[numdressroman].style.opacity = "1";
   } else {
-    inc = 0;
-    image[inc].style.opacity = "1";
+    numdressroman = 0;
+    dressroman[numdressroman].style.opacity = "1";
   }
 });
-left.addEventListener("click", function () {
-  image[inc].style.opacity = "0";
-  inc--;
+leftdressroman.addEventListener("click", function () {
+  dressroman[numdressroman].style.opacity = "0";
+  numdressroman--;
 
-  if (inc > -1) {
-    image[inc].style.opacity = "1";
+  if (numdressroman > -1) {
+    dressroman[numdressroman].style.opacity = "1";
   } else {
-    inc = endinc - 1;
-    image[inc].style.opacity = "1";
-  }
-});
-
-right1.addEventListener("click", function () {
-  image1[inc1].style.opacity = "0";
-  inc1++;
-  if (inc1 < endinc1) {
-    image1[inc1].style.opacity = "1";
-  } else {
-    inc1 = 0;
-    image1[inc1].style.opacity = "1";
-  }
-});
-left1.addEventListener("click", function () {
-  image1[inc1].style.opacity = "0";
-  inc1--;
-  if (inc1 > -1) {
-    image1[inc1].style.opacity = "1";
-  } else {
-    inc1 = endinc1 - 1;
-    image1[inc1].style.opacity = "1";
+    numdressroman = endnumdressroman - 1;
+    dressroman[numdressroman].style.opacity = "1";
   }
 });
 
-function susu(){
-  if(inc == 1 && inc1 == 2){
+rightvocabroman.addEventListener("click", function () {
+  vocabdressroman[numvocabroman].style.opacity = "0";
+  numvocabroman++;
+  if (numvocabroman < endnumvocabroman) {
+    vocabdressroman[numvocabroman].style.opacity = "1";
+  } else {
+    numvocabroman = 0;
+    vocabdressroman[numvocabroman].style.opacity = "1";
+  }
+});
+leftvocabroman.addEventListener("click", function () {
+  vocabdressroman[numvocabroman].style.opacity = "0";
+  numvocabroman--;
+  if (numvocabroman > -1) {
+    vocabdressroman[numvocabroman].style.opacity = "1";
+  } else {
+    numvocabroman = endnumvocabroman - 1;
+    vocabdressroman[numvocabroman].style.opacity = "1";
+  }
+});
+
+// ปุ่มfinish
+function finishroman(){
+  if(numdressroman == 0 && numvocabroman == 9){
     document.querySelector(".answerroman").style.display="block";
     document.querySelector(".whatroman").style.display="none";
     document.querySelector(".tryroman").style.display="none";
-    document.querySelector(".button1").style.display="none";
-    
+    document.querySelector(".finishroman").style.display="none";
   }
   else{
     document.querySelector(".tryroman").style.display="block";
     document.querySelector(".whatroman").style.display="none";
     document.querySelector(".answerroman").style.display="none";
-
   }
+}
+function hintroman(){
+  document.querySelector(".showhint").style.display="block";
+}
+function closehintroman(){
+  document.querySelector(".showhint").style.display="none";
 }
 
 </script>

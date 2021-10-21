@@ -297,28 +297,41 @@ body {
     transform:rotate(17.48deg);
 }
 
+.showhint{
+  width: 60vw;
+  height: 85vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  margin-left: 25vw;
+  top: 8vh;
+  display: none;
+  
+}
+.infohintroman{
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  margin-left: 8vw;
+  font-size:1.5vw;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
 
-
-
-
-
-
-
-
-
-#slideshow {
+#gamedressroman {
     position: absolute;
     top: 20vh;
     margin-left: 15vw;
   }
 
-  #slideshow > .image {
+  #gamedressroman > .dressroman {
     position: absolute;
     
     
   }
  
-  #left {
+  #leftdressroman {
     position: absolute;
     top: 40vh;
     margin-left: 15vw;
@@ -330,7 +343,7 @@ body {
     cursor: pointer;
     z-index: 4;
   }
-  #right {
+  #rightdressroman {
     position: absolute;
     top: 40vh;
     margin-left: 35vw;
@@ -342,14 +355,14 @@ body {
     cursor: pointer;
     z-index: 4;
   }
-  #pic1{
+  #romandresspic{
       width: 20vw;
   }
-  .image {
+  .dressroman {
     opacity: 0;
     text-align: center;
   }
-  .image:nth-child(1) {
+  .dressroman:nth-child(1) {
     opacity: 1;
   }
 
@@ -362,13 +375,13 @@ body {
 
   }
 
-  #slideshow1 > .image1 {
+  #slideshow1 > .vocabdressroman {
     position: absolute;
 
     
   }
  
-  #left1 {
+  #leftvocabroman {
     position: absolute;
     top: 85vh;
     margin-left: 15vw;
@@ -380,7 +393,7 @@ body {
     cursor: pointer;
     z-index: 4;
   }
-  #right1 {
+  #rightvocabroman {
     position: absolute;
     top: 85vh;
     margin-left: 35vw;
@@ -393,19 +406,19 @@ body {
     z-index: 4;
   }
   
-  .image1 {
+  .vocabdressroman {
     opacity: 0;
     text-align: center;
     width: 20vw;
   }
-  .image1:nth-child(1) {
+  .vocabdressroman:nth-child(1) {
     opacity: 1;
   }
 
 
 
 
-.button1 {
+.finishroman {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255); 
     top: 85vh;
@@ -419,7 +432,7 @@ body {
     border-radius: 5px;
   }
   
-  .button1:hover {
+  .finishroman:hover {
     background-color: transparent;
     color: black;
     border: 2px solid #000000;
@@ -429,11 +442,11 @@ body {
   
   }
 
-  .button2 {
+  .hintroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0); 
-    top: 70vh;
-    margin-left: 80vw;
+    top: 25vh;
+    margin-left: 0vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -441,9 +454,10 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     cursor: pointer;
     border-radius: 5px;
+
   }
   
-  .button2:hover {
+  .hintroman:hover {
     background-color: transparent;
     color: hsl(0, 77%, 50%);;
     border: 2px solid hsl(0, 77%, 50%);
@@ -452,7 +466,28 @@ body {
 
   
   }
+  .closehimtroman{
+    background-color: hsl(0, 77%, 50%);
+    color: rgb(255, 255, 255); 
+    top: 50vh;
+    margin-left: 40vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .closehimtroman:hover {
+    background-color: transparent;
+    color: hsl(0, 77%, 50%);;
+    border: 2px solid hsl(0, 77%, 50%);
+    transition: 0.5s;
+    cursor: pointer;
 
+  
+  }
 .answerroman{
     width:35vw;
     height:15vw;
@@ -481,7 +516,7 @@ body {
 .whatroman{
     width:30vw;
     height:10vw;
-    top: 20vw;
+    top: 19vw;
     margin-left: 60vw;
     position:absolute;
     text-align: center;
