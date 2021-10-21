@@ -30,7 +30,7 @@ body {
     left: 0;
     top: 0;
     height: 6px;
-    width: calc((var(--x)/4300)*100%);
+    width: calc((var(--x)/8000)*100%);
     background: hsl(0,0%,13%);
     z-index: 6;
 }
