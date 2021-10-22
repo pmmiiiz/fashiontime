@@ -79,6 +79,7 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
+  bottom: 25vh;
 }
 
 .textwave {
