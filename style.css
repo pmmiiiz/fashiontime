@@ -1050,6 +1050,10 @@ body {
         .bbroman1:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
         }
         
         @keyframes bbroman1 {
@@ -1070,6 +1074,10 @@ body {
         .bbroman2:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
         }
         
         @keyframes bbroman2 {
@@ -1091,6 +1099,11 @@ body {
         .bbroman3:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman3 {
@@ -1111,6 +1124,11 @@ body {
         .bbroman4:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman4 {
@@ -1131,6 +1149,11 @@ body {
         .bbroman5:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman5 {
@@ -1151,6 +1174,11 @@ body {
         .bbroman6:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman6 {
@@ -1172,6 +1200,11 @@ body {
         .bbroman7:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman7 {
@@ -1192,6 +1225,11 @@ body {
         .bbroman8:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman8 {
@@ -1212,6 +1250,11 @@ body {
         .bbroman9:hover{
           filter: grayscale(0%);
           transition: 0.5s;
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          -o-animation-play-state: paused;
+          animation-play-state: paused;
+          
         }
         
         @keyframes bbroman9 {
