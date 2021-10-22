@@ -440,8 +440,17 @@ body {
 .infohintregen{
   position: absolute;
   text-align: center;
-  top: 15vh;
+  top: 12vh;
   margin-left: 8vw;
+  font-size:1.5vw;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
+.moviehintregen{
+  position: absolute;
+  text-align: left;
+  top: 28vh;
+  margin-left: 4vw;
   font-size:1.5vw;
   font-family: 'Prompt', sans-serif;
   color: white;
