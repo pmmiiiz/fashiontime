@@ -159,17 +159,17 @@
       <!-- รีเจนซี่ -->
       <div class="content_regency">
         <div class="intro">
-          <div class="slat">
+          <div class="slat showitem3" data-show="0">
             <img src="img/slat.png" width="100%">
           </div>
-          <div class="bganswerregen">
-            <img src="img/4.png" width="100%"><!--id="bgansregen"-->
+          <div class="bganswerregen" >
+            <img src="img/4.png" width="100%" id="bganswerregenn" data-show="0"><!--id="bgansregen"-->
           </div>
           <div class="nameregen"> 
-            <div class="regency"><p>REGENCY</p></div>
-            <div class="regencyyear"><p>1795-1815</p></div>
+            <div class="regency showall3" data-show="0"><p>REGENCY</p></div>
+            <div class="regencyyear showall3" data-show="0"><p>1795-1815</p></div>
           </div>
-          <div class="butterfly">
+          <div class="butterfly showitem3" data-show="0">
             <img src="img/Butterfly.gif" width="100%">
           </div>
           <div class="answerregen">
@@ -192,18 +192,18 @@
             </div>
             <button class="closehintregen" onclick="closehintregen()"><U><i>close</i></U></button>
           </div>
-          <div class="whatregen">
+          <div class="whatregen showall3" data-show="0">
             WHAT IS <br>DRESS?<br>
           </div>
           <div class="tryregen">
             Try Agian<br>
           </div>
-          <button class="hintregen" onclick="hintregen()"><U><i>HINT</i></U></button>
+          <button class="hintregen showall3" data-show="0" onclick="hintregen()"><U><i>HINT</i></U></button>
         </div>
 
         <!-- เกมเปลี่ยนชุด -->
-        <button id="leftdressregen">❰</button>
-        <div id="gamedressregen">
+        <button id="leftdressregen" class="showall3" data-show="0">❰</button>
+        <div id="gamedressregen" data-show="0">
               <div class="dressregen" >
                 <img src="img/fa1.png" id="regendresspic">
               </div>
@@ -217,12 +217,12 @@
                   <img src="IMG/fa4.png"  id="regendresspic">
               </div>
         </div>
-        <button id="rightdressregen">❱</button>
+        <button id="rightdressregen" class="showall3" data-show="0">❱</button>
               
               
         <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
-        <button id="leftvocabregen">❰</button>
-              <div id="gamevocabregen">
+        <button id="leftvocabregen" class="showall3" data-show="0">❰</button>
+              <div id="gamevocabregen" class="showall3" data-show="0">
                 <div class="vocabdressregen">
                   โดยอง
                 </div>
@@ -257,8 +257,8 @@
                   พี่จอนนี่เทอขา
                 </div>
               </div>
-        <button id="rightvocabregen">❱</button>
-        <button class="finishregen" onclick="finishregen()"><U><i>FINISH</i></U></button>
+        <button id="rightvocabregen" class="showall3" data-show="0">❱</button>
+        <button class="finishregen showall3" data-show="0" onclick="finishregen()"><U><i>FINISH</i></U></button>
       </div>
       <!-- แกลลอรี่รีเจนซี่ -->
       <div class="gallery_regency">
@@ -322,11 +322,11 @@
                 </div>
                 <!-- ชื่อยุคและปี -->
                 <div class="nameroman" style="position: absolute;"> 
-                    <p class="romantic">ROMANTIC</p>
-                    <p class="romanticyear">1810–1840</p>
+                    <p class="romantic showall1" data-show="0">ROMANTIC</p>
+                    <p class="romanticyear showall1" data-show="0" >1810–1840</p>
                 </div>
                 <!-- พื้นหลังคำตอบ -->
-                <div class="bganswerroman">
+                <div class="bganswerroman" id="bganswerromann" data-show="0">
                     <img src="img/2.png" id="bgansroman">
                 </div>
                 <!-- คำตอบของแต่ละยุคที่พอกดปุ่มfinishแล้วคำตอบถูกขึ้นมา -->
@@ -338,21 +338,21 @@
                 </div>
                 <!-- ตกแต่งที่เอียงซ้ายขวา -->
                 <div class="wink1">
-                    <img src="img/winkred.png" id="picwink1">
+                    <img src="img/winkred.png" id="picwink1"  class="showitem1" data-show="0">
                     
                 </div>
                 <div class="wink2">
-                    <img src="img/winkred.png" id="picwink2">
+                    <img src="img/winkred.png" id="picwink2"  class="showitem1" data-show="0">
                     
                 </div>
                 <div class="wink3">
-                    <img src="img/winkred.png" id="picwink3">
+                    <img src="img/winkred.png" id="picwink3"  class="showitem1" data-show="0">
                   
                 </div>
 
                 <!-- เกมเปลี่ยนชุด -->
-                <button id="leftdressroman">❰</button>
-                <div id="gamedressroman">
+                <button id="leftdressroman" class="showall1" data-show="0">❰</button>
+                <div id="gamedressroman" data-show="0">
                   <div class="dressroman" >
                     <img src="img/fa1.png" id="romandresspic">
                   </div>
@@ -366,11 +366,11 @@
                     <img src="IMG/fa4.png"  id="romandresspic">
                   </div>
                 </div>
-                <button id="rightdressroman">❱</button>
+                <button id="rightdressroman" class="showall1" data-show="0">❱</button>
  
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
-                <button id="leftvocabroman">❰</button>
-                <div id="gamevocabroman">
+                <button id="leftvocabroman" class="showall1" data-show="0">❰</button>
+                <div id="gamevocabroman"  class="showall1" data-show="0">
                   <div class="vocabdressroman">
                     น้องคิว
                   </div>
@@ -405,10 +405,10 @@
                     พี่มิล
                   </div>
                 </div>
-                <button id="rightvocabroman">❱</button>
+                <button id="rightvocabroman" class="showall1" data-show="0">❱</button>
 
                 <!-- ปุ่มfinish -->
-                <button class="finishroman" onclick="finishroman()"><U><i>FINISH</i></U></button>
+                <button class="finishroman showall1" data-show="0" onclick="finishroman()"><U><i>FINISH</i></U></button>
 
                 <!-- ข้อมูลhint -->
                 <div class="showhintroman">
@@ -421,7 +421,7 @@
                     <button class="closehintroman" onclick="closehintroman()"><U><i>close</i></U></button>
                 </div>
                 <!-- คำตอบปกติตอนยังไม่ขึ้น -->
-                <div class="whatroman">
+                <div class="whatroman showall1" data-show="0">
                     WHAT IS <br>DRESS?<br>
                 </div>
                 <!-- คำตอบที่ตอบผิดตอบผิด -->
@@ -429,7 +429,7 @@
                         Try Agian<br>
                 </div>
                 <!-- ปุ่มhint -->
-                <button class="hintroman" onclick="hintroman()"><U><i>HINT</i></U></button>
+                <button class="hintroman showall1" data-show="0" onclick="hintroman()"><U><i>HINT</i></U></button>
             </div>
           </div>
            <!-- หน้าคั่นแต่ละยุค(ฟองสบู่) -->
@@ -459,22 +459,22 @@
         <div class="content_victoria">
           <div class="intro">
             <!-- ของตกแต่งนาฬิกาทราย -->
-            <div class="sandclockvictor">
+            <div class="sandclockvictor showitem2" data-show="0">
               <img src="img/sandclockyell.png" id="bgsandclockvictor">
             </div>
             <!-- ของตกแต่งดอกไม้ -->
-            <div class="bgflowervictor">
+            <div class="bgflowervictor showitem2" data-show="0">
                 <img src="img/floweryellow.png" id="bgpicflower">
             </div>
             <!-- พื้นหลังคำตอบ -->
-            <div class="bganswervictor">
+            <div id="bganswervictor" data-show="0">
               <img src="img/3.png" id="bgansvictor">
             </div>
             <!-- ชื่อยุคและปีรวมถึงของตกแต่งตรงชื่อ -->
             <div class="namevictor" style="position: absolute;"> 
-              <p class="victor">VICTORIA</p>
-              <p class="victoryear">1837–1901</p>
-              <img src="img/velvet2.png" id="bordervictor">
+              <p class="victor showall2" data-show="0">VICTORIA</p>
+              <p class="victoryear showall2" data-show="0">1837–1901</p>
+              <img src="img/velvet2.png" id="bordervictor" class="showitem2" data-show="0">
             </div>
             <!-- คำตอบของแต่ละยุคที่พอกดปุ่มfinishแล้วคำตอบถูกขึ้นมา -->
             <div class="answervictor">
@@ -501,7 +501,7 @@
               <button class="closehintvictor" onclick="closehintvictor()"><U><i>close</i></U></button>
             </div>
             <!-- คำตอบปกติตอนยังไม่ขึ้น -->
-            <div class="whatvictor">
+            <div class="whatvictor showall2" data-show="0">
                 WHAT IS <br>DRESS?<br>
             </div>
             <!-- คำตอบที่ตอบผิดตอบผิด -->
@@ -509,11 +509,11 @@
                 Try Agian<br>
             </div>
             <!-- ปุ่มhint -->
-            <button class="hintvictor" onclick="hintvictor()"><U><i>HINT</i></U></button>
+            <button class="hintvictor showall2" data-show="0" onclick="hintvictor()"><U><i>HINT</i></U></button>
           
             <!-- เกมเปลี่ยนชุด -->
-            <button id="leftdressvictor">❰</button>
-                <div id="gamedressvictor">
+            <button id="leftdressvictor" class="showall2" data-show="0">❰</button>
+                <div id="gamedressvictor" data-show="0">
                   <div class="dressvictor" >
                     <img src="img/fa2.png" id="victordresspic">
                   </div>
@@ -527,11 +527,11 @@
                     <img src="IMG/fa4.png"  id="victordresspic">
                   </div>
                 </div>
-                <button id="rightdressvictor">❱</button>
+                <button id="rightdressvictor" class="showall2" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
-                <button id="leftvocabvictor">❰</button>
-                <div id="gamevocabvictor">
+                <button id="leftvocabvictor" class="showall2" data-show="0">❰</button>
+                <div id="gamevocabvictor" class="showall2" data-show="0">
                   <div class="vocabdressvictor">
                     โดยอง
                   </div>
@@ -566,9 +566,9 @@
                     พี่จอนนี่เทอขา
                   </div>
                 </div>
-                <button id="rightvocabvictor">❱</button>
+                <button id="rightvocabvictor" class="showall2" data-show="0">❱</button>
                 <!-- ปุ่มfinish -->
-                <button class="finishvictor" onclick="finishvictor()"><U><i>FINISH</i></U></button>
+                <button id="centerpage" class="finishvictor showall2" data-show="0" onclick="finishvictor()"><U><i>FINISH</i></U></button>
                 
           </div>
 
@@ -677,11 +677,45 @@
     if (newX <= 3000) {
         body.style.setProperty("--bg", scrollY);
     }
-    if (newX+window.innerWidth-300>= document.querySelector("#bgroman").offsetLeft){
+    if (newX+window.innerWidth-600>= document.querySelector("#bgroman").offsetLeft){
       document.querySelector("#bgroman").dataset.show="1";
+      document.querySelector("#bganswerromann").dataset.show="1";
+      document.querySelector("#gamedressroman").dataset.show="1";
+      document.querySelectorAll(".showall1").forEach((showall1)=>{
+        showall1.dataset.show="1";
+      })
+      document.querySelectorAll(".showitem1").forEach((showitem1)=>{
+        showitem1.dataset.show="1";
+      })
+      
+    }
+    if (newX+window.innerWidth-600>= document.querySelector("#centerpage").offsetLeft){
+      document.querySelector("#bganswervictor").dataset.show="1";
+      document.querySelector("#gamedressvictor").dataset.show="1";
+      document.querySelectorAll(".showall2").forEach((showall2)=>{
+        showall2.dataset.show="1";
+      })
+      document.querySelectorAll(".showitem2").forEach((showitem2)=>{
+        showitem2.dataset.show="1";
+      })
+      
+    }
+    if (newX+window.innerWidth-600>= document.querySelector("#leftvocabregen").offsetLeft){
+      document.querySelector("#bganswerregenn").dataset.show="1";
+      document.querySelector("#gamedressregen").dataset.show="1";
+      document.querySelectorAll(".showall3").forEach((showall3)=>{
+        showall3.dataset.show="1";
+      })
+      document.querySelectorAll(".showitem3").forEach((showitem3)=>{
+        showitem3.dataset.show="1";
+      })
+      
     }
     console.log(document.querySelector("#bgroman").offsetLeft)
+    
+    console.log(document.querySelector("#centerpage").offsetLeft)
     };
+
 
     //เลื่อนหน้าจอ//
     function scrollHorizontally(e) {

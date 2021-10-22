@@ -712,23 +712,120 @@ body {
 #bgroman[data-show="1"]{
   position: absolute;
   width: 32vw;
-  transition: all 5s;
+  transition: all 1s;
 
 }
 #bgroman[data-show="0"]
 {
 transform: translateY(-200px);
-transition: all 5s;
-
+}
+#bganswerromann[data-show="1"]{
+  position: absolute;
+  transition: all 1.5s;
+}
+#bganswerromann[data-show="0"]{
+  transform: translateY(1000px);
+  
+}
+#gamedressroman[data-show="1"]{
+  position: absolute;
+  transition: all 4.5s;
 
 }
+#gamedressroman[data-show="0"]{
+  transform: translateY(-600px);
+}
+
+.showall1[data-show="1"]{
+  transition: all 5.5s;
+  opacity: 1;
+
+}
+.showall1[data-show="0"]{
+  opacity:0;
+}
+.showitem1[data-show="1"]{
+  transition: all 6s;
+  opacity: 1;
+
+}
+.showitem1[data-show="0"]{
+  opacity:0;
+}
+#bganswervictor[data-show="1"]{
+  position: absolute;
+  transition: all 1.5s;
+}
+#bganswervictor[data-show="0"]{
+  transform: translateY(1000px);
+  
+}
+#gamedressvictor[data-show="1"]{
+  position: absolute;
+  transition: all 4.5s;
+
+}
+#gamedressvictor[data-show="0"]{
+  transform: translateY(-600px);
+}
+.showall2[data-show="1"]{
+  transition: all 5s;
+  opacity: 1;
+
+}
+.showall2[data-show="0"]{
+  opacity:0;
+}
+.showitem2[data-show="1"]{
+  transition:  4s;
+  transition-delay: 2s;
+  opacity: 1;
+
+}
+.showitem2[data-show="0"]{
+  opacity:0;
+}
+#bganswerregenn[data-show="1"]{
+  position: absolute;
+  transition: all 1.5s;
+}
+#bganswerregenn[data-show="0"]{
+  transform: translateY(1000px);
+  
+}
+#gamedressregen[data-show="1"]{
+  position: absolute;
+  transition: all 4.5s;
+
+}
+#gamedressregen[data-show="0"]{
+  transform: translateY(-600px);
+}
+.showall3[data-show="1"]{
+  transition: all 5s;
+  opacity: 1;
+
+}
+.showall3[data-show="0"]{
+  opacity:0;
+}
+.showitem3[data-show="1"]{
+  transition:  4s;
+  transition-delay: 2s;
+  opacity: 1;
+
+}
+.showitem3[data-show="0"]{
+  opacity:0;
+}
+
+
 .nameroman{
     width: 100vw;
 }
 .romantic{
     text-align: center;
     color: hsl(0, 77%, 50%);
-
     font-size: 3.5vw;
     font-family: 'Rubik Mono One';
     
@@ -750,6 +847,7 @@ transition: all 5s;
     margin-left: 45vw;
     
 }
+
 .wink1{
     position: absolute;
     top: 5vw;
@@ -963,7 +1061,7 @@ transition: all 5s;
   .hintroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0); 
-    top: 67vh;
+    top: 33vw;
     margin-left: 80vw;
     position: absolute;
     width: 10vw;
