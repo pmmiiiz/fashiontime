@@ -373,7 +373,7 @@ body {
 .regency{
   position: absolute;
   width: 30vw;
-  transform: translate(67vw, -5vh);
+  transform: translate(67vw, -7vh);
   font-size: 5vw;
   font-family: 'Rubik Mono One', sans-serif;
   text-align: center;
@@ -382,7 +382,7 @@ body {
 .regencyyear{
   position: absolute;
   width: 50vw;
-  transform: translate(53vw, 4vh);
+  transform: translate(53vw, 2vh);
   font-size: 5vw;
   font-family: 'Rubik Mono One', sans-serif;
   text-align: center;
@@ -558,7 +558,7 @@ body {
 }
 #gamedressregen {
   position: absolute;
-  transform: translate(58vw, 30vh);
+  transform: translate(57vw, 29vh);
 }
 
 #gamedressregen > .dressregen {
