@@ -36,7 +36,9 @@ body {
 }
 
 .content_cover, .content_intro, .content_regency,
-.content_romantic, .content_victoria{
+.content_romantic, .content_victoria, .content_artnuvo, 
+.content_1910stoWWI, .content_Flapper, .content_ReadyToWear, 
+.content_1940s, .content_1950s, .content_1960s{
     display: inline-flex;
     margin-left: -4px;
 }
@@ -1526,25 +1528,7 @@ body {
             font-family: 'Prompt', sans-serif;
             color: white;
         }
-      
-        /* .bggalleryvictor1{
-          width: 50vw;
-          height: 100vh;
-          background: url(img/bgw.png);
-          font-family: 'Rubik Mono One', sans-serif;
-          font-size:6vw;
-          
 
-        }
-        .bggalleryvictor2{
-          width: 50vw;
-          height: 100vh;
-          background: url(img/bgw.png);
-          font-family: 'Rubik Mono One', sans-serif;
-          font-size:6vw;
-          
-
-        } */
         .blackvictor1{
           width: calc(42vw/3);
           height: 25vh;
@@ -1711,3 +1695,24 @@ body {
           filter: grayscale(0%);
           transition: 1s;
         }
+
+
+        /* ยุคอาร์ตนูโว */
+
+
+        /* ยุค1910s – WWI */
+
+
+        /* ยุคแฟลปเปอร์ */
+
+
+        /* ยุคReady-To-Wear */
+
+
+        /* ยุค1940s */
+
+
+        /* ยุค1950s */
+
+
+        /* ยุค1960s */
