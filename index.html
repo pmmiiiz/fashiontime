@@ -320,8 +320,8 @@
         <div class="content_romantic">
             <div class="intro">
               <!-- พื้นหลังชื่อยุค -->
-                <div class="topicromantic">
-                    <img src="img/1.png" id="bgroman">
+                <div class="topicromantic" id="bgroman" data-show="0">
+                    <img src="img/1.png" width="100%">
                 </div>
                 <!-- ชื่อยุคและปี -->
                 <div class="nameroman" style="position: absolute;"> 
@@ -670,16 +670,20 @@
     let body = document.body;
 
     document.body.onscroll = function(){
-    newY = window.scrollX;
-    let scrollY = window.scrollY;
+    let newX = window.scrollX;
+    let scrollY = window.scrollY; 
 
-    clockrot.style.setProperty('--deg',newY);
+    clockrot.style.setProperty('--deg',newX);
 
     body.style.setProperty("--x", window.scrollX);
 
-    if (scrollY <= 3000) {
+    if (newX <= 3000) {
         body.style.setProperty("--bg", scrollY);
     }
+    if (newX+window.innerWidth-300>= document.querySelector("#bgroman").offsetLeft){
+      document.querySelector("#bgroman").dataset.show="1";
+    }
+    console.log(document.querySelector("#bgroman").offsetLeft)
     };
 
     //เลื่อนหน้าจอ//
