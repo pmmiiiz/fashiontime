@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
-/* html{
+html{
   scroll-behavior: smooth;
-} */
+}
 html,
 body {
   /* height: 100%; */
