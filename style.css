@@ -65,6 +65,62 @@ body {
   transform:rotate(calc(var(--deg) * 1deg));
 }
 
+.navbar-list{
+  font-size: 14px;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 160px 10px;
+  padding: 10px auto;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+}
+
+.navbar-list a{
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.navbar-list div{
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 45px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #000000;
+}
+
+.navbar-list div:hover{
+  background-color: #E01D1D;
+  cursor: pointer;
+}
+
+.texttop{
+    display:block;
+    transform: rotate(-90deg); 
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    white-space:nowrap;
+    top: 17%;
+    left:-16%;
+    font-size:10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.textdown{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    white-space:nowrap;
+    bottom: 2%;
+    left: 8%;
+    font-size:10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
 /*หน้าแรก*/
 .cover{
   width: 100vw;
