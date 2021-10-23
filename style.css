@@ -799,7 +799,7 @@ transform: translateY(-200px);
 
 }
 #gamedressregen[data-show="0"]{
-  transform: translateY(-600px);
+  transform: translate(57vw, -600px);
 }
 .showall3[data-show="1"]{
   transition: all 5s;
