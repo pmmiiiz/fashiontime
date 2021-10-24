@@ -1603,7 +1603,25 @@
         </div>
 
 
-
+        <!-- สรุป -->
+        <div class="content_conclusion">
+            <div class="conclusion" id="lsastpage">
+                <div class="concluinfo1">
+                   <img src="img/cloclk.png" id="picclock">
+                   <img src="img/kemlong.png" id="kem1">
+                   <img src="img/kemshort.png" id="kem2">
+                </div>
+                <div class="nemework">DRESS<br>TIMEMACHINE</div>
+                <div class="next" onclick="next()"><i>»click HERE«</i></div>
+                <div class="context">ทุกสิ่งทุกอย่างล้วนมีอิทธิพลต่อแฟชั่น<br>
+                    ไม่ว่าจะเป็นเรื่องของการเมือง ศาสนา <br>
+                    หริอเศรษฐกิจ และแฟชั่นยังเป็นตัวแทนการแสดงออก<br>
+                    ถึงค่านิยมในยุคนั้นๆ อีกด้วย<br></div>
+                    <div class="winkwhite"><img src="img/winkwhite.png"></div>
+                    <div class="winkwhite2"><img src="img/winkwhite.png"></div>
+                    <div class="winkwhite3"><img src="img/winkwhite.png"></div>
+            </div>
+        </div>
 
 
     </div>
@@ -2515,6 +2533,21 @@ function closehintartnuvo(){
 
     function closehint1960() {
         document.querySelector(".showhint1960").style.display = "none";
+    }
+
+    
+    // สรุป
+    function next(){
+            document.querySelector(".concluinfo1").style.display = "none";
+            document.querySelector(".nemework").style.display = "none";
+            document.querySelector(".next").style.display = "none";
+            document.querySelector(".conclusion").style.backgroundImage="url(img/black55.png)";
+            document.querySelector(".context").style.opacity = "1";
+            document.querySelector(".winkwhite").style.opacity = "1";
+            document.querySelector(".winkwhite2").style.opacity = "1";
+            document.querySelector(".winkwhite3").style.opacity = "1";
+      
+      
     }
 </script>
 

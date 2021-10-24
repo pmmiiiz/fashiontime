@@ -48,7 +48,8 @@ body {
 .content_ReadyToWear,
 .content_1940s,
 .content_1950s,
-.content_1960s {
+.content_1960s,
+.content_conclusion {
     display: inline-flex;
     margin-left: -4px;
 }
@@ -4973,4 +4974,174 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     letter-spacing: -0.5vw;
+}
+
+/* สรุป */
+.conclusion{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bgw.png);
+}
+
+.concluinfo1{
+    position: absolute; 
+    
+}
+#picclock{
+    width: 10vw; 
+    align-items: center;
+    transition: all 2s ease-in-out;
+    animation: zoomclock 10s;
+    animation-fill-mode: forwards;
+    margin-left: 20vw;
+    position: absolute;
+    top: 20vw;
+
+}
+@keyframes zoomclock {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(4);
+    }
+}
+
+#kem1{
+    width: 10vw; 
+    align-items: center;
+    transition: all 2s ease-in-out;
+    animation: kem1ro 10s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-left: 20vw;
+    top: 20vw;
+
+}
+@keyframes kem1ro {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(-403deg) scale(4);
+    }
+}
+
+#kem2{
+    width: 10vw; 
+    align-items: center;
+    transition: all 2s ease-in-out;
+    animation: kem2ro 10s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-left: 20vw;
+    top: 20vw;
+
+}
+@keyframes kem2ro {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(-45deg) scale(4);
+    }
+}
+
+.next {
+ 
+    color: rgb(0, 0, 0); 
+    transform: translate(85vw, 90vh);
+    position: absolute;
+    width: 20vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    margin-left: -9vw;
+    top: -10.5vw;
+    animation: namewow 5s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 3;
+
+  }
+  
+  .next:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: -10vw;
+    
+  }
+  .nemework{
+    width: 100vw; 
+    height: 100vh;
+    animation:namewow 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-left: 20vw;
+    top: 40vh;
+    color: #000000;
+    font-size: 5vw;
+    text-align: center;
+    opacity: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+
+
+}
+@keyframes namewow {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+.context{
+    position: absolute;
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    top: 35vh;
+    color: #ffffff;
+    font-size: 3vw;
+    text-align: center;
+    opacity: 0;
+    transition: 5s;
+    z-index: 2;
+    font-family: 'Prompt', sans-serif;
+
+}
+.winkwhite{
+    position: absolute;
+    width: 20vw;
+    margin-left: 15vw;
+    top: 5vw;
+    transform: rotate(-20deg);
+    opacity: 0;
+    z-index: 3;
+    transition: 7s;
+    
+}
+.winkwhite2{
+    position: absolute;
+    width: 20vw;
+    margin-left: 5vw;
+    top: 30vw;
+    transform: rotate(-5deg);
+    opacity: 0;
+    z-index: 3;
+    transition: 7s;    
+}
+.winkwhite3{
+    position: absolute;
+    width: 20vw;
+    margin-left: 80vw;
+    top: 3vw;
+    transform: rotate(15deg);
+    opacity: 0;
+    z-index: 3;
+    transition: 7s;
+    
 }
