@@ -4977,16 +4977,19 @@ body {
 }
 
 /* สรุป */
-.conclusion{
+.conclusion {
     width: 100vw;
     height: 100vh;
     background-image: url(img/bgw.png);
 }
 
-.concluinfo1{
+.concluinfo1 [data-show="0"]{
     position: absolute; 
+
     
 }
+ 
+
 #picclock{
     width: 10vw; 
     align-items: center;
@@ -5066,6 +5069,13 @@ body {
     z-index: 3;
 
   }
+  .next {
+ 
+
+    opacity: 1;
+    
+
+  }
   
   .next:hover {
     transition: 0.5s;
@@ -5143,5 +5153,17 @@ body {
     opacity: 0;
     z-index: 3;
     transition: 7s;
+    
+}
+
+
+.showall11[data-show="1"] {
+    
+    opacity: 1;
+    transition: all 5s;
+}
+
+.showall11[data-show="0"] {
+    opacity: 0;
     
 }
