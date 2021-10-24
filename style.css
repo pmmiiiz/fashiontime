@@ -154,7 +154,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+
 
 .textcover {
     position: absolute;
@@ -163,8 +165,18 @@ body {
     justify-content: center;
     align-items: center;
     bottom: 25vh;
+    animation: showt 10s ease 200ms backwards;
 }
-
+@keyframes showt {
+    from {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 .textwave {
     display: flex;
     flex-direction: row;
@@ -271,18 +283,49 @@ body {
     display: inline-block;
     position: absolute;
     bottom: 10vh;
+    animation: drop-girl 5s ease 200ms backwards;
+}
+@keyframes drop-girl {
+    from {
+     transform: translateY(-1000px);
+    }
+    to {
+     transform: translate(0px);
+    }
 }
 
 .cover_time {
     display: inline-block;
     position: absolute;
     bottom: 0%;
+    animation: drop-in 1s ease 200ms backwards;
+}
+@keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(1000px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
 }
 
 .cover_rose {
     position: absolute;
     width: 15vw;
     transform: translate(-15vw, 3.5vh);
+    animation: show 8s ease 200ms backwards;
+}
+@keyframes show {
+    from {
+        transform: translate(-15vw, 3.5vh) scale(0.1);
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translate(-15vw, 3.5vh) scale(1);
+    }
 }
 
 .cover_bird {
@@ -290,6 +333,17 @@ body {
     position: absolute;
     bottom: 10vh;
     left: 55%;
+    animation: showb 8s ease 200ms backwards;
+}
+@keyframes showb {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .arrow {
@@ -304,6 +358,15 @@ body {
     justify-content: center;
     background-image: url(img/scroll.png);
     background-size: 10vw;
+    animation: showa 8s ease 200ms backwards;
+}
+@keyframes showa {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .bounce {
@@ -334,6 +397,7 @@ body {
         transform: translateX(0px);
     }
 }
+
 
 
 /*intro*/
@@ -458,6 +522,33 @@ body {
     position: absolute;
     bottom: 0;
     transform: translate(75vw, 0vh);
+    animation: carrun 15s infinite linear;
+}
+@keyframes carrun{
+    from{
+        transform: translate(80vw, 0vh);
+    }
+    to{
+        transform: translate(0vw, 0vh);
+    }
+}
+
+.showitem0[data-show="1"] {
+    transition: all 6s;
+    opacity: 1;
+}
+
+.showitem0[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem00[data-show="1"] {
+    transition: all 4s;
+    opacity: 1;
+}
+
+.showitem00[data-show="0"] {
+    opacity: 0;
 }
 
 .intro_velvet {
@@ -4975,6 +5066,25 @@ body {
     text-align: center;
     letter-spacing: -0.5vw;
 }
+
+.showitem10[data-show="1"] {
+    transition: 4s;
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.showitem10[data-show="0"] {
+    opacity: 0;
+}
+.showall10[data-show="1"]{
+    transition: all 5s;
+    opacity: 1;
+  
+}
+.showall10[data-show="0"]{
+    opacity:0;
+}
+
 
 /* สรุป */
 .conclusion {
