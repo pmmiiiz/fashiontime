@@ -2390,7 +2390,7 @@ body {
   }
   .slat{
     position: absolute;
-    transform: translate(0vw, 25vh);
+    transform: translate(0vw, 20vh);
     width: 25vw;
   }
   .butterfly{
