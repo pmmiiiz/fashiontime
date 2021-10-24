@@ -848,7 +848,153 @@
 
         <!-- ยุค1950s -->
         <div class="content_1950s">
-            <div class="intro">
+            <div class="intro" id="link1950s">
+                <!-- ของตกแต่ง -->
+                <div class="sandclock1950 showitem9" data-show="0">
+                    <img src="img/sandclockpurpink.png" id="bgsandclock1950">
+                </div>
+                <!-- ของตกแต่งดอกไม้ -->
+                <div class="bgflower1950 showitem9" data-show="0">
+                    <img src="img/flowerpurpink.png" id="bgpicflower1950">
+                </div>
+                <!-- พื้นหลังคำตอบ -->
+                <div id="bganswer1950" data-show="0">
+                    <img src="img/3.png" id="bgans1950">
+                </div>
+                <!-- ชื่อยุคและปีรวมถึงของตกแต่งตรงชื่อ -->
+                <div class="name1950" style="position: absolute;">
+                    <p class="s1950 showall9" data-show="0">1950s</p>
+                    <p class="s1950year showall9" data-show="0">1950-1959</p>
+                    <img src="img/velvet2.png" id="border1950" class="showitem9" data-show="0">
+                </div>
+                <!-- คำตอบของแต่ละยุคที่พอกดปุ่มfinishแล้วคำตอบถูกขึ้นมา -->
+                <div class="answer1950">
+                    <br>เป็นยุคที่เศรษฐกิจรุ่งเรือง วัยรุ่นแต่งตัว <br> มีแนวฮิตเป็นของตัวเอง ในช่วงแรกจะฮิตกระโปรง<br>ทรงดินสอแคบเข้ารูป 
+                    ยุคนี้จะนิยมใส่กระโปรงบานคลุมเข่า<br> รัดเอวเห็นสัดส่วน ส่วนกางเกงจะนิยมใส่กางเกงรัดรูป<br>ที่ยาวเลยเข่าเช่นกัน ผู้หญิงจะนิยมจัดแต่งทรงผมดัดเป็นลอน ๆ 
+
+                </div>
+                <!-- ข้อมูลhint -->
+                <div class="showhint1950">
+                    <div class="infohint1950">
+                        <h1>ยุค 1950s</h1>
+                        <p>ยุคนี้มีสัญลักษณ์ที่โดดเด่น คือ ผู้หญิงจะนิยมใส่กระโปรงบาน  <br>ยาวคลุมเข่า  ข้างในกระโปรงเสริมผ้าตาข่ายหลาย ๆ ชั้น เน้นทรวดทรง</p>
+                        <p class="cinema1950"><b>ภาพยนตร์ที่นำเสนอเรื่องราวในยุค 1950s<br>
+                            &emsp;&emsp;-Breakfast at Tiffany's (1961)<br>
+                            &emsp;&emsp;-Grease (1978)<br>
+                            &emsp;&emsp;-The Dressmaker (2015)<br>
+                            
+                    </div>
+                    <!-- ปุ่มปิดในhint -->
+                    <button class="closehint1950" onclick="closehint1950()"><U><i>close</i></U></button>
+                </div>
+                <!-- คำตอบปกติตอนยังไม่ขึ้น -->
+                <div class="what1950 showall9" data-show="0">
+                    WHAT IS <br>DRESS?<br>
+                </div>
+                <!-- คำตอบที่ตอบผิดตอบผิด -->
+                <div class="try1950">
+                    Try Agian<br>
+                </div>
+                <!-- ปุ่มhint -->
+                <button class="hint1950 showall9" data-show="0" onclick="hint1950()"><U><i>HINT</i></U></button>
+
+                <!-- เกมเปลี่ยนชุด -->
+                <button id="leftdress1950" class="showall9" data-show="0">❰</button>
+                <div id="gamedress1950" data-show="0">
+                    <div class="dress1950">
+                        <img src="IMG/fa9.png" id="s1950dresspic">
+                    </div>
+                    <div class="dress1950">
+                        <img src="img/fa2.png" id="s1950dresspic">
+                    </div>
+                    <div class="dress1950">
+                        <img src="img/fa1.png" id="s1950dresspic">
+                    </div>
+                    <div class="dress1950">
+                        <img src="IMG/fa4.png" id="s1950dresspic">
+                    </div>
+                </div>
+                <button id="rightdress1950" class="showall9" data-show="0">❱</button>
+
+                <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
+                <button id="leftvocab1950" class="showall9" data-show="0">❰</button>
+                <div id="gamevocab1950" class="showall9" data-show="0">
+                    <div class="vocabdress1950">
+                        โดยอง
+                    </div>
+                    <div class="vocabdress1950">
+                        พี่น้องเตนล์
+                    </div>
+                    <div class="vocabdress1950">
+                        น้องแจมิน
+                    </div>
+                    <div class="vocabdress1950">
+                        มาร์คลี
+                    </div>
+                    <div class="vocabdress1950">
+                        เจโน่
+                    </div>
+                    <div class="vocabdress1950">
+                        แฮชาน
+                    </div>
+                    <div class="vocabdress1950">
+                        น้องอินจุน
+                    </div>
+                    <div class="vocabdress1950">
+                        เฉินเล่อ
+                    </div>
+                    <div class="vocabdress1950">
+                        น้องจีซอง
+                    </div>
+                    <div class="vocabdress1950">
+                        วินวิน
+                    </div>
+                    <div class="vocabdress1950">
+                        พี่จอนนี่เทอขา
+                    </div>
+                </div>
+                <button id="rightvocab1950" class="showall9" data-show="0">❱</button>
+                <!-- ปุ่มfinish -->
+                <button id="centerpage1950" class="finish1950 showall9" data-show="0" onclick="finish1950()"><U><i>FINISH</i></U></button>
+            </div>
+
+            <!-- หน้าคั่นแต่ละยุค(ตารางหมากรุก) -->
+            <div class="gallery_1950s">
+                <!-- หมากรุกแถวแรก -->
+                <div class="bggallery1950s1">
+                    <div class="black1950s1">
+                        <img src="img/91.jpg" id="pic1950s1">
+                    </div>
+                    <div class="pink1950s1"></div>
+                    <div class="black1950s2">
+                        <img src="img/92.jpg" id="pic1950s2">
+                    </div>
+                    <div class="pink1950s2"></div>
+                </div>
+                <!-- หมากรุกแถว2 -->
+                <div class="bggallery1950s2">
+                    <div class="pink1950s3"></div>
+                    <div class="black1950s3">
+                        <p class="galname1950">1950s</p>
+                    </div>
+                    <div class="pink1950s4">
+                        <p class="galdress1950">DRESS</p>
+                    </div>
+                    <div class="black1950s4">
+                        <img src="img/93.jpg" id="pic1950s3">
+                    </div>
+                </div>
+                <!-- หมากรุกแถว3 -->
+                <div class="bggallery1950s3">
+                    <div class="black1950s5">
+                        <img src="img/94.jpg" id="pic1950s4">
+                    </div>
+                    <div class="pink1950s5"></div>
+                    <div class="black1950s6">
+                        <img src="img/95.jpg" id="pic1950s5">
+                    </div>
+                    <div class="pink1950s6"></div>
+                </div>
             </div>
         </div>
 
@@ -1081,7 +1227,17 @@
             })
 
         }
+        if (newX + window.innerWidth - 600 >= document.querySelector("#centerpage1950").offsetLeft) {
+            document.querySelector("#bganswer1950").dataset.show = "1";
+            document.querySelector("#gamedress1950").dataset.show = "1";
+            document.querySelectorAll(".showall9").forEach((showall9) => {
+                showall9.dataset.show = "1";
+            })
+            document.querySelectorAll(".showitem9").forEach((showitem9) => {
+                showitem9.dataset.show = "1";
+            })
 
+        }
         if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocab1960").offsetLeft) {
             document.querySelector("#bganswer1960s").dataset.show = "1";
             document.querySelector("#gamedress1960").dataset.show = "1";
@@ -1466,6 +1622,97 @@
     function closehintflapper() {
         document.querySelector(".showhintflapper").style.display = "none";
     }
+
+
+
+    // เปลี่ยนชุดและคำยุค1950s
+    let numdress1950 = 0;
+    let endnumdress1950 = 4;
+    let numvocab1950 = 0;
+    let endnumvocab1950 = 11;
+    const dress1950 = document.querySelectorAll(".dress1950");
+    const vocabdress1950 = document.querySelectorAll(".vocabdress1950");
+
+    rightdress1950.addEventListener("click", function() {
+        dress1950[numdress1950].style.opacity = "0";
+        numdress1950++;
+
+        if (numdress1950 < endnumdress1950) {
+            dress1950[numdress1950].style.opacity = "1";
+        } else {
+            numdress1950 = 0;
+            dress1950[numdress1950].style.opacity = "1";
+        }
+    });
+    leftdress1950.addEventListener("click", function() {
+        dress1950[numdress1950].style.opacity = "0";
+        numdress1950--;
+
+        if (numdress1950 > -1) {
+            dress1950[numdress1950].style.opacity = "1";
+        } else {
+            numdress1950 = endnumdress1950 - 1;
+            dress1950[numdress1950].style.opacity = "1";
+        }
+    });
+
+    rightvocab1950.addEventListener("click", function() {
+        vocabdress1950[numvocab1950].style.opacity = "0";
+        numvocab1950++;
+        if (numvocab1950 < endnumvocab1950) {
+            vocabdress1950[numvocab1950].style.opacity = "1";
+        } else {
+            numvocab1950 = 0;
+            vocabdress1950[numvocab1950].style.opacity = "1";
+        }
+    });
+    leftvocab1950.addEventListener("click", function() {
+        vocabdress1950[numvocab1950].style.opacity = "0";
+        numvocab1950--;
+        if (numvocab1950 > -1) {
+            vocabdress1950[numvocab1950].style.opacity = "1";
+        } else {
+            numvocab1950 = endnumvocab1950 - 1;
+            vocabdress1950[numvocab1950].style.opacity = "1";
+        }
+    });
+
+    // ปุ่มfinish
+    function finish1950() {
+        if (numdress1950 == 0 && numvocab1950 == 9) {
+            document.querySelector(".answer1950").style.display = "block";
+            document.querySelector(".what1950").style.display = "none";
+            document.querySelector(".try1950").style.display = "none";
+            document.querySelector(".finish1950").style.display = "none";
+            document.querySelector("#rightdress1950").style.display = "none";
+            document.querySelector("#leftdress1950").style.display = "none";
+            document.querySelector("#rightvocab1950").style.display = "none";
+            document.querySelector("#leftvocab1950").style.display = "none";
+            document.querySelector(".hint1950").style.display = "none";
+            document.querySelector("#bgpicflower1950").style.filter = "brightness(1)";
+            document.querySelector("#bgsandclock1950").style.filter = "brightness(1)";
+            document.querySelector("#pic1950s1").style.opacity = "1";
+            document.querySelector("#pic1950s2").style.opacity = "1";
+            document.querySelector("#pic1950s3").style.opacity = "1";
+            document.querySelector("#pic1950s4").style.opacity = "1";
+            document.querySelector("#pic1950s5").style.opacity = "1";
+
+
+        } else {
+            document.querySelector(".try1950").style.display = "block";
+            document.querySelector(".what1950").style.display = "none";
+            document.querySelector(".answer1950").style.display = "none";
+        }
+    }
+    // ปุ่มhint
+    function hint1950() {
+        document.querySelector(".showhint1950").style.display = "block";
+    }
+
+    function closehint1950() {
+        document.querySelector(".showhint1950").style.display = "none";
+    }
+
 
     // เปลี่ยนชุดและคำยุค1960s
     let numdress1960 = 0;
