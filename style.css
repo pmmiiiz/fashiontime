@@ -59,6 +59,7 @@ body {
 .gallery_victoria,
 .gallery_flapper,
 .gallery_ready,
+.gallery_1940s,
 .gallery_1950s,
 .gallery_1960s,
 .gallery_1910stoWWI,
@@ -3522,7 +3523,7 @@ body {
 .pinkflapper1 {
     width: calc(42vw/3);
     height: 25vh;
-    background: url(img/pink.PNG);
+    background: url(img/pink.png);
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 6vw;
 }
@@ -4149,6 +4150,642 @@ body {
 
 
 /* ยุค1940s */
+.topic1940 {
+    position: absolute;
+    margin-left: 34%;
+}
+
+#bg1940[data-show="1"] {
+    position: absolute;
+    width: 32vw;
+    transition: all 1s;
+}
+
+#bg1940[data-show="0"] {
+    transform: translateY(-200px);
+}
+
+#bganswer1940[data-show="1"] {
+    position: absolute;
+    transition: all 1.5s;
+}
+
+#bganswer1940[data-show="0"] {
+    transform: translateY(1000px);
+}
+
+#gamedress1940[data-show="1"] {
+    position: absolute;
+    transition: all 4.5s;
+}
+
+#gamedress1940[data-show="0"] {
+    transform: translateY(-600px);
+}
+
+.showall8[data-show="1"] {
+    transition: all 5.5s;
+    opacity: 1;
+}
+
+.showall8[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem8[data-show="1"] {
+    transition: all 6s;
+    opacity: 1;
+}
+
+.showitem8[data-show="0"] {
+    opacity: 0;
+}
+
+.name1940 {
+    width: 100vw;
+}
+
+.s1940 {
+    text-align: center;
+    color: hsla(32, 100%, 56%, 1);
+    font-size: 3.5vw;
+    font-family: 'Rubik Mono One';
+    margin-left: 3vw;
+}
+
+.s1940year {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin-left: 2vw;
+    margin-top: -4.5vw;
+    font-family: 'Rubik Mono One';
+}
+
+#bgans1940 {
+    position: absolute;
+    width: 54vw;
+    top: 7vw;
+    margin-left: 45vw;
+}
+
+.wink11940 {
+    position: absolute;
+    top: 5vw;
+    margin-left: 10vw;
+    animation-name: wink1;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink11940 {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+#picwink11940 {
+    width: 10vw;
+    transform: rotate(-31.58deg);
+    filter: brightness(0);
+}
+
+.wink21940 {
+    position: absolute;
+    top: 30vw;
+    margin-left: 38vw;
+    animation-name: wink2;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink21940 {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+#picwink21940 {
+    width: 7vw;
+    transform: rotate(6.75deg);
+    filter: brightness(0);
+}
+
+.wink31940 {
+    position: absolute;
+    top: 3vw;
+    margin-left: 88vw;
+    animation-name: wink3;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink31940 {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+#picwink31940 {
+    width: 8.5vw;
+    transform: rotate(17.48deg);
+    filter: brightness(0);
+}
+
+.showhint1940 {
+    width: 60vw;
+    height: 85vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    margin-left: 25vw;
+    top: 8vh;
+    display: none;
+}
+
+.infohint1940 {
+    position: absolute;
+    text-align: center;
+    top: 15vh;
+    margin-left: 6vw;
+    font-size: 1.5vw;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+#gamedress1940 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 15vw;
+}
+
+#gamedress1940>.dress1940 {
+    position: absolute;
+}
+
+#leftdress1940 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 15vw;
+    background: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#rightdress1940 {
+    position: absolute;
+    top: 40vh;
+    margin-left: 35vw;
+    background: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#s1940dresspic {
+    width: 40vh;
+
+}
+
+.dress1940 {
+    opacity: 0;
+    text-align: center;
+}
+
+.dress1940:nth-child(1) {
+    opacity: 1;
+}
+
+#gamevocab1940 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+}
+
+#gamevocab1940>.vocabdress1940 {
+    position: absolute;
+}
+
+#leftvocab1940 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 15vw;
+    background: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#rightvocab1940 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 35vw;
+    background: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.vocabdress1940 {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+.vocabdress1940:nth-child(1) {
+    opacity: 1;
+}
+
+.finish1940 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    top: 85vh;
+    margin-left: 40vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.finish1940:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hint1940 {
+    background-color: hsla(32, 100%, 56%, 1);
+    color: rgb(0, 0, 0);
+    top: 33vw;
+    margin-left: 80vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hint1940:hover {
+    background-color: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    ;
+    border: 2px solid hsla(32, 100%, 56%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.closehint1940 {
+    background-color: hsla(32, 100%, 56%, 1);
+    color: rgb(255, 255, 255);
+    top: 50vh;
+    margin-left: 40vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closehint1940:hover {
+    background-color: transparent;
+    color: hsla(32, 100%, 56%, 1);
+    ;
+    border: 2px solid hsla(32, 100%, 56%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.answer1940 {
+    width: 35vw;
+    height: 15vw;
+    top: 20vw;
+    margin-left: 57vw;
+    position: absolute;
+    text-align: center;
+    font-size: 1.3vw;
+    display: none;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+.try1940 {
+    width: 30vw;
+    height: 10vw;
+    top: 18vw;
+    margin-left: 60vw;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    display: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: hsla(32, 100%, 56%, 1);
+}
+
+.what1940 {
+    width: 30vw;
+    height: 10vw;
+    top: 19vw;
+    margin-left: 60vw;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    display: block;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: hsla(32, 100%, 56%, 1);
+}
+
+.bggallery11940 {
+    width: 30vw;
+    height: 100vh;
+    background: url(img/black\ 2.png);
+}
+
+.bggallery21940 {
+    width: 20vw;
+    height: 100vh;
+    background: url(img/bgyel.png);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6vw;
+    line-height: 87%;
+}
+
+.galltxt1940 {
+    padding-top: 11vh;
+    position: absolute;
+    margin-left: 7vw;
+}
+
+.bb19401 {
+    position: absolute;
+    width: 7vw;
+    animation: bb19401 10s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19401:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19401 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(5vw);
+    }
+    100% {
+        transform: scale(1) translateY(-15vh) translateX(8vw);
+    }
+}
+
+.bb19402 {
+    position: absolute;
+    width: 7vw;
+    animation: bb19402 11s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19402:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19402 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
+    }
+    100% {
+        transform: scale(1) translateY(-10vh) translateX(15vw);
+    }
+}
+
+.bb19403 {
+    position: absolute;
+    width: 5vw;
+    animation: bb19403 12s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19403:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19403 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
+    }
+    100% {
+        transform: scale(1) translateY(-14vh) translateX(8vw);
+    }
+}
+
+.bb19404 {
+    position: absolute;
+    width: 6vw;
+    animation: bb19404 13s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19404:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19404 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(25vw);
+    }
+    100% {
+        transform: scale(1) translateY(-13vh) translateX(19vw);
+    }
+}
+
+.bb19405 {
+    position: absolute;
+    width: 5vw;
+    animation: bb19401 14s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19405:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19405 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(19vw);
+    }
+    100% {
+        transform: scale(1) translateY(-12vh) translateX(30vw);
+    }
+}
+
+.bb19406 {
+    position: absolute;
+    width: 7vw;
+    animation: bb19406 15s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19406:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19406 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(40vw);
+    }
+    100% {
+        transform: scale(1) translateY(-11vh) translateX(10vw);
+    }
+}
+
+.bb19407 {
+    position: absolute;
+    width: 5vw;
+    animation: bb19407 9s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19407:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19407 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
+    }
+    100% {
+        transform: scale(1) translateY(-10vh) translateX(9vw);
+    }
+}
+
+.bb19408 {
+    position: absolute;
+    width: 6vw;
+    animation: bb19408 16s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19408:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19408 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(26vw);
+    }
+    100% {
+        transform: scale(1) translateY(-13vh) translateX(1vw);
+    }
+}
+
+.bb19409 {
+    position: absolute;
+    width: 5vw;
+    animation: bb19409 9s infinite;
+    filter: grayscale(100%);
+}
+
+.bb19409:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb19409 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(10vw);
+    }
+    100% {
+        transform: scale(1) translateY(-14vh) translateX(25vw);
+    }
+}
+
+.albb1940 {
+    opacity: 0;
+}
 
 
 /* ยุค1950s */
