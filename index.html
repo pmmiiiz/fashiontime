@@ -836,7 +836,175 @@
 
         <!-- ยุคReady-To-Wear -->
         <div class="content_ReadyToWear">
-            <div class="intro">
+            <div class="intro" id="linkready">
+                <!-- -ของตกแต่ง -->
+                <div class="slatRTW showitem7" data-show="0">
+                    <img src="img/slat.png" width="100%">
+                </div>
+                <!-- พื้นหลังคำตอบ -->
+                <div class="bganswerRTW">
+                    <img src="img/4.png" width="100%" id="bganswerRTW" data-show="0">
+                    <!--id="bgansRTW"-->
+                </div>
+                <!-- ชื่อยุค -->
+                <div class="RTW">
+                    <div class="nameRTW showall7" data-show="0">
+                        <p>Ready-To-Wear</p>
+                    </div>
+                    <div class="RTWyear showall7" data-show="0">
+                        <p>1930-1940</p>
+                    </div>
+                </div>
+                <!-- ของตกแต่งผีเสื้อ -->
+                <!-- <div class="butterflyRTW showitem7" data-show="0">
+                    <img src="img/Butterfly.gif" width="100%">
+                </div> -->
+                <!-- คำตอบ -->
+                <div class="answerRTW">
+                    ชุดของยุคนี้มีความเป็นผู้หญิงมากขึ้น ทรวดทรงเข้ารูปหรือจะกระโปรงพลีท<br>ก็เป็นที่นิยม ในยุคนี้เริ่มมีการแบ่งชุดกลางวันกับกลางคืนออกจากกัน<br>ตอนกลางวันชุดจะมีลักษณะแบบเรียบๆ ส่วนกลางคืนจะเป็นชุดไฮโซหรูหรา<br>ชุดที่เป็นสัญลักษณ์คือเดรสยาวคอวี
+                    โชว์หลัง
+                    <br>คนนิยมไปอาบแดดให้หลังสีแทนเพื่อจะใส่มาโชว์กัน
+                </div>
+                <!-- ข้อมูลhint -->
+                <div class="showhintRTW">
+                    <div class="infohintRTW">
+                        <h1>ยุค Ready-To-Wear</h1>
+                        <p>แฟชั่นยุคนี้ส่วนใหญ่จะมีลักษณะเป็นเดรสหรือกระโปรงที่ทรวดทรงเข้ารูป<br>ชุดที่ใส่ในตอนกลางคืนจะเป็นเดรสยาวคอวี โชว์หลัง แบบหรูหรา</p><br>
+                    </div>
+                    <button class="closehintRTW" onclick="closehintRTW()"><U><i>close</i></U></button>
+                </div>
+                <!-- คำตอบปกติตอนยังไม่ขึ้น -->
+                <div class="whatRTW showall7" data-show="0">
+                    WHAT IS <br>DRESS?<br>
+                </div>
+                <!-- คำตอบปกติตอนตอบผิด -->
+                <div class="tryRTW">
+                    Try Agian<br>
+                </div>
+                <!-- ปุ่มhint -->
+                <button class="hintRTW showall7" data-show="0" onclick="hintRTW()"><U><i>HINT</i></U></button>
+            </div>
+
+            <!-- เกมเปลี่ยนชุด -->
+            <!-- ปุ่มซ้าย -->
+            <button id="leftdressRTW" class="showall7" data-show="0">❰</button>
+            <div id="gamedressRTW" data-show="0">
+                <div class="dressRTW">
+                    <img src="img/fa6.png" id="RTWdresspic">
+                </div>
+                <div class="dressRTW">
+                    <img src="img/fa2.png" id="RTWdresspic">
+                </div>
+                <div class="dressRTW">
+                    <img src="IMG/fa3.png" id="RTWdresspic">
+                </div>
+                <div class="dressRTW">
+                    <img src="IMG/fa1.png" id="RTWdresspic">
+                </div>
+            </div>
+            <!-- ปุ่มขวา -->
+            <button id="rightdressRTW" class="showall7" data-show="0">❱</button>
+
+
+            <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
+            <!-- ปุ่มซ้าย -->
+            <button id="leftvocabRTW" class="showall7" data-show="0">❰</button>
+            <div id="gamevocabRTW" class="showall7" data-show="0">
+                <div class="vocabdressRTW">
+                    โดยอง
+                </div>
+                <div class="vocabdressRTW">
+                    พี่น้องเตนล์
+                </div>
+                <div class="vocabdressRTW">
+                    น้องแจมิน
+                </div>
+                <div class="vocabdressRTW">
+                    มาร์คลี
+                </div>
+                <div class="vocabdressRTW">
+                    เจโน่
+                </div>
+                <div class="vocabdressRTW">
+                    แฮชาน
+                </div>
+                <div class="vocabdressRTW">
+                    น้องอินจุน
+                </div>
+                <div class="vocabdressRTW">
+                    เฉินเล่อ
+                </div>
+                <div class="vocabdressRTW">
+                    น้องจีซอง
+                </div>
+                <div class="vocabdressRTW">
+                    วินวิน
+                </div>
+                <div class="vocabdressRTW">
+                    พี่จอนนี่เทอขา
+                </div>
+            </div>
+            <!-- ปุ่มขวา -->
+            <button id="rightvocabRTW" class="showall3" data-show="0">❱</button>
+            <!-- ปุ่มfinish -->
+            <button class="finishRTW showall3" data-show="0" onclick="finishRTW()"><U><i>FINISH</i></U></button>
+        </div>
+        <!-- แกลลอรี่ ready -->
+        <div class="gallery_ready">
+            <div class="bggalleryblackRTW">
+                <!-- ฟิล์มซ้าย -->
+                <div class="film1RTW">
+                    <img src="img/film.png" width="100%">
+                </div>
+                <!-- รูปภาพ -->
+                <div class="galfilmRTW">
+                    <div class="picfilmRTW">
+                        <img src="img/rtw1.png" width="100%" class="rtw1">
+                        <img src="img/rtw2.png" width="100%" class="rtw2">
+                        <img src="img/rtw3.png" width="100%" class="rtw3">
+                        <img src="img/rtw4.png" width="100%" class="rtw4">
+                        <img src="img/rtw5.png" width="100%" class="rtw5">
+                        <img src="img/rtw6.png" width="100%" class="rtw6">
+
+                        <img src="img/rtw1.png" width="100%" class="rtw1">
+                        <img src="img/rtw2.png" width="100%" class="rtw2">
+                        <img src="img/rtw3.png" width="100%" class="rtw3">
+                        <img src="img/rtw4.png" width="100%" class="rtw4">
+                        <img src="img/rtw5.png" width="100%" class="rtw5">
+                        <img src="img/rtw6.png" width="100%" class="rtw6">
+
+                        <img src="img/rtw1.png" width="100%" class="rtw1">
+                        <img src="img/rtw2.png" width="100%" class="rtw2">
+                        <img src="img/rtw3.png" width="100%" class="rtw3">
+                        <img src="img/rtw4.png" width="100%" class="rtw4">
+                        <img src="img/rtw5.png" width="100%" class="rtw5">
+                        <img src="img/rtw6.png" width="100%" class="rtw6">
+
+                        <img src="img/rtw1.png" width="100%" class="rtw1">
+                        <img src="img/rtw2.png" width="100%" class="rtw2">
+                        <img src="img/rtw3.png" width="100%" class="rtw3">
+                        <img src="img/rtw4.png" width="100%" class="rtw4">
+                        <img src="img/rtw5.png" width="100%" class="rtw5">
+                        <img src="img/rtw6.png" width="100%" class="rtw6">
+
+                    </div>
+                </div>
+                <!-- ฟิล์มขวา -->
+                <div class="film2RTW">
+                    <img src="img/film.png" width="100%">
+                </div>
+            </div>
+            <!-- ชื่อตัวอักษร -->
+            <div class="bggallerycreamRTW">
+                <div class="heartRTW">
+                    <img src="img/wheart.png" width="100%">
+                </div>
+                <div class="htextRTW">
+                    <p>Ready-To-Wear</p>
+                </div>
+                <div class="dtextRTW">
+                    <p>DRESS</p>
+                </div>
             </div>
         </div>
 
@@ -869,15 +1037,15 @@
                 </div>
                 <!-- คำตอบของแต่ละยุคที่พอกดปุ่มfinishแล้วคำตอบถูกขึ้นมา -->
                 <div class="answer1950">
-                    <br>เป็นยุคที่เศรษฐกิจรุ่งเรือง วัยรุ่นแต่งตัว <br> มีแนวฮิตเป็นของตัวเอง ในช่วงแรกจะฮิตกระโปรง<br>ทรงดินสอแคบเข้ารูป 
-                    ยุคนี้จะนิยมใส่กระโปรงบานคลุมเข่า<br> รัดเอวเห็นสัดส่วน ส่วนกางเกงจะนิยมใส่กางเกงรัดรูป<br>ที่ยาวเลยเข่าเช่นกัน ผู้หญิงจะนิยมจัดแต่งทรงผมดัดเป็นลอน ๆ 
+                    <br>เป็นยุคที่เศรษฐกิจรุ่งเรือง วัยรุ่นแต่งตัว <br> มีแนวฮิตเป็นของตัวเอง ในช่วงแรกจะฮิตกระโปรง<br>ทรงดินสอแคบเข้ารูป ยุคนี้จะนิยมใส่กระโปรงบานคลุมเข่า
+                    <br> รัดเอวเห็นสัดส่วน ส่วนกางเกงจะนิยมใส่กางเกงรัดรูป<br>ที่ยาวเลยเข่าเช่นกัน ผู้หญิงจะนิยมจัดแต่งทรงผมดัดเป็นลอน ๆ
 
                 </div>
                 <!-- ข้อมูลhint -->
                 <div class="showhint1950">
                     <div class="infohint1950">
                         <h1>ยุค 1950s</h1>
-                        <p>ยุคนี้มีสัญลักษณ์ที่โดดเด่น คือ ผู้หญิงจะนิยมใส่กระโปรงบาน  <br>ยาวคลุมเข่า  ข้างในกระโปรงเสริมผ้าตาข่ายหลาย ๆ ชั้น เน้นทรวดทรง</p>
+                        <p>ยุคนี้มีสัญลักษณ์ที่โดดเด่น คือ ผู้หญิงจะนิยมใส่กระโปรงบาน <br>ยาวคลุมเข่า ข้างในกระโปรงเสริมผ้าตาข่ายหลาย ๆ ชั้น เน้นทรวดทรง</p>
                         <p class="cinema1950"><b>ภาพยนตร์ที่นำเสนอเรื่องราวในยุค 1950s<br>
                             &emsp;&emsp;-Breakfast at Tiffany's (1961)<br>
                             &emsp;&emsp;-Grease (1978)<br>
@@ -1224,6 +1392,17 @@
             })
             document.querySelectorAll(".showitem6").forEach((showitem6) => {
                 showitem6.dataset.show = "1";
+            })
+
+        }
+        if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocabRTW").offsetLeft) {
+            document.querySelector("#bganswerRTW").dataset.show = "1";
+            document.querySelector("#gamedressRTW").dataset.show = "1";
+            document.querySelectorAll(".showall7").forEach((showall7) => {
+                showall7.dataset.show = "1";
+            })
+            document.querySelectorAll(".showitem7").forEach((showitem7) => {
+                showitem7.dataset.show = "1";
             })
 
         }
@@ -1621,6 +1800,89 @@
 
     function closehintflapper() {
         document.querySelector(".showhintflapper").style.display = "none";
+    }
+
+
+    // เปลี่ยนชุดและคำยุคเรดี้ทูแวร์
+    let numdressRTW = 0;
+    let endnumdressRTW = 4;
+    let numvocabRTW = 0;
+    let endnumvocabRTW = 11;
+    const dressRTW = document.querySelectorAll(".dressRTW");
+    const vocabdressRTW = document.querySelectorAll(".vocabdressRTW");
+
+    rightdressRTW.addEventListener("click", function() {
+        dressRTW[numdressRTW].style.opacity = "0";
+        numdressRTW++;
+
+        if (numdressRTW < endnumdressRTW) {
+            dressRTW[numdressRTW].style.opacity = "1";
+        } else {
+            numdressRTW = 0;
+            dressRTW[numdressRTW].style.opacity = "1";
+        }
+    });
+    leftdressRTW.addEventListener("click", function() {
+        dressRTW[numdressRTW].style.opacity = "0";
+        numdressRTW--;
+
+        if (numdressRTW > -1) {
+            dressRTW[numdressRTW].style.opacity = "1";
+        } else {
+            numdressRTW = endnumdressRTW - 1;
+            dressRTW[numdressRTW].style.opacity = "1";
+        }
+    });
+
+    rightvocabRTW.addEventListener("click", function() {
+        vocabdressRTW[numvocabRTW].style.opacity = "0";
+        numvocabRTW++;
+        if (numvocabRTW < endnumvocabRTW) {
+            vocabdressRTW[numvocabRTW].style.opacity = "1";
+        } else {
+            numvocabRTW = 0;
+            vocabdressRTW[numvocabRTW].style.opacity = "1";
+        }
+    });
+    leftvocabRTW.addEventListener("click", function() {
+        vocabdressRTW[numvocabRTW].style.opacity = "0";
+        numvocabRTW--;
+        if (numvocabRTW > -1) {
+            vocabdressRTW[numvocabRTW].style.opacity = "1";
+        } else {
+            numvocabRTW = endnumvocabRTW - 1;
+            vocabdressRTW[numvocabRTW].style.opacity = "1";
+        }
+    });
+
+    // ปุ่มfinish
+    function finishRTW() {
+        if (numdressRTW == 0 && numvocabRTW == 9) {
+            document.querySelector(".answerRTW").style.display = "block";
+            document.querySelector(".whatRTW").style.display = "none";
+            document.querySelector(".tryRTW").style.display = "none";
+            document.querySelector(".finishRTW").style.display = "none";
+            document.querySelector("#rightdressRTW").style.display = "none";
+            document.querySelector("#leftdressRTW").style.display = "none";
+            document.querySelector("#rightvocabRTW").style.display = "none";
+            document.querySelector("#leftvocabRTW").style.display = "none";
+            document.querySelector(".hintRTW").style.display = "none";
+            document.querySelector(".galfilmRTW").style.opacity = "1";
+
+
+        } else {
+            document.querySelector(".tryRTW").style.display = "block";
+            document.querySelector(".whatRTW").style.display = "none";
+            document.querySelector(".answerRTW").style.display = "none";
+        }
+    }
+    // ปุ่มhint
+    function hintRTW() {
+        document.querySelector(".showhintRTW").style.display = "block";
+    }
+
+    function closehintRTW() {
+        document.querySelector(".showhintRTW").style.display = "none";
     }
 
 
