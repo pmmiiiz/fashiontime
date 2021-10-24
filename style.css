@@ -2100,7 +2100,7 @@ body {
     margin-left: 11vw;
 }
 
-#bgpicflower {
+#bgpicflowerflapper {
     position: absolute;
     width: 25vw;
     top: 27vw;
@@ -2542,6 +2542,43 @@ body {
 #picflap5:hover {
     filter: grayscale(0%);
     transition: 1s;
+}
+
+.showall6[data-show="1"] {
+    transition: all 5s;
+    opacity: 1;
+}
+
+.showall6[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem6[data-show="1"] {
+    transition: 4s;
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.showitem6[data-show="0"] {
+    opacity: 0;
+}
+
+#gamedressflapper[data-show="1"] {
+    position: absolute;
+    transition: all 4.5s;
+}
+
+#gamedressflapper[data-show="0"] {
+    transform: translateY(-600px);
+}
+
+#bganswerflapper[data-show="1"] {
+    position: absolute;
+    transition: all 1.5s;
+}
+
+#bganswerflapper[data-show="0"] {
+    transform: translateY(1000px);
 }
 
 

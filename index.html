@@ -672,11 +672,11 @@
             <div class="intro" id="linkflap">
                 <!-- ของตกแต่งนาฬิกาทราย -->
                 <div class="sandclockflapper showitem6" data-show="0">
-                    <img src="img/sandclockyell.png" id="bgsandclockflapper">
+                    <img src="img/sandclockpink.png" id="bgsandclockflapper">
                 </div>
                 <!-- ของตกแต่งดอกไม้ -->
                 <div class="bgflowerflapper showitem6" data-show="0">
-                    <img src="img/floweryellow.png" id="bgpicflower">
+                    <img src="img/flowerpink.png" id="bgpicflowerflapper">
                 </div>
                 <!-- พื้นหลังคำตอบ -->
                 <div id="bganswerflapper" data-show="0">
@@ -773,7 +773,7 @@
                 </div>
                 <button id="rightvocabflapper" class="showall6" data-show="0">❱</button>
                 <!-- ปุ่มfinish -->
-                <button id="centerpage" class="finishflapper showall6" data-show="0" onclick="finishflapper()"><U><i>FINISH</i></U></button>
+                <button id="centerpageflap" class="finishflapper showall6" data-show="0" onclick="finishflapper()"><U><i>FINISH</i></U></button>
             </div>
 
             <!-- หน้าคั่นแต่ละยุค(ตารางหมากรุก) -->
@@ -896,6 +896,18 @@
             })
 
         }
+        if (newX + window.innerWidth - 600 >= document.querySelector("#centerpageflap").offsetLeft) {
+            document.querySelector("#bganswerflapper").dataset.show = "1";
+            document.querySelector("#gamedressflapper").dataset.show = "1";
+            document.querySelectorAll(".showall6").forEach((showall6) => {
+                showall6.dataset.show = "1";
+            })
+            document.querySelectorAll(".showitem6").forEach((showitem6) => {
+                showitem6.dataset.show = "1";
+            })
+
+        }
+
         console.log(document.querySelector("#bgroman").offsetLeft)
 
         console.log(document.querySelector("#centerpage").offsetLeft)
@@ -1246,7 +1258,7 @@
             document.querySelector("#rightvocabflapper").style.display = "none";
             document.querySelector("#leftvocabflapper").style.display = "none";
             document.querySelector(".hintflapper").style.display = "none";
-            document.querySelector("#bgpicflower").style.filter = "brightness(1)";
+            document.querySelector("#bgpicflowerflapper").style.filter = "brightness(1)";
             document.querySelector("#bgsandclockflapper").style.filter = "brightness(1)";
             document.querySelector("#picflap1").style.opacity = "1";
             document.querySelector("#picflap2").style.opacity = "1";
