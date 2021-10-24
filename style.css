@@ -59,7 +59,9 @@ body {
 .gallery_flapper,
 .gallery_ready,
 .gallery_1950s,
-.gallery_1960s {
+.gallery_1960s,
+.gallery_1910stoWWI,
+.gallery_artnuvo {
     display: inline-flex;
     margin-left: -4px;
 }
@@ -2059,9 +2061,1058 @@ body {
 
 
 /* ยุคอาร์ตนูโว */
-
+.nameartnuvo{
+    width: 100vw;
+    position: absolute;
+  }
+  .artnuvo{
+    position: absolute;
+    width: 50vw;
+    transform: translate(49vw, -7vh);
+    font-size: 5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    color: #935be3;
+  }
+  .artnuvoyear{
+    position: absolute;
+    width: 50vw;
+    transform: translate(53vw, 2vh);
+    font-size: 5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+  }
+  .bganswerartnuvo{
+    position: absolute;
+    width: 55vw;
+    transform: translate(0vw, 14vh);
+    display: inline-block
+  }
+  .whatartnuvo{
+    width:30vw;
+    height:10vw;
+    margin-left: 12vw;
+    top: 26vw;
+    position:absolute;
+    text-align: center;
+    font-size:5vw;
+    display:block;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #935be3;
+  }
+  .hintartnuvo {
+    background-color: #935be3;
+    color: rgb(0, 0, 0); 
+    margin-left: 30vw;
+    top: 41vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .hintartnuvo:hover {
+    background-color: transparent;
+    color: #935be3;
+    border: 2px solid #935be3;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .showhintartnuvo{
+    width: 60vw;
+    height: 85vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    margin-left: 25vw;
+    top: 8vh;
+    display: none;
+    
+  }
+  .infohintartnuvo{
+    position: absolute;
+    text-align: center;
+    top: 12vh;
+    margin-left: 8vw;
+    font-size:1.5vw;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+  }
+  .moviehintartnuvo{
+    position: absolute;
+    text-align: left;
+    top: 28vh;
+    margin-left: 4vw;
+    font-size:1.5vw;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+  }
+  .closehintartnuvo{
+    background-color: #935be3;
+    color: rgb(255, 255, 255); 
+    top: 68vh;
+    margin-left: 35vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .closehintartnuvo:hover {
+    background-color: transparent;
+    color: #935be3;
+    border: 2px solid #935be3;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .tryartnuvo{
+    width:30vw;
+    height:10vw;
+    margin-left: 12vw;
+    top: 26vw;
+    position:absolute;
+    text-align: center;
+    font-size:5vw;
+    display:none;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #935be3;
+  }
+  .answerartnuvo{
+    width:40vw;
+    height:16vw;
+    top: 28vw;
+    margin-left: 7vw;
+    position:absolute;
+    text-align: center;
+    font-size:1.2vw;
+    display:none;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    line-height: 2vw;
+  }
+  .finishartnuvo {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    transform: translate(85vw, 90vh);
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .finishartnuvo:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #000000;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #leftdressartnuvo {
+    position: absolute;
+    transform: translate(55vw, 50vh);
+    background: transparent;
+    color: #935be3;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+    display: block;
+  }
+  #rightdressartnuvo {
+    position: absolute;
+    transform: translate(80vw, 50vh);
+    background: transparent;
+    color: #935be3;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+  }
+  #leftvocabartnuvo{
+    position: absolute;
+    transform: translate(55vw, 90vh);
+    background: transparent;
+    color: #935be3;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+  }
+  #rightvocabartnuvo{
+    position: absolute;
+    transform: translate(80vw, 90vh);
+    background: transparent;
+    color: #935be3;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+  }
+  #gamedressartnuvo {
+    position: absolute;
+    transform: translate(57vw, 29vh);
+  }
+  
+  #gamedressartnuvo > .dressartnuvo {
+    position: absolute; 
+  }
+  #gamevocabartnuvo {
+    position: absolute;
+    transform: translate(58vw, 90vh);
+    font-size: 2.5vw;
+  }
+  
+  #gamevocabartnuvo > .vocabdressartnuvo {
+    position: absolute;
+  }
+  .dressartnuvo {
+    opacity: 0;
+    text-align: center;
+  }
+  .dressartnuvo:nth-child(1) {
+    opacity: 1;
+  }
+  #artnuvodresspic{
+    width: 40vh;
+  }
+  .vocabdressartnuvo {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Prompt', sans-serif;
+  }
+  .vocabdressartnuvo:nth-child(1) {
+    opacity: 1;
+  }
+  .slat{
+    position: absolute;
+    transform: translate(0vw, 25vh);
+    width: 25vw;
+  }
+  .butterfly{
+    position: absolute;
+    transform: translate(35vw, 12vh);
+    width: 25vw;
+  }
+  
+  .bggalleryblack{
+    width: 30vw;
+    height: 100vh;
+    background: url(img/black\ 2.png);
+  }
+  .bggallerycream{
+    width: 30vw;
+    height: 100vh;
+    background: url(img/bw.png);
+    background-size: 100%;
+  }
+  .film1{
+    display: inline-block;
+    position: absolute;
+    width: 4vw;
+  }
+  .film2{
+    display: inline-block;
+    position: absolute;
+    width: 4vw;
+    transform: translate(26vw);
+  }
+  .galfilmartnuvo {
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transform: translate(5vw);
+    opacity: 0;
+  }
+  
+  .galfilmartnuvo .picfilm {
+    height: 350vh;;
+    display: inline-block;
+    animation: marqueegal 20s linear infinite;
+  }
+  .re1, .re2, .re3, .re4, .re5, .re6{
+    transition: 2s;
+    filter: grayscale(100%);
+  }
+  .re1:hover, .re2:hover, .re3:hover, .re4:hover, .re5:hover, .re6:hover{
+      filter: grayscale(0%);
+  }
+  @keyframes marqueegal {
+    0% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: calc(-2935px + 508px);
+    }
+  }
+  
+  .galfilmartnuvo .picfilm:hover{
+        -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+  }
+  .hearta{
+    transform: translate(0vw, 30vh);
+    display: inline-block;
+    position: absolute;
+    width: 30vw;
+  }
+  .texth_ar{
+    position: absolute;
+    width: 25vw;
+    color: #935be3;
+    transform: translate(2.5vw, 30vh);
+    font-size: 4.2vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    letter-spacing: -0.5vw;
+  }
+  .textd_ar{
+    position: absolute;
+    width: 25vw;
+    color: #935be3;
+    transform: translate(2.5vw, 53vh);
+    font-size: 4.2vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    letter-spacing: -0.5vw;
+  }
+  #bganswerartnuvo[data-show="1"]{
+    position: absolute;
+    transition: all 1.5s;
+  }
+  #bganswerartnuvo[data-show="0"]{
+    transform: translateY(1000px);
+    
+  }
+  #gamedressartnuvo[data-show="1"]{
+    position: absolute;
+    transition: all 4.5s;
+  
+  }
+  #gamedressartnuvo[data-show="0"]{
+    transform: translateY(-600px);
+  }
+  .showall4[data-show="1"]{
+    transition: all 5s;
+    opacity: 1;
+  
+  }
+  .showall4[data-show="0"]{
+    opacity:0;
+  }
+  .showitem4[data-show="1"]{
+    transition:  4s;
+    transition-delay: 2s;
+    opacity: 1;
+  
+  }
+  .showitem4[data-show="0"]{
+    opacity:0;
+  }
 
 /* ยุค1910s – WWI */
+.topic1910stoWWI{
+    position: absolute;
+    margin-left: 34%;
+  
+  }
+  #bg1910stoWWI[data-show="1"]{
+    position: absolute;
+    width: 32vw;
+    transition: all 1s;
+  }
+  #bg1910stoWWI[data-show="0"]
+  {
+  transform: translateY(-200px);
+  }
+  #bganswer1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 1.5s;
+  }
+  #bganswer1910stoWWI[data-show="0"]{
+    transform: translateY(1000px);
+    
+  }
+  #gamedress1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 4.5s;
+  
+  }
+  #gamedress1910stoWWI[data-show="0"]{
+    transform: translateY(-600px);
+  }
+  
+  .showall5[data-show="1"]{
+    transition: all 5.5s;
+    opacity: 1;
+  
+  }
+  .showall5[data-show="0"]{
+    opacity:0;
+  }
+  .showitem5[data-show="1"]{
+    transition: all 6s;
+    opacity: 1;
+  
+  }
+  .showitem5[data-show="0"]{
+    opacity:0;
+  }
+  #bganswer1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 1.5s;
+  }
+  #bganswer1910stoWWI[data-show="0"]{
+    transform: translateY(1000px);
+    
+  }
+  #gamedress1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 4.5s;
+  
+  }
+  #gamedress1910stoWWI[data-show="0"]{
+    transform: translateY(-600px);
+  }
+  .showall2[data-show="1"]{
+    transition: all 5s;
+    opacity: 1;
+  
+  }
+  .showall2[data-show="0"]{
+    opacity:0;
+  }
+  .showitem2[data-show="1"]{
+    transition:  4s;
+    transition-delay: 2s;
+    opacity: 1;
+  
+  }
+  .showitem2[data-show="0"]{
+    opacity:0;
+  }
+  #bganswer1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 1.5s;
+  }
+  #bganswer1910stoWWI[data-show="0"]{
+    transform: translateY(1000px);
+    
+  }
+  #gamedress1910stoWWI[data-show="1"]{
+    position: absolute;
+    transition: all 4.5s;
+  
+  }
+  #gamedress1910stoWWI[data-show="0"]{
+    transform: translateY(-600px);
+  }
+  .showall3[data-show="1"]{
+    transition: all 5s;
+    opacity: 1;
+  
+  }
+  .showall3[data-show="0"]{
+    opacity:0;
+  }
+  .showitem3[data-show="1"]{
+    transition:  4s;
+    transition-delay: 2s;
+    opacity: 1;
+  
+  }
+  .showitem3[data-show="0"]{
+    opacity:0;
+  }
+  
+  
+  .name1910stoWWI{
+      width: 100vw;
+  }
+  .s1910stoWWI{
+      text-align: center;
+      color: #fb8b6c;
+      font-size: 3.5vw;
+      font-family: 'Rubik Mono One';
+      
+  }
+  
+  .s1910stoWWIyear{
+      text-align:center;
+      color: white;
+      font-size: 2vw;
+      margin-left: 8vw;
+      margin-top: -4.5vw;
+      font-family: 'Rubik Mono One';
+      
+  }
+  #bgans1910stoWWI{
+      position: absolute;
+      width: 54vw;
+      top: 7vw;
+      margin-left: 45vw;
+      
+  }
+  
+  .wink1{
+      position: absolute;
+      top: 5vw;
+      margin-left: 10vw;
+      animation-name: wink1;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      
+  }
+  @keyframes wink1 {
+    from {transform: rotate(-10deg);}
+    to {transform: rotate(20deg);}
+  }
+  
+  #picwink1{
+      width: 10vw;
+      transform: rotate(-31.58deg);
+      filter: brightness(0);
+  }
+  .wink2{
+      position: absolute;
+      top: 30vw;
+      margin-left: 38vw;
+      animation-name: wink2;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  @keyframes wink2 {
+    from {transform: rotate(-10deg);}
+    to {transform: rotate(20deg);}
+  }
+  #picwink2{
+      width: 7vw;
+      transform: rotate(6.75deg);
+      filter: brightness(0);
+  }
+  .wink3{
+      position: absolute;
+      top: 3vw;
+      margin-left: 88vw;
+      animation-name: wink3;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  @keyframes wink3 {
+    from {transform: rotate(-20deg);}
+    to {transform: rotate(10deg);}
+  }
+  #picwink3{
+      width: 8.5vw;
+      transform:rotate(17.48deg);
+      filter: brightness(0);
+  }
+  
+  .showhint1910stoWWI{
+    width: 60vw;
+    height: 85vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    margin-left: 25vw;
+    top: 8vh;
+    display: none;
+    
+  }
+  .infohint1910stoWWI{
+    position: absolute;
+    text-align: center;
+    top: 15vh;
+    margin-left: 8vw;
+    font-size:1.5vw;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    
+  }
+  
+  #gamedress1910stoWWI {
+      position: absolute;
+      top: 20vh;
+      margin-left: 15vw;
+    }
+  
+    #gamedress1910stoWWI > .dress1910stoWWI {
+      position: absolute;
+      
+      
+    }
+   
+    #leftdress1910stoWWI {
+      position: absolute;
+      top: 40vh;
+      margin-left: 15vw;
+      background: transparent;
+      color: #fb8b6c;
+      font-size: 2.5vw;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      z-index: 4;
+    }
+    #rightdress1910stoWWI {
+      position: absolute;
+      top: 40vh;
+      margin-left: 35vw;
+      background: transparent;
+      color: #fb8b6c;
+      font-size: 2.5vw;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      z-index: 4;
+    }
+    #s1910stoWWIdresspic{
+        width: 40vh;
+    }
+    .dress1910stoWWI {
+      opacity: 0;
+      text-align: center;
+    }
+    .dress1910stoWWI:nth-child(1) {
+      opacity: 1;
+    }
+  
+  
+    #gamevocab1910stoWWI {
+      position: absolute;
+      top: 85vh;
+      margin-left: 16vw;
+      font-size: 2.5vw;
+  
+    }
+  
+    #gamevocab1910stoWWI > .vocabdress1910stoWWI {
+      position: absolute;
+  
+      
+    }
+   
+    #leftvocab1910stoWWI {
+      position: absolute;
+      top: 85vh;
+      margin-left: 15vw;
+      background: transparent;
+      color: #fb8b6c;
+      font-size: 2.5vw;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      z-index: 4;
+    }
+    #rightvocab1910stoWWI {
+      position: absolute;
+      top: 85vh;
+      margin-left: 35vw;
+      background: transparent;
+      color: #fb8b6c;
+      font-size: 2.5vw;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      z-index: 4;
+    }
+    
+    .vocabdress1910stoWWI {
+      opacity: 0;
+      text-align: center;
+      width: 20vw;
+      font-family: 'Prompt', sans-serif;
+    }
+    .vocabdress1910stoWWI:nth-child(1) {
+      opacity: 1;
+    }
+  
+  
+  
+  
+  .finish1910stoWWI {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255); 
+      top: 85vh;
+      margin-left: 40vw;
+      position: absolute;
+      width: 10vw;
+      height: 3vw;
+      font-size: 1.5vw;
+      font-family: 'Rubik Mono One', sans-serif;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .finish1910stoWWI:hover {
+      background-color: transparent;
+      color: black;
+      border: 2px solid #000000;
+      transition: 0.5s;
+      cursor: pointer;
+  
+    
+    }
+  
+    .hint1910stoWWI {
+      background-color: #fb8b6c;
+      color: rgb(0, 0, 0); 
+      top: 33vw;
+      margin-left: 80vw;
+      position: absolute;
+      width: 10vw;
+      height: 3vw;
+      font-size: 1.5vw;
+      font-family: 'Rubik Mono One', sans-serif;
+      cursor: pointer;
+      border-radius: 5px;
+  
+    }
+    
+    .hint1910stoWWI:hover {
+      background-color: transparent;
+      color: #fb8b6c;;
+      border: 2px solid #fb8b6c;
+      transition: 0.5s;
+      cursor: pointer;
+  
+    
+    }
+    .closehint1910stoWWI{
+      background-color: #fb8b6c;
+      color: rgb(255, 255, 255); 
+      top: 50vh;
+      margin-left: 40vw;
+      position: absolute;
+      width: 10vw;
+      height: 3vw;
+      font-size: 1.5vw;
+      font-family: 'Rubik Mono One', sans-serif;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .closehint1910stoWWI:hover {
+      background-color: transparent;
+      color: #fb8b6c;;
+      border: 2px solid #fb8b6c;
+      transition: 0.5s;
+      cursor: pointer;
+  
+    
+    }
+  .answer1910stoWWI{
+      width:35vw;
+      height:15vw;
+      top: 20vw;
+      margin-left: 57vw;
+      position:absolute;
+      text-align: center;
+      font-size:1.3vw;
+      display:none;
+      font-family: 'Prompt', sans-serif;
+      color: white;
+  }
+  
+  .try1910stoWWI{
+      width:30vw;
+      height:10vw;
+      top: 18vw;
+      margin-left: 60vw;
+      position:absolute;
+      text-align: center;
+      font-size:5vw;
+      display:none;
+      font-family: 'Rubik Mono One', sans-serif;
+      color: #fb8b6c;
+  }
+  .what1910stoWWI{
+      width:30vw;
+      height:10vw;
+      top: 19vw;
+      margin-left: 60vw;
+      position:absolute;
+      text-align: center;
+      font-size:5vw;
+      display:block;
+      font-family: 'Rubik Mono One', sans-serif;
+      color: #fb8b6c;
+      }
+      .bggallery1{
+          width: 30vw;
+          height: 100vh;
+          background: url(img/black\ 2.png);
+        }
+        .bggallerywwi{
+            width: 20vw;
+            height: 100vh;
+            background: url(img/peach.png);
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size:6vw;
+            line-height: 87%;
+            
+            
+          }
+          .galltxt1910stoWWI{
+              padding-top: 11vh;
+              position:absolute;
+              margin-left: 7vw;
+          }
+  
+          .bb1910stoWWI1{
+            position: absolute;
+            width: 7vw;
+            animation: bb1910stoWWI1 10s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI1:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+          }
+          
+          @keyframes bb1910stoWWI1 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(5vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-15vh) translateX(8vw);
+            }
+          }
+          .bb1910stoWWI2{
+            position: absolute;
+            width: 7vw;
+            animation: bb1910stoWWI2 11s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI2:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+          }
+          
+          @keyframes bb1910stoWWI2 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(1vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-10vh) translateX(15vw);
+            }
+          }
+          .bb1910stoWWI3{
+            position: absolute;
+            width: 5vw;
+            animation: bb1910stoWWI3 12s infinite;
+            filter: grayscale(100%);
+            
+          }
+          .bb1910stoWWI3:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI3 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(1vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-14vh) translateX(8vw);
+            }
+          }
+          .bb1910stoWWI4{
+            position: absolute;
+            width: 6vw;
+            animation: bb1910stoWWI4 13s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI4:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI4 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(25vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-13vh) translateX(19vw);
+            }
+          }
+          .bb1910stoWWI5{
+            position: absolute;
+            width: 5vw;
+            animation: bb1910stoWWI1 14s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI5:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI5 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(19vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-12vh) translateX(30vw);
+            }
+          }
+          .bb1910stoWWI6{
+            position: absolute;
+            width: 7vw;
+            animation: bb1910stoWWI6 15s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI6:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI6 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(40vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-11vh) translateX(10vw);
+            }
+          }
+          .bb1910stoWWI7{
+            position: absolute;
+            width: 5vw;
+            animation: bb1910stoWWI7 9s infinite;
+            filter: grayscale(100%);
+  
+          }
+          .bb1910stoWWI7:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI7 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(1vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-10vh) translateX(9vw);
+            }
+          }
+          .bb1910stoWWI8{
+            position: absolute;
+            width: 6vw;
+            animation: bb1910stoWWI8 16s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI8:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI8 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(26vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-13vh) translateX(1vw);
+            }
+          }
+          .bb1910stoWWI9{
+            position: absolute;
+            width: 5vw;
+            animation: bb1910stoWWI9 9s infinite;
+            filter: grayscale(100%);
+          }
+          .bb1910stoWWI9:hover{
+            filter: grayscale(0%);
+            transition: 0.5s;
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            
+          }
+          
+          @keyframes bb1910stoWWI9 {
+            0% { 
+              transform: scale(0.5) translateY(200vh) translateX(10vw);
+            }
+          
+            100% { 
+              transform: scale(1) translateY(-14vh) translateX(25vw);
+            }
+          }
+  
+          .albb1910stoWWI{
+            opacity: 0;
+          }
 
 
 /* ยุคแฟลปเปอร์ */
