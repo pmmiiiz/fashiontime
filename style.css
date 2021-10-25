@@ -155,9 +155,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 
 .textcover {
     position: absolute;
@@ -168,6 +166,7 @@ body {
     bottom: 25vh;
     animation: showt 6s ease 200ms backwards;
 }
+
 @keyframes showt {
     from {
         transform: translateY(-1000px);
@@ -178,6 +177,7 @@ body {
         opacity: 1;
     }
 }
+
 .textwave {
     display: flex;
     flex-direction: row;
@@ -285,12 +285,13 @@ body {
     bottom: 10vh;
     animation: drop-girl 5s ease 200ms backwards;
 }
+
 @keyframes drop-girl {
     from {
-     transform: translateY(-1000px);
+        transform: translateY(-1000px);
     }
     to {
-     transform: translate(0px);
+        transform: translate(0px);
     }
 }
 
@@ -300,14 +301,15 @@ body {
     bottom: -1%;
     animation: drop-in 1s ease 200ms backwards;
 }
+
 @keyframes drop-in {
     from {
-     opacity: 0;
-     transform: translateY(1000px);
+        opacity: 0;
+        transform: translateY(1000px);
     }
     to {
-     opacity: 1;
-     transform: translate(0px);
+        opacity: 1;
+        transform: translate(0px);
     }
 }
 
@@ -317,10 +319,11 @@ body {
     transform: translate(-15vw, 3.5vh);
     animation: show 8s ease 200ms backwards;
 }
+
 @keyframes show {
     from {
         transform: translate(-15vw, 3.5vh) scale(0.1);
-      opacity: 0;
+        opacity: 0;
     }
     to {
         opacity: 1;
@@ -335,6 +338,7 @@ body {
     left: 55%;
     animation: showb 8s ease 200ms backwards;
 }
+
 @keyframes showb {
     from {
         transform: scale(0.1);
@@ -360,9 +364,10 @@ body {
     background-size: 10vw;
     animation: showa 8s ease 200ms backwards;
 }
+
 @keyframes showa {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
         opacity: 1;
@@ -397,7 +402,6 @@ body {
         transform: translateX(0px);
     }
 }
-
 
 
 /*intro*/
@@ -524,11 +528,12 @@ body {
     transform: translate(75vw, 0vh);
     animation: carrun 15s infinite linear;
 }
-@keyframes carrun{
-    from{
+
+@keyframes carrun {
+    from {
         transform: translate(80vw, 0vh);
     }
-    to{
+    to {
         transform: translate(0vw, 0vh);
     }
 }
@@ -844,7 +849,7 @@ body {
     width: 25vw;
 }
 
-.dia1{
+.dia1 {
     position: absolute;
     transform: translate(60vw, 70vh);
     width: 10vw;
@@ -866,7 +871,7 @@ body {
     }
 }
 
-.dia2{
+.dia2 {
     position: absolute;
     width: 10vw;
     animation-name: dia2;
@@ -887,23 +892,29 @@ body {
         transform: translate(90vw, 30vh) rotate(-10deg);
     }
 }
-.showdia [data-show="0"]{
+
+.showdia [data-show="0"] {
     opacity: 0;
 }
-.showdia [data-show="1"]{
+
+.showdia [data-show="1"] {
     opacity: 1;
 }
-.showdia2 [data-show="0"]{
+
+.showdia2 [data-show="0"] {
     opacity: 0;
 }
-.showdia2 [data-show="1"]{
+
+.showdia2 [data-show="1"] {
     opacity: 1;
 }
+
 .butterfly {
     position: absolute;
     transform: translate(35vw, 12vh);
     width: 25vw;
 }
+
 #bganswerregenn[data-show="1"] {
     position: absolute;
     transition: all 1.5s;
@@ -940,7 +951,6 @@ body {
 .showitem3[data-show="0"] {
     opacity: 0;
 }
-
 
 .bggalleryblack {
     width: 30vw;
@@ -2236,11 +2246,13 @@ body {
 
 
 /* ยุคอาร์ตนูโว */
-.nameartnuvo{
+
+.nameartnuvo {
     width: 100vw;
     position: absolute;
-  }
-  .artnuvo{
+}
+
+.artnuvo {
     position: absolute;
     width: 50vw;
     transform: translate(49vw, -7vh);
@@ -2248,8 +2260,9 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     color: #935be3;
-  }
-  .dia1art{
+}
+
+.dia1art {
     position: absolute;
     transform: translate(60vw, 70vh);
     width: 10vw;
@@ -2271,7 +2284,7 @@ body {
     }
 }
 
-.dia2art{
+.dia2art {
     position: absolute;
     width: 10vw;
     animation-name: dia2;
@@ -2292,47 +2305,55 @@ body {
         transform: translate(90vw, 30vh) rotate(-10deg);
     }
 }
-.showdiaart [data-show="0"]{
+
+.showdiaart [data-show="0"] {
     opacity: 0;
 }
-.showdiaart [data-show="1"]{
+
+.showdiaart [data-show="1"] {
     opacity: 1;
 }
-.showdia2art [data-show="0"]{
+
+.showdia2art [data-show="0"] {
     opacity: 0;
 }
-.showdia2art [data-show="1"]{
+
+.showdia2art [data-show="1"] {
     opacity: 1;
 }
-  .artnuvoyear{
+
+.artnuvoyear {
     position: absolute;
     width: 50vw;
     transform: translate(53vw, 2vh);
     font-size: 5vw;
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
-  }
-  .bganswerartnuvo{
+}
+
+.bganswerartnuvo {
     position: absolute;
     width: 55vw;
     transform: translate(0vw, 14vh);
     display: inline-block
-  }
-  .whatartnuvo{
-    width:30vw;
-    height:10vw;
+}
+
+.whatartnuvo {
+    width: 30vw;
+    height: 10vw;
     margin-left: 12vw;
     top: 26vw;
-    position:absolute;
+    position: absolute;
     text-align: center;
-    font-size:5vw;
-    display:block;
+    font-size: 5vw;
+    display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #935be3;
-  }
-  .hintartnuvo {
+}
+
+.hintartnuvo {
     background-color: #935be3;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     margin-left: 30vw;
     top: 41vw;
     position: absolute;
@@ -2342,15 +2363,17 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     cursor: pointer;
     border-radius: 5px;
-  }
-  .hintartnuvo:hover {
+}
+
+.hintartnuvo:hover {
     background-color: transparent;
     color: #935be3;
     border: 2px solid #935be3;
     transition: 0.5s;
     cursor: pointer;
-  }
-  .showhintartnuvo{
+}
+
+.showhintartnuvo {
     width: 60vw;
     height: 85vh;
     background-color: rgb(0, 0, 0);
@@ -2360,29 +2383,31 @@ body {
     margin-left: 25vw;
     top: 8vh;
     display: none;
-    
-  }
-  .infohintartnuvo{
+}
+
+.infohintartnuvo {
     position: absolute;
     text-align: center;
     top: 12vh;
     margin-left: 8vw;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
-  }
-  .moviehintartnuvo{
+}
+
+.moviehintartnuvo {
     position: absolute;
     text-align: left;
     top: 28vh;
     margin-left: 4vw;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
-  }
-  .closehintartnuvo{
+}
+
+.closehintartnuvo {
     background-color: #935be3;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     top: 68vh;
     margin-left: 35vw;
     position: absolute;
@@ -2392,42 +2417,46 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     cursor: pointer;
     border-radius: 5px;
-  }
-  .closehintartnuvo:hover {
+}
+
+.closehintartnuvo:hover {
     background-color: transparent;
     color: #935be3;
     border: 2px solid #935be3;
     transition: 0.5s;
     cursor: pointer;
-  }
-  .tryartnuvo{
-    width:30vw;
-    height:10vw;
+}
+
+.tryartnuvo {
+    width: 30vw;
+    height: 10vw;
     margin-left: 12vw;
     top: 26vw;
-    position:absolute;
+    position: absolute;
     text-align: center;
-    font-size:5vw;
-    display:none;
+    font-size: 5vw;
+    display: none;
     font-family: 'Rubik Mono One', sans-serif;
     color: #935be3;
-  }
-  .answerartnuvo{
-    width:40vw;
-    height:16vw;
+}
+
+.answerartnuvo {
+    width: 40vw;
+    height: 16vw;
     top: 28vw;
     margin-left: 7vw;
-    position:absolute;
+    position: absolute;
     text-align: center;
-    font-size:1.2vw;
-    display:none;
+    font-size: 1.2vw;
+    display: none;
     font-family: 'Prompt', sans-serif;
     color: white;
     line-height: 2vw;
-  }
-  .finishartnuvo {
+}
+
+.finishartnuvo {
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     transform: translate(55vw, 90vh);
     position: absolute;
     width: 10vw;
@@ -2436,16 +2465,17 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  .finishartnuvo:hover {
+}
+
+.finishartnuvo:hover {
     background-color: transparent;
     color: black;
     border: 2px solid #000000;
     transition: 0.5s;
     cursor: pointer;
-  }
-  #leftdressartnuvo {
+}
+
+#leftdressartnuvo {
     position: absolute;
     transform: translate(69vw, 50vh);
     background: transparent;
@@ -2456,8 +2486,9 @@ body {
     cursor: pointer;
     z-index: 4;
     display: block;
-  }
-  #rightdressartnuvo {
+}
+
+#rightdressartnuvo {
     position: absolute;
     transform: translate(89vw, 50vh);
     background: transparent;
@@ -2467,8 +2498,9 @@ body {
     outline: 0;
     cursor: pointer;
     z-index: 4;
-  }
-  #leftvocabartnuvo{
+}
+
+#leftvocabartnuvo {
     position: absolute;
     transform: translate(69vw, 90vh);
     background: transparent;
@@ -2478,8 +2510,9 @@ body {
     outline: 0;
     cursor: pointer;
     z-index: 4;
-  }
-  #rightvocabartnuvo{
+}
+
+#rightvocabartnuvo {
     position: absolute;
     transform: translate(89vw, 90vh);
     background: transparent;
@@ -2489,77 +2522,90 @@ body {
     outline: 0;
     cursor: pointer;
     z-index: 4;
-  }
-  #gamedressartnuvo {
+}
+
+#gamedressartnuvo {
     position: absolute;
     transform: translate(70vw, 25vh);
-  }
-  
-  #gamedressartnuvo > .dressartnuvo {
-    position: absolute; 
-  }
-  #gamevocabartnuvo {
+}
+
+#gamedressartnuvo>.dressartnuvo {
+    position: absolute;
+}
+
+#gamevocabartnuvo {
     position: absolute;
     transform: translate(70vw, 90vh);
     font-size: 2.5vw;
-  }
-  
-  #gamevocabartnuvo > .vocabdressartnuvo {
+}
+
+#gamevocabartnuvo>.vocabdressartnuvo {
     position: absolute;
-  }
-  .dressartnuvo {
+}
+
+.dressartnuvo {
     opacity: 0;
     text-align: center;
-  }
-  .dressartnuvo:nth-child(1) {
+}
+
+.dressartnuvo:nth-child(1) {
     opacity: 1;
-  }
-  #artnuvodresspic{
+}
+
+#artnuvodresspic {
     width: 20vw
-  }
-  .vocabdressartnuvo {
+}
+
+.vocabdressartnuvo {
     opacity: 0;
     text-align: center;
     width: 20vw;
     font-family: 'Prompt', sans-serif;
-  }
-  .vocabdressartnuvo:nth-child(1) {
+}
+
+.vocabdressartnuvo:nth-child(1) {
     opacity: 1;
-  }
-  .slat{
+}
+
+.slat {
     position: absolute;
     transform: translate(0vw, 20vh);
     width: 25vw;
-  }
-  .butterfly{
+}
+
+.butterfly {
     position: absolute;
     transform: translate(35vw, 12vh);
     width: 25vw;
-  }
-  
-  .bggalleryblack{
+}
+
+.bggalleryblack {
     width: 30vw;
     height: 100vh;
     background: url(img/black\ 2.png);
-  }
-  .bggallerycream{
+}
+
+.bggallerycream {
     width: 30vw;
     height: 100vh;
     background: url(img/bw.png);
     background-size: 100%;
-  }
-  .film1{
+}
+
+.film1 {
     display: inline-block;
     position: absolute;
     width: 4vw;
-  }
-  .film2{
+}
+
+.film2 {
     display: inline-block;
     position: absolute;
     width: 4vw;
     transform: translate(26vw);
-  }
-  .galfilmartnuvo {
+}
+
+.galfilmartnuvo {
     position: absolute;
     width: 20vw;
     height: 100vh;
@@ -2567,42 +2613,58 @@ body {
     overflow: hidden;
     transform: translate(5vw);
     opacity: 0;
-  }
-  
-  .galfilmartnuvo .picfilm {
-    height: 350vh;;
+}
+
+.galfilmartnuvo .picfilm {
+    height: 350vh;
+    ;
     display: inline-block;
     animation: marqueegal 20s linear infinite;
-  }
-  .art1, .art2, .art3, .art4, .art5, .art6{
+}
+
+.art1,
+.art2,
+.art3,
+.art4,
+.art5,
+.art6 {
     transition: 2s;
     filter: grayscale(100%);
-  }
-  .art1:hover, .art2:hover, .art3:hover, .art4:hover, .art5:hover, .art6:hover{
-      filter: grayscale(0%);
-  }
-  @keyframes marqueegal {
+}
+
+.art1:hover,
+.art2:hover,
+.art3:hover,
+.art4:hover,
+.art5:hover,
+.art6:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes marqueegal {
     0% {
-      margin-top: 0;
+        margin-top: 0;
     }
     100% {
-      margin-top: calc(-2935px + 508px);
+        margin-top: calc(-2935px + 508px);
     }
-  }
-  
-  .galfilmartnuvo .picfilm:hover{
-        -webkit-animation-play-state: paused;
-      -moz-animation-play-state: paused;
-      -o-animation-play-state: paused;
-      animation-play-state: paused;
-  }
-  .hearta{
+}
+
+.galfilmartnuvo .picfilm:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.hearta {
     transform: translate(0vw, 30vh);
     display: inline-block;
     position: absolute;
     width: 30vw;
-  }
-  .texth_ar{
+}
+
+.texth_ar {
     position: absolute;
     width: 25vw;
     color: #935be3;
@@ -2611,8 +2673,9 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     letter-spacing: -0.5vw;
-  }
-  .textd_ar{
+}
+
+.textd_ar {
     position: absolute;
     width: 25vw;
     color: #935be3;
@@ -2621,249 +2684,282 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     letter-spacing: -0.5vw;
-  }
-  #bganswerartnuvo[data-show="1"]{
+}
+
+#bganswerartnuvo[data-show="1"] {
     position: absolute;
     transition: all 1.5s;
-  }
-  #bganswerartnuvo[data-show="0"]{
+}
+
+#bganswerartnuvo[data-show="0"] {
     transform: translateY(1000px);
-    
-  }
-  #gamedressartnuvo[data-show="1"]{
+}
+
+#gamedressartnuvo[data-show="1"] {
     position: absolute;
     transition: all 4.5s;
-  
-  }
-  #gamedressartnuvo[data-show="0"]{
+}
+
+#gamedressartnuvo[data-show="0"] {
     transform: translate(70vw, -600px);
-  }
-  .showall4[data-show="1"]{
+}
+
+.showall4[data-show="1"] {
     transition: all 5s;
     opacity: 1;
-  
-  }
-  .showall4[data-show="0"]{
-    opacity:0;
-  }
-  .showitem4[data-show="1"]{
-    transition:  4s;
+}
+
+.showall4[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem4[data-show="1"] {
+    transition: 4s;
     transition-delay: 2s;
     opacity: 1;
-  
-  }
-  .showitem4[data-show="0"]{
-    opacity:0;
-  }
+}
+
+.showitem4[data-show="0"] {
+    opacity: 0;
+}
+
 
 /* ยุค1910s – WWI */
-.topic1910stoWWI{
+
+.topic1910stoWWI {
     position: absolute;
     margin-left: 34%;
-  
-  }
-  #bg1910stoWWI[data-show="1"]{
+}
+
+#bg1910stoWWI[data-show="1"] {
     position: absolute;
     width: 32vw;
     transition: all 1s;
-  }
-  #bg1910stoWWI[data-show="0"]
-  {
-  transform: translateY(-200px);
-  }
-  #bganswer1910stoWWI[data-show="1"]{
+}
+
+#bg1910stoWWI[data-show="0"] {
+    transform: translateY(-200px);
+}
+
+#bganswer1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 1.5s;
-  }
-  #bganswer1910stoWWI[data-show="0"]{
+}
+
+#bganswer1910stoWWI[data-show="0"] {
     transform: translateY(1000px);
-    
-  }
-  #gamedress1910stoWWI[data-show="1"]{
+}
+
+#gamedress1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 4.5s;
-  
-  }
-  #gamedress1910stoWWI[data-show="0"]{
+}
+
+#gamedress1910stoWWI[data-show="0"] {
     transform: translateY(-600px);
-  }
-  
-  .showall5[data-show="1"]{
+}
+
+.showall5[data-show="1"] {
     transition: all 5.5s;
     opacity: 1;
-  
-  }
-  .showall5[data-show="0"]{
-    opacity:0;
-  }
-  .showitem5[data-show="1"]{
+}
+
+.showall5[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem5[data-show="1"] {
     transition: all 6s;
     opacity: 1;
-  
-  }
-  .showitem5[data-show="0"]{
-    opacity:0;
-  }
-  #bganswer1910stoWWI[data-show="1"]{
+}
+
+.showitem5[data-show="0"] {
+    opacity: 0;
+}
+
+#bganswer1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 1.5s;
-  }
-  #bganswer1910stoWWI[data-show="0"]{
+}
+
+#bganswer1910stoWWI[data-show="0"] {
     transform: translateY(1000px);
-    
-  }
-  #gamedress1910stoWWI[data-show="1"]{
+}
+
+#gamedress1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 4.5s;
-  
-  }
-  #gamedress1910stoWWI[data-show="0"]{
+}
+
+#gamedress1910stoWWI[data-show="0"] {
     transform: translateY(-600px);
-  }
-  .showall2[data-show="1"]{
+}
+
+.showall2[data-show="1"] {
     transition: all 5s;
     opacity: 1;
-  
-  }
-  .showall2[data-show="0"]{
-    opacity:0;
-  }
-  .showitem2[data-show="1"]{
-    transition:  4s;
+}
+
+.showall2[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem2[data-show="1"] {
+    transition: 4s;
     transition-delay: 2s;
     opacity: 1;
-  
-  }
-  .showitem2[data-show="0"]{
-    opacity:0;
-  }
-  #bganswer1910stoWWI[data-show="1"]{
+}
+
+.showitem2[data-show="0"] {
+    opacity: 0;
+}
+
+#bganswer1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 1.5s;
-  }
-  #bganswer1910stoWWI[data-show="0"]{
+}
+
+#bganswer1910stoWWI[data-show="0"] {
     transform: translateY(1000px);
-    
-  }
-  #gamedress1910stoWWI[data-show="1"]{
+}
+
+#gamedress1910stoWWI[data-show="1"] {
     position: absolute;
     transition: all 4.5s;
-  
-  }
-  #gamedress1910stoWWI[data-show="0"]{
+}
+
+#gamedress1910stoWWI[data-show="0"] {
     transform: translateY(-600px);
-  }
-  .showall3[data-show="1"]{
+}
+
+.showall3[data-show="1"] {
     transition: all 5s;
     opacity: 1;
-  
-  }
-  .showall3[data-show="0"]{
-    opacity:0;
-  }
-  .showitem3[data-show="1"]{
-    transition:  4s;
+}
+
+.showall3[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem3[data-show="1"] {
+    transition: 4s;
     transition-delay: 2s;
     opacity: 1;
-  
-  }
-  .showitem3[data-show="0"]{
-    opacity:0;
-  }
-  
-  
-  .name1910stoWWI{
-      width: 100vw;
-  }
-  .s1910stoWWI{
-      text-align: center;
-      color: #fb8b6c;
-      font-size: 3.5vw;
-      font-family: 'Rubik Mono One';
-      
-  }
-  
-  .s1910stoWWIyear{
-      text-align:center;
-      color: white;
-      font-size: 2vw;
-      margin-left: 8vw;
-      margin-top: -4.5vw;
-      font-family: 'Rubik Mono One';
-      
-  }
-  #bgans1910stoWWI{
-      position: absolute;
-      width: 54vw;
-      top: 7vw;
-      margin-left: 45vw;
-      
-  }
-  
-  .wink1{
-      position: absolute;
-      top: 5vw;
-      margin-left: 10vw;
-      animation-name: wink1;
-      animation-duration: 0.5s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      
-  }
-  @keyframes wink1 {
-    from {transform: rotate(-10deg);}
-    to {transform: rotate(20deg);}
-  }
-  
-  #picwink1{
-      width: 10vw;
-      transform: rotate(-31.58deg);
-      filter: brightness(0);
-  }
-  .wink2{
-      position: absolute;
-      top: 30vw;
-      margin-left: 38vw;
-      animation-name: wink2;
-      animation-duration: 0.5s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-  }
-  @keyframes wink2 {
-    from {transform: rotate(-10deg);}
-    to {transform: rotate(20deg);}
-  }
-  #picwink2{
-      width: 7vw;
-      transform: rotate(6.75deg);
-      filter: brightness(0);
-  }
-  .wink3{
-      position: absolute;
-      top: 3vw;
-      margin-left: 88vw;
-      animation-name: wink3;
-      animation-duration: 0.5s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-  }
-  @keyframes wink3 {
-    from {transform: rotate(-20deg);}
-    to {transform: rotate(10deg);}
-  }
-  #picwink3{
-      width: 8.5vw;
-      transform:rotate(17.48deg);
-      filter: brightness(0);
-  }
-  
-  .showhint1910stoWWI{
+}
+
+.showitem3[data-show="0"] {
+    opacity: 0;
+}
+
+.name1910stoWWI {
+    width: 100vw;
+}
+
+.s1910stoWWI {
+    text-align: center;
+    color: #fb8b6c;
+    font-size: 3.5vw;
+    font-family: 'Rubik Mono One';
+}
+
+.s1910stoWWIyear {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin-left: 8vw;
+    margin-top: -4.5vw;
+    font-family: 'Rubik Mono One';
+}
+
+#bgans1910stoWWI {
+    position: absolute;
+    width: 54vw;
+    top: 7vw;
+    margin-left: 45vw;
+}
+
+.wink1 {
+    position: absolute;
+    top: 5vw;
+    margin-left: 10vw;
+    animation-name: wink1;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink1 {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+#picwink1 {
+    width: 10vw;
+    transform: rotate(-31.58deg);
+    filter: brightness(0);
+}
+
+.wink2 {
+    position: absolute;
+    top: 30vw;
+    margin-left: 38vw;
+    animation-name: wink2;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink2 {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+#picwink2 {
+    width: 7vw;
+    transform: rotate(6.75deg);
+    filter: brightness(0);
+}
+
+.wink3 {
+    position: absolute;
+    top: 3vw;
+    margin-left: 88vw;
+    animation-name: wink3;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wink3 {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+#picwink3 {
+    width: 8.5vw;
+    transform: rotate(17.48deg);
+    filter: brightness(0);
+}
+
+.showhint1910stoWWI {
     width: 60vw;
     height: 85vh;
     background-color: rgb(0, 0, 0);
@@ -2873,476 +2969,471 @@ body {
     margin-left: 25vw;
     top: 8vh;
     display: none;
-    
-  }
-  .infohint1910stoWWI{
+}
+
+.infohint1910stoWWI {
     position: absolute;
     text-align: center;
     top: 15vh;
     margin-left: 8vw;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
-    
-  }
-  
-  #gamedress1910stoWWI {
-      position: absolute;
-      top: 20vh;
-      margin-left: 15vw;
+}
+
+#gamedress1910stoWWI {
+    position: absolute;
+    top: 20vh;
+    margin-left: 15vw;
+}
+
+#gamedress1910stoWWI>.dress1910stoWWI {
+    position: absolute;
+}
+
+#leftdress1910stoWWI {
+    position: absolute;
+    top: 40vh;
+    margin-left: 15vw;
+    background: transparent;
+    color: #fb8b6c;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#rightdress1910stoWWI {
+    position: absolute;
+    top: 40vh;
+    margin-left: 35vw;
+    background: transparent;
+    color: #fb8b6c;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#s1910stoWWIdresspic {
+    width: 20vw
+}
+
+.dress1910stoWWI {
+    opacity: 0;
+    text-align: center;
+}
+
+.dress1910stoWWI:nth-child(1) {
+    opacity: 1;
+}
+
+#gamevocab1910stoWWI {
+    position: absolute;
+    top: 85vh;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+}
+
+#gamevocab1910stoWWI>.vocabdress1910stoWWI {
+    position: absolute;
+}
+
+#leftvocab1910stoWWI {
+    position: absolute;
+    top: 85vh;
+    margin-left: 15vw;
+    background: transparent;
+    color: #fb8b6c;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#rightvocab1910stoWWI {
+    position: absolute;
+    top: 85vh;
+    margin-left: 35vw;
+    background: transparent;
+    color: #fb8b6c;
+    font-size: 2.5vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.vocabdress1910stoWWI {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+.vocabdress1910stoWWI:nth-child(1) {
+    opacity: 1;
+}
+
+.finish1910stoWWI {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    top: 85vh;
+    margin-left: 40vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.finish1910stoWWI:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hint1910stoWWI {
+    background-color: #fb8b6c;
+    color: rgb(0, 0, 0);
+    top: 33vw;
+    margin-left: 80vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hint1910stoWWI:hover {
+    background-color: transparent;
+    color: #fb8b6c;
+    ;
+    border: 2px solid #fb8b6c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.closehint1910stoWWI {
+    background-color: #fb8b6c;
+    color: rgb(255, 255, 255);
+    top: 50vh;
+    margin-left: 40vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.closehint1910stoWWI:hover {
+    background-color: transparent;
+    color: #fb8b6c;
+    ;
+    border: 2px solid #fb8b6c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.answer1910stoWWI {
+    width: 35vw;
+    height: 15vw;
+    top: 20vw;
+    margin-left: 57vw;
+    position: absolute;
+    text-align: center;
+    font-size: 1.3vw;
+    display: none;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+.try1910stoWWI {
+    width: 30vw;
+    height: 10vw;
+    top: 18vw;
+    margin-left: 60vw;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    display: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #fb8b6c;
+}
+
+.what1910stoWWI {
+    width: 30vw;
+    height: 10vw;
+    top: 19vw;
+    margin-left: 60vw;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    display: block;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #fb8b6c;
+}
+
+.bggallery1 {
+    width: 30vw;
+    height: 100vh;
+    background: url(img/black\ 2.png);
+}
+
+.bggallerywwi {
+    width: 20vw;
+    height: 100vh;
+    background: url(img/peach.png);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6vw;
+    line-height: 87%;
+}
+
+.galltxt1910stoWWI {
+    padding-top: 11vh;
+    position: absolute;
+    margin-left: 7vw;
+}
+
+.bb1910stoWWI1 {
+    position: absolute;
+    width: 7vw;
+    animation: bb1910stoWWI1 10s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI1:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI1 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(5vw);
     }
-  
-    #gamedress1910stoWWI > .dress1910stoWWI {
-      position: absolute;
-      
-      
+    100% {
+        transform: scale(1) translateY(-15vh) translateX(8vw);
     }
-   
-    #leftdress1910stoWWI {
-      position: absolute;
-      top: 40vh;
-      margin-left: 15vw;
-      background: transparent;
-      color: #fb8b6c;
-      font-size: 2.5vw;
-      border: 0;
-      outline: 0;
-      cursor: pointer;
-      z-index: 4;
+}
+
+.bb1910stoWWI2 {
+    position: absolute;
+    width: 7vw;
+    animation: bb1910stoWWI2 11s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI2:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI2 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
     }
-    #rightdress1910stoWWI {
-      position: absolute;
-      top: 40vh;
-      margin-left: 35vw;
-      background: transparent;
-      color: #fb8b6c;
-      font-size: 2.5vw;
-      border: 0;
-      outline: 0;
-      cursor: pointer;
-      z-index: 4;
+    100% {
+        transform: scale(1) translateY(-10vh) translateX(15vw);
     }
-    #s1910stoWWIdresspic{
-        width: 20vw
+}
+
+.bb1910stoWWI3 {
+    position: absolute;
+    width: 5vw;
+    animation: bb1910stoWWI3 12s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI3:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI3 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
     }
-    .dress1910stoWWI {
-      opacity: 0;
-      text-align: center;
+    100% {
+        transform: scale(1) translateY(-14vh) translateX(8vw);
     }
-    .dress1910stoWWI:nth-child(1) {
-      opacity: 1;
+}
+
+.bb1910stoWWI4 {
+    position: absolute;
+    width: 6vw;
+    animation: bb1910stoWWI4 13s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI4:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI4 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(25vw);
     }
-  
-  
-    #gamevocab1910stoWWI {
-      position: absolute;
-      top: 85vh;
-      margin-left: 16vw;
-      font-size: 2.5vw;
-  
+    100% {
+        transform: scale(1) translateY(-13vh) translateX(19vw);
     }
-  
-    #gamevocab1910stoWWI > .vocabdress1910stoWWI {
-      position: absolute;
-  
-      
+}
+
+.bb1910stoWWI5 {
+    position: absolute;
+    width: 5vw;
+    animation: bb1910stoWWI1 14s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI5:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI5 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(19vw);
     }
-   
-    #leftvocab1910stoWWI {
-      position: absolute;
-      top: 85vh;
-      margin-left: 15vw;
-      background: transparent;
-      color: #fb8b6c;
-      font-size: 2.5vw;
-      border: 0;
-      outline: 0;
-      cursor: pointer;
-      z-index: 4;
+    100% {
+        transform: scale(1) translateY(-12vh) translateX(30vw);
     }
-    #rightvocab1910stoWWI {
-      position: absolute;
-      top: 85vh;
-      margin-left: 35vw;
-      background: transparent;
-      color: #fb8b6c;
-      font-size: 2.5vw;
-      border: 0;
-      outline: 0;
-      cursor: pointer;
-      z-index: 4;
+}
+
+.bb1910stoWWI6 {
+    position: absolute;
+    width: 7vw;
+    animation: bb1910stoWWI6 15s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI6:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI6 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(40vw);
     }
-    
-    .vocabdress1910stoWWI {
-      opacity: 0;
-      text-align: center;
-      width: 20vw;
-      font-family: 'Prompt', sans-serif;
+    100% {
+        transform: scale(1) translateY(-11vh) translateX(10vw);
     }
-    .vocabdress1910stoWWI:nth-child(1) {
-      opacity: 1;
+}
+
+.bb1910stoWWI7 {
+    position: absolute;
+    width: 5vw;
+    animation: bb1910stoWWI7 9s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI7:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI7 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(1vw);
     }
-  
-  
-  
-  
-  .finish1910stoWWI {
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255); 
-      top: 85vh;
-      margin-left: 40vw;
-      position: absolute;
-      width: 10vw;
-      height: 3vw;
-      font-size: 1.5vw;
-      font-family: 'Rubik Mono One', sans-serif;
-      cursor: pointer;
-      border-radius: 5px;
+    100% {
+        transform: scale(1) translateY(-10vh) translateX(9vw);
     }
-    
-    .finish1910stoWWI:hover {
-      background-color: transparent;
-      color: black;
-      border: 2px solid #000000;
-      transition: 0.5s;
-      cursor: pointer;
-  
-    
+}
+
+.bb1910stoWWI8 {
+    position: absolute;
+    width: 6vw;
+    animation: bb1910stoWWI8 16s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI8:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI8 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(26vw);
     }
-  
-    .hint1910stoWWI {
-      background-color: #fb8b6c;
-      color: rgb(0, 0, 0); 
-      top: 33vw;
-      margin-left: 80vw;
-      position: absolute;
-      width: 10vw;
-      height: 3vw;
-      font-size: 1.5vw;
-      font-family: 'Rubik Mono One', sans-serif;
-      cursor: pointer;
-      border-radius: 5px;
-  
+    100% {
+        transform: scale(1) translateY(-13vh) translateX(1vw);
     }
-    
-    .hint1910stoWWI:hover {
-      background-color: transparent;
-      color: #fb8b6c;;
-      border: 2px solid #fb8b6c;
-      transition: 0.5s;
-      cursor: pointer;
-  
-    
+}
+
+.bb1910stoWWI9 {
+    position: absolute;
+    width: 5vw;
+    animation: bb1910stoWWI9 9s infinite;
+    filter: grayscale(100%);
+}
+
+.bb1910stoWWI9:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes bb1910stoWWI9 {
+    0% {
+        transform: scale(0.5) translateY(200vh) translateX(10vw);
     }
-    .closehint1910stoWWI{
-      background-color: #fb8b6c;
-      color: rgb(255, 255, 255); 
-      top: 50vh;
-      margin-left: 40vw;
-      position: absolute;
-      width: 10vw;
-      height: 3vw;
-      font-size: 1.5vw;
-      font-family: 'Rubik Mono One', sans-serif;
-      cursor: pointer;
-      border-radius: 5px;
+    100% {
+        transform: scale(1) translateY(-14vh) translateX(25vw);
     }
-    .closehint1910stoWWI:hover {
-      background-color: transparent;
-      color: #fb8b6c;;
-      border: 2px solid #fb8b6c;
-      transition: 0.5s;
-      cursor: pointer;
-  
-    
-    }
-  .answer1910stoWWI{
-      width:35vw;
-      height:15vw;
-      top: 20vw;
-      margin-left: 57vw;
-      position:absolute;
-      text-align: center;
-      font-size:1.3vw;
-      display:none;
-      font-family: 'Prompt', sans-serif;
-      color: white;
-  }
-  
-  .try1910stoWWI{
-      width:30vw;
-      height:10vw;
-      top: 18vw;
-      margin-left: 60vw;
-      position:absolute;
-      text-align: center;
-      font-size:5vw;
-      display:none;
-      font-family: 'Rubik Mono One', sans-serif;
-      color: #fb8b6c;
-  }
-  .what1910stoWWI{
-      width:30vw;
-      height:10vw;
-      top: 19vw;
-      margin-left: 60vw;
-      position:absolute;
-      text-align: center;
-      font-size:5vw;
-      display:block;
-      font-family: 'Rubik Mono One', sans-serif;
-      color: #fb8b6c;
-      }
-      .bggallery1{
-          width: 30vw;
-          height: 100vh;
-          background: url(img/black\ 2.png);
-        }
-        .bggallerywwi{
-            width: 20vw;
-            height: 100vh;
-            background: url(img/peach.png);
-            font-family: 'Rubik Mono One', sans-serif;
-            font-size:6vw;
-            line-height: 87%;
-            
-            
-          }
-          .galltxt1910stoWWI{
-              padding-top: 11vh;
-              position:absolute;
-              margin-left: 7vw;
-          }
-  
-          .bb1910stoWWI1{
-            position: absolute;
-            width: 7vw;
-            animation: bb1910stoWWI1 10s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI1:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-          }
-          
-          @keyframes bb1910stoWWI1 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(5vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-15vh) translateX(8vw);
-            }
-          }
-          .bb1910stoWWI2{
-            position: absolute;
-            width: 7vw;
-            animation: bb1910stoWWI2 11s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI2:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-          }
-          
-          @keyframes bb1910stoWWI2 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(1vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-10vh) translateX(15vw);
-            }
-          }
-          .bb1910stoWWI3{
-            position: absolute;
-            width: 5vw;
-            animation: bb1910stoWWI3 12s infinite;
-            filter: grayscale(100%);
-            
-          }
-          .bb1910stoWWI3:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI3 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(1vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-14vh) translateX(8vw);
-            }
-          }
-          .bb1910stoWWI4{
-            position: absolute;
-            width: 6vw;
-            animation: bb1910stoWWI4 13s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI4:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI4 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(25vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-13vh) translateX(19vw);
-            }
-          }
-          .bb1910stoWWI5{
-            position: absolute;
-            width: 5vw;
-            animation: bb1910stoWWI1 14s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI5:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI5 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(19vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-12vh) translateX(30vw);
-            }
-          }
-          .bb1910stoWWI6{
-            position: absolute;
-            width: 7vw;
-            animation: bb1910stoWWI6 15s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI6:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI6 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(40vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-11vh) translateX(10vw);
-            }
-          }
-          .bb1910stoWWI7{
-            position: absolute;
-            width: 5vw;
-            animation: bb1910stoWWI7 9s infinite;
-            filter: grayscale(100%);
-  
-          }
-          .bb1910stoWWI7:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI7 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(1vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-10vh) translateX(9vw);
-            }
-          }
-          .bb1910stoWWI8{
-            position: absolute;
-            width: 6vw;
-            animation: bb1910stoWWI8 16s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI8:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI8 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(26vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-13vh) translateX(1vw);
-            }
-          }
-          .bb1910stoWWI9{
-            position: absolute;
-            width: 5vw;
-            animation: bb1910stoWWI9 9s infinite;
-            filter: grayscale(100%);
-          }
-          .bb1910stoWWI9:hover{
-            filter: grayscale(0%);
-            transition: 0.5s;
-            -webkit-animation-play-state: paused;
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            animation-play-state: paused;
-            
-          }
-          
-          @keyframes bb1910stoWWI9 {
-            0% { 
-              transform: scale(0.5) translateY(200vh) translateX(10vw);
-            }
-          
-            100% { 
-              transform: scale(1) translateY(-14vh) translateX(25vw);
-            }
-          }
-  
-          .albb1910stoWWI{
-            opacity: 0;
-          }
+}
+
+.albb1910stoWWI {
+    opacity: 0;
+}
 
 
 /* ยุคแฟลปเปอร์ */
@@ -4016,10 +4107,24 @@ body {
     line-height: 2vw;
 }
 
+.answerRTW {
+    width: 40vw;
+    height: 16vw;
+    top: 26.5vw;
+    margin-left: 7vw;
+    position: absolute;
+    text-align: center;
+    font-size: 1.2vw;
+    display: none;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    line-height: 2vw;
+}
+
 .finishRTW {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    transform: translate(85vw, 90vh);
+    transform: translate(55vw, 90vh);
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -4039,7 +4144,7 @@ body {
 
 #leftdressRTW {
     position: absolute;
-    transform: translate(55vw, 50vh);
+    transform: translate(69vw, 50vh);
     background: transparent;
     color: #48d74e;
     font-size: 2.5vw;
@@ -4052,7 +4157,7 @@ body {
 
 #rightdressRTW {
     position: absolute;
-    transform: translate(80vw, 50vh);
+    transform: translate(89vw, 50vh);
     background: transparent;
     color: #48d74e;
     font-size: 2.5vw;
@@ -4064,7 +4169,7 @@ body {
 
 #leftvocabRTW {
     position: absolute;
-    transform: translate(55vw, 90vh);
+    transform: translate(69vw, 90vh);
     background: transparent;
     color: #48d74e;
     font-size: 2.5vw;
@@ -4076,7 +4181,7 @@ body {
 
 #rightvocabRTW {
     position: absolute;
-    transform: translate(80vw, 90vh);
+    transform: translate(89vw, 90vh);
     background: transparent;
     color: #48d74e;
     font-size: 2.5vw;
@@ -4088,7 +4193,7 @@ body {
 
 #gamedressRTW {
     position: absolute;
-    transform: translate(57vw, 29vh);
+    transform: translate(70vw, 29vh);
 }
 
 #gamedressRTW>.dressRTW {
@@ -4097,7 +4202,7 @@ body {
 
 #gamevocabRTW {
     position: absolute;
-    transform: translate(58vw, 90vh);
+    transform: translate(70vw, 90vh);
     font-size: 2.5vw;
 }
 
@@ -4115,7 +4220,7 @@ body {
 }
 
 #RTWdresspic {
-    width: 20vw
+    width: 20vw;
 }
 
 .vocabdressRTW {
@@ -4287,6 +4392,7 @@ body {
 
 
 /* ยุค1940s */
+
 .topic1940 {
     position: absolute;
     margin-left: 34%;
@@ -4507,7 +4613,6 @@ body {
 
 #s1940dresspic {
     width: 20vw
-
 }
 
 .dress1940 {
@@ -4926,6 +5031,7 @@ body {
 
 
 /* ยุค1950s */
+
 .name1950 {
     width: 100vw;
 }
@@ -5444,6 +5550,7 @@ body {
     transition: 1s;
 }
 
+
 /* ยุค1960s */
 
 .name1960 {
@@ -5558,7 +5665,8 @@ body {
     font-family: 'Prompt', sans-serif;
     color: white;
 }
-.dia160{
+
+.dia160 {
     position: absolute;
     transform: translate(60vw, 70vh);
     width: 10vw;
@@ -5580,7 +5688,7 @@ body {
     }
 }
 
-.dia260{
+.dia260 {
     position: absolute;
     width: 10vw;
     animation-name: dia2;
@@ -5601,16 +5709,20 @@ body {
         transform: translate(90vw, 30vh) rotate(-10deg);
     }
 }
-.showdia60 [data-show="0"]{
+
+.showdia60 [data-show="0"] {
     opacity: 0;
 }
-.showdia60 [data-show="1"]{
+
+.showdia60 [data-show="1"] {
     opacity: 1;
 }
-.showdia260 [data-show="0"]{
+
+.showdia260 [data-show="0"] {
     opacity: 0;
 }
-.showdia260 [data-show="1"]{
+
+.showdia260 [data-show="1"] {
     opacity: 1;
 }
 
@@ -5898,32 +6010,31 @@ body {
 .showitem10[data-show="0"] {
     opacity: 0;
 }
-.showall10[data-show="1"]{
+
+.showall10[data-show="1"] {
     transition: all 5s;
     opacity: 1;
-  
 }
-.showall10[data-show="0"]{
-    opacity:0;
+
+.showall10[data-show="0"] {
+    opacity: 0;
 }
 
 
 /* สรุป */
+
 .conclusion {
     width: 100vw;
     height: 100vh;
     background-image: url(img/bgw.png);
 }
 
-.concluinfo1 [data-show="0"]{
-    position: absolute; 
-
-    
+.concluinfo1 [data-show="0"] {
+    position: absolute;
 }
- 
 
-#picclock{
-    width: 10vw; 
+#picclock {
+    width: 10vw;
     align-items: center;
     transition: all 2s ease-in-out;
     animation: zoomclock 10s;
@@ -5931,8 +6042,8 @@ body {
     margin-left: 20vw;
     position: absolute;
     top: 20vw;
-
 }
+
 @keyframes zoomclock {
     from {
         transform: scale(1);
@@ -5942,8 +6053,8 @@ body {
     }
 }
 
-#kem1{
-    width: 10vw; 
+#kem1 {
+    width: 10vw;
     align-items: center;
     transition: all 2s ease-in-out;
     animation: kem1ro 10s;
@@ -5951,8 +6062,8 @@ body {
     position: absolute;
     margin-left: 20vw;
     top: 20vw;
-
 }
+
 @keyframes kem1ro {
     from {
         transform: rotate(0deg) scale(1);
@@ -5962,8 +6073,8 @@ body {
     }
 }
 
-#kem2{
-    width: 10vw; 
+#kem2 {
+    width: 10vw;
     align-items: center;
     transition: all 2s ease-in-out;
     animation: kem2ro 10s;
@@ -5971,8 +6082,8 @@ body {
     position: absolute;
     margin-left: 20vw;
     top: 20vw;
-
 }
+
 @keyframes kem2ro {
     from {
         transform: rotate(0deg) scale(1);
@@ -5981,14 +6092,15 @@ body {
         transform: rotate(-45deg) scale(4);
     }
 }
-#nextid{
+
+#nextid {
     animation: namewow 5s;
     animation-delay: 8s;
     animation-fill-mode: forwards;
 }
+
 .next {
- 
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     transform: translate(85vw, 90vh);
     position: absolute;
     width: 20vw;
@@ -5998,29 +6110,24 @@ body {
     cursor: pointer;
     margin-left: -9vw;
     top: -10.5vw;
-    
     opacity: 0;
     z-index: 3;
+}
 
-  }
-  .next {
- 
-
+.next {
     opacity: 1;
-    
+}
 
-  }
-  
-  .next:hover {
+.next:hover {
     transition: 0.5s;
     cursor: pointer;
     margin-left: -10vw;
-    
-  }
-  .nemework{
-    width: 100vw; 
+}
+
+.nemework {
+    width: 100vw;
     height: 100vh;
-    animation:namewow 2s;
+    animation: namewow 2s;
     animation-delay: 7s;
     animation-fill-mode: forwards;
     position: absolute;
@@ -6031,20 +6138,20 @@ body {
     text-align: center;
     opacity: 0;
     font-family: 'Rubik Mono One', sans-serif;
-
-
 }
+
 @keyframes namewow {
     from {
         opacity: 0;
     }
     to {
-       opacity: 1;
+        opacity: 1;
     }
 }
-.context{
+
+.context {
     position: absolute;
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 35vh;
@@ -6055,9 +6162,9 @@ body {
     transition: 5s;
     z-index: 2;
     font-family: 'Prompt', sans-serif;
-
 }
-.winkwhite{
+
+.winkwhite {
     position: absolute;
     width: 20vw;
     margin-left: 15vw;
@@ -6066,9 +6173,9 @@ body {
     opacity: 0;
     z-index: 3;
     transition: 7s;
-    
 }
-.winkwhite2{
+
+.winkwhite2 {
     position: absolute;
     width: 20vw;
     margin-left: 7vw;
@@ -6076,9 +6183,10 @@ body {
     transform: rotate(-10deg);
     opacity: 0;
     z-index: 3;
-    transition: 7s;    
+    transition: 7s;
 }
-.winkwhite3{
+
+.winkwhite3 {
     position: absolute;
     width: 20vw;
     margin-left: 80vw;
@@ -6087,17 +6195,13 @@ body {
     opacity: 0;
     z-index: 3;
     transition: 7s;
-    
 }
 
-
 .showall11[data-show="1"] {
-    
     opacity: 1;
     transition: all 5s;
 }
 
 .showall11[data-show="0"] {
     opacity: 0;
-    
 }
