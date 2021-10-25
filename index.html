@@ -261,16 +261,28 @@
             <button id="leftdressregen" class="showall3" data-show="0">❰</button>
             <div id="gamedressregen" data-show="0">
                 <div class="dressregen">
-                    <img src="img/fa1.png" id="regendresspic">
+                    <img src="img/ready.png" id="regendresspic">
                 </div>
                 <div class="dressregen">
-                    <img src="img/fa2.png" id="regendresspic">
+                    <img src="img/1960s.png" id="regendresspic">
                 </div>
                 <div class="dressregen">
-                    <img src="IMG/fa3.png" id="regendresspic">
+                    <img src="IMG/vic.png" id="regendresspic">
                 </div>
                 <div class="dressregen">
-                    <img src="IMG/fa4.png" id="regendresspic">
+                    <img src="IMG/re.png" id="regendresspic">
+                </div>
+                <div class="dressregen">
+                    <img src="img/1950s.png" id="regendresspic">
+                </div>
+                <div class="dressregen">
+                    <img src="img/wwi.png" id="regendresspic">
+                </div>
+                <div class="dressregen">
+                    <img src="IMG/1940s.png" id="regendresspic">
+                </div>
+                <div class="dressregen">
+                    <img src="IMG/flap.png" id="regendresspic">
                 </div>
             </div>
             <!-- ปุ่มขวา -->
@@ -1938,7 +1950,7 @@
 
     // เปลี่ยนชุดและคำยุครีเจนซี่
     let numdressregen = 0;
-    let endnumdressregen = 4;
+    let endnumdressregen = 8;
     let numvocabregen = 0;
     let endnumvocabregen = 11;
     const dressregen = document.querySelectorAll(".dressregen");
@@ -1990,7 +2002,7 @@
 
     // ปุ่มfinish
     function finishregen() {
-        if (numdressregen == 0 && numvocabregen == 9) {
+        if (numdressregen == 3 && numvocabregen == 9) {
             document.querySelector(".answerregen").style.display = "block";
             document.querySelector(".whatregen").style.display = "none";
             document.querySelector(".tryregen").style.display = "none";
