@@ -4096,20 +4096,6 @@ body {
 .answerRTW {
     width: 40vw;
     height: 16vw;
-    top: 28vw;
-    margin-left: 7vw;
-    position: absolute;
-    text-align: center;
-    font-size: 1.2vw;
-    display: none;
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    line-height: 2vw;
-}
-
-.answerRTW {
-    width: 40vw;
-    height: 16vw;
     top: 26.5vw;
     margin-left: 7vw;
     position: absolute;
