@@ -1150,15 +1150,6 @@ body {
     transform: translateY(1000px);
 }
 
-#gamedressregen[data-show="1"] {
-    position: absolute;
-    transition: all 4.5s;
-}
-
-#gamedressregen[data-show="0"] {
-    transform: translate(57vw, -600px);
-}
-
 .showall3[data-show="1"] {
     transition: all 5s;
     opacity: 1;
@@ -5409,11 +5400,12 @@ body {
 .s1960 {
     position: absolute;
     width: 30vw;
-    transform: translate(67vw, -7vh);
+    transform: translate(70vw, -7vh);
     font-size: 5vw;
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     color: #49D1B5;
+    letter-spacing: -0.5vw;
 }
 
 .year1960 {
@@ -5428,7 +5420,7 @@ body {
 .finish1960 {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    transform: translate(85vw, 90vh);
+    transform: translate(55vw, 90vh);
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -5512,13 +5504,60 @@ body {
     font-family: 'Prompt', sans-serif;
     color: white;
 }
+.dia160{
+    position: absolute;
+    transform: translate(60vw, 70vh);
+    width: 10vw;
+    animation-name: dia1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+}
 
-.cinemavivtor {
-    text-align: left;
-    margin-left: 3vw;
-    font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
-    color: white;
+@keyframes dia1 {
+    from {
+        transform: translate(65vw, 70vh) rotate(-10deg);
+    }
+    to {
+        transform: translate(65vw, 70vh) rotate(20deg);
+    }
+}
+
+.dia260{
+    position: absolute;
+    width: 10vw;
+    animation-name: dia2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+    z-index: 5;
+}
+
+@keyframes dia2 {
+    from {
+        transform: translate(90vw, 30vh) rotate(20deg);
+    }
+    to {
+        transform: translate(90vw, 30vh) rotate(-10deg);
+    }
+}
+.showdia60 [data-show="0"]{
+    opacity: 0;
+}
+.showdia60 [data-show="1"]{
+    opacity: 1;
+}
+.showdia260 [data-show="0"]{
+    opacity: 0;
+}
+.showdia260 [data-show="1"]{
+    opacity: 1;
 }
 
 .closehint1960 {
@@ -5573,7 +5612,7 @@ body {
 
 #leftdress1960 {
     position: absolute;
-    transform: translate(55vw, 50vh);
+    transform: translate(69vw, 50vh);
     background: transparent;
     color: #49D1B5;
     font-size: 2.5vw;
@@ -5586,7 +5625,7 @@ body {
 
 #rightdress1960 {
     position: absolute;
-    transform: translate(80vw, 50vh);
+    transform: translate(89vw, 50vh);
     background: transparent;
     color: #49D1B5;
     font-size: 2.5vw;
@@ -5598,7 +5637,7 @@ body {
 
 #leftvocab1960 {
     position: absolute;
-    transform: translate(55vw, 90vh);
+    transform: translate(69vw, 90vh);
     background: transparent;
     color: #49D1B5;
     font-size: 2.5vw;
@@ -5610,7 +5649,7 @@ body {
 
 #rightvocab1960 {
     position: absolute;
-    transform: translate(80vw, 90vh);
+    transform: translate(89vw, 90vh);
     background: transparent;
     color: #49D1B5;
     font-size: 2.5vw;
@@ -5622,7 +5661,7 @@ body {
 
 #gamedress1960 {
     position: absolute;
-    transform: translate(57vw, 29vh);
+    transform: translate(70vw, 29vh);
 }
 
 #gamedress1960>.dress1960 {
@@ -5635,12 +5674,12 @@ body {
 }
 
 #gamedress1960[data-show="0"] {
-    transform: translate(57vw, -600px);
+    transform: translate(70vw, -600px);
 }
 
 #gamevocab1960 {
     position: absolute;
-    transform: translate(58vw, 90vh);
+    transform: translate(70vw, 90vh);
     font-size: 2.5vw;
 }
 
@@ -5658,7 +5697,7 @@ body {
 }
 
 #s1960dresspic {
-    width: 40vh;
+    width: 20vw;
 }
 
 .vocabdress1960 {
