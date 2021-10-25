@@ -797,7 +797,7 @@ body {
 
 #gamedressregen {
     position: absolute;
-    transform: translate(70vw, 29vh);
+    transform: translate(70vw, 25vh);
 }
 
 #gamedressregen>.dressregen {
@@ -2249,6 +2249,61 @@ body {
     text-align: center;
     color: #935be3;
   }
+  .dia1art{
+    position: absolute;
+    transform: translate(60vw, 70vh);
+    width: 10vw;
+    animation-name: dia1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+@keyframes dia1 {
+    from {
+        transform: translate(65vw, 70vh) rotate(-10deg);
+    }
+    to {
+        transform: translate(65vw, 70vh) rotate(20deg);
+    }
+}
+
+.dia2art{
+    position: absolute;
+    width: 10vw;
+    animation-name: dia2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+    z-index: 5;
+}
+
+@keyframes dia2 {
+    from {
+        transform: translate(90vw, 30vh) rotate(20deg);
+    }
+    to {
+        transform: translate(90vw, 30vh) rotate(-10deg);
+    }
+}
+.showdiaart [data-show="0"]{
+    opacity: 0;
+}
+.showdiaart [data-show="1"]{
+    opacity: 1;
+}
+.showdia2art [data-show="0"]{
+    opacity: 0;
+}
+.showdia2art [data-show="1"]{
+    opacity: 1;
+}
   .artnuvoyear{
     position: absolute;
     width: 50vw;
@@ -2373,7 +2428,7 @@ body {
   .finishartnuvo {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255); 
-    transform: translate(85vw, 90vh);
+    transform: translate(55vw, 90vh);
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -2392,7 +2447,7 @@ body {
   }
   #leftdressartnuvo {
     position: absolute;
-    transform: translate(55vw, 50vh);
+    transform: translate(69vw, 50vh);
     background: transparent;
     color: #935be3;
     font-size: 2.5vw;
@@ -2404,7 +2459,7 @@ body {
   }
   #rightdressartnuvo {
     position: absolute;
-    transform: translate(80vw, 50vh);
+    transform: translate(89vw, 50vh);
     background: transparent;
     color: #935be3;
     font-size: 2.5vw;
@@ -2415,7 +2470,7 @@ body {
   }
   #leftvocabartnuvo{
     position: absolute;
-    transform: translate(55vw, 90vh);
+    transform: translate(69vw, 90vh);
     background: transparent;
     color: #935be3;
     font-size: 2.5vw;
@@ -2426,7 +2481,7 @@ body {
   }
   #rightvocabartnuvo{
     position: absolute;
-    transform: translate(80vw, 90vh);
+    transform: translate(89vw, 90vh);
     background: transparent;
     color: #935be3;
     font-size: 2.5vw;
@@ -2437,7 +2492,7 @@ body {
   }
   #gamedressartnuvo {
     position: absolute;
-    transform: translate(59vw, 29vh);
+    transform: translate(70vw, 25vh);
   }
   
   #gamedressartnuvo > .dressartnuvo {
@@ -2445,7 +2500,7 @@ body {
   }
   #gamevocabartnuvo {
     position: absolute;
-    transform: translate(59vw, 90vh);
+    transform: translate(70vw, 90vh);
     font-size: 2.5vw;
   }
   
@@ -2519,11 +2574,11 @@ body {
     display: inline-block;
     animation: marqueegal 20s linear infinite;
   }
-  .re1, .re2, .re3, .re4, .re5, .re6{
+  .art1, .art2, .art3, .art4, .art5, .art6{
     transition: 2s;
     filter: grayscale(100%);
   }
-  .re1:hover, .re2:hover, .re3:hover, .re4:hover, .re5:hover, .re6:hover{
+  .art1:hover, .art2:hover, .art3:hover, .art4:hover, .art5:hover, .art6:hover{
       filter: grayscale(0%);
   }
   @keyframes marqueegal {
@@ -2581,7 +2636,7 @@ body {
   
   }
   #gamedressartnuvo[data-show="0"]{
-    transform: translateY(-600px);
+    transform: translate(70vw, -600px);
   }
   .showall4[data-show="1"]{
     transition: all 5s;
@@ -5660,7 +5715,7 @@ body {
 
 #gamedress1960 {
     position: absolute;
-    transform: translate(70vw, 29vh);
+    transform: translate(70vw, 25vh);
 }
 
 #gamedress1960>.dress1960 {
