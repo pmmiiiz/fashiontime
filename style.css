@@ -297,7 +297,7 @@ body {
 .cover_time {
     display: inline-block;
     position: absolute;
-    bottom: 0%;
+    bottom: -1%;
     animation: drop-in 1s ease 200ms backwards;
 }
 @keyframes drop-in {
