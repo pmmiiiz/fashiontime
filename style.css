@@ -5886,9 +5886,9 @@ body {
 .winkwhite2{
     position: absolute;
     width: 20vw;
-    margin-left: 5vw;
-    top: 30vw;
-    transform: rotate(-5deg);
+    margin-left: 7vw;
+    top: 33vw;
+    transform: rotate(-10deg);
     opacity: 0;
     z-index: 3;
     transition: 7s;    
