@@ -94,7 +94,6 @@ body {
     font-size:  0.95vw;
     font-family: 'Archivo Black', sans-serif;
     margin: 22vh 22px;
-    padding: 1.5vh auto;
     text-align: center;
     align-items: center;
     position: fixed;
@@ -128,8 +127,8 @@ body {
     text-align: center;
     align-items: center;
     white-space: nowrap;
-    top: 20vh;
-    left: -1.2vw;
+    top: 18vh;
+    left: -1vw;
     font-size: 0.6vw;
     font-family: 'Archivo Black', sans-serif;
 }
