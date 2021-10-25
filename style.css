@@ -16,9 +16,9 @@ body {
 body {
     --bg: 0;
     --x: 0;
-    width: 50000px;
+    width: max-content;
     height: 100%;
-    background: hotpink;
+    background: url(img/bgw.png);
     margin: 0;
     min-width: 1200px;
 }
@@ -32,7 +32,7 @@ body {
     left: 0;
     top: 0;
     height: 6px;
-    width: calc((var(--x)/13000)*100%);
+    width: calc((var(--x)/24000)*100%);
     background: hsl(0, 0%, 13%);
     z-index: 6;
 }
@@ -166,7 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     bottom: 25vh;
-    animation: showt 10s ease 200ms backwards;
+    animation: showt 6s ease 200ms backwards;
 }
 @keyframes showt {
     from {
@@ -185,7 +185,6 @@ body {
 
 .letter {
     font-size: 6vw;
-    ;
     font-weight: normal;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -1302,7 +1301,7 @@ body {
 #gamedressroman {
     position: absolute;
     top: 20vh;
-    margin-left: 15vw;
+    margin-left: 17vw;
 }
 
 #gamedressroman>.dressroman {
@@ -1336,7 +1335,7 @@ body {
 }
 
 #romandresspic {
-    width: 40vh;
+    width: 20vw
 }
 
 .dressroman {
@@ -1928,7 +1927,7 @@ body {
 #gamedressvictor {
     position: absolute;
     top: 30vh;
-    margin-left: 70vw;
+    margin-left: 72vw;
 }
 
 #gamedressvictor>.dressvictor {
@@ -1963,7 +1962,7 @@ body {
 }
 
 #victordresspic {
-    width: 40vh;
+    width: 20vw
 }
 
 .dressvictor {
@@ -2438,7 +2437,7 @@ body {
   }
   #gamedressartnuvo {
     position: absolute;
-    transform: translate(57vw, 29vh);
+    transform: translate(59vw, 29vh);
   }
   
   #gamedressartnuvo > .dressartnuvo {
@@ -2446,7 +2445,7 @@ body {
   }
   #gamevocabartnuvo {
     position: absolute;
-    transform: translate(58vw, 90vh);
+    transform: translate(59vw, 90vh);
     font-size: 2.5vw;
   }
   
@@ -2461,7 +2460,7 @@ body {
     opacity: 1;
   }
   #artnuvodresspic{
-    width: 40vh;
+    width: 20vw
   }
   .vocabdressartnuvo {
     opacity: 0;
@@ -2869,7 +2868,7 @@ body {
       z-index: 4;
     }
     #s1910stoWWIdresspic{
-        width: 40vh;
+        width: 20vw
     }
     .dress1910stoWWI {
       opacity: 0;
@@ -3500,7 +3499,7 @@ body {
 }
 
 #flapperdresspic {
-    width: 40vh;
+    width: 20vw
 }
 
 .dressflapper {
@@ -4061,7 +4060,7 @@ body {
 }
 
 #RTWdresspic {
-    width: 40vh;
+    width: 20vw
 }
 
 .vocabdressRTW {
@@ -4418,7 +4417,7 @@ body {
 #gamedress1940 {
     position: absolute;
     top: 20vh;
-    margin-left: 15vw;
+    margin-left: 16vw;
 }
 
 #gamedress1940>.dress1940 {
@@ -4452,7 +4451,7 @@ body {
 }
 
 #s1940dresspic {
-    width: 40vh;
+    width: 20vw
 
 }
 
@@ -5081,7 +5080,7 @@ body {
 #gamedress1950 {
     position: absolute;
     top: 30vh;
-    margin-left: 70vw;
+    margin-left: 72vw;
 }
 
 #gamedress1950>.dress1950 {
@@ -5116,7 +5115,7 @@ body {
 }
 
 #s1950dresspic {
-    width: 40vh;
+    width: 20vw
 }
 
 .dress1950 {
