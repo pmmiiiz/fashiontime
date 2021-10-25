@@ -715,7 +715,7 @@ body {
 .answerregen {
     width: 40vw;
     height: 16vw;
-    top: 28vw;
+    top: 26.5vw;
     margin-left: 7vw;
     position: absolute;
     text-align: center;
@@ -729,7 +729,7 @@ body {
 .finishregen {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    transform: translate(85vw, 90vh);
+    transform: translate(55vw, 90vh);
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -749,7 +749,7 @@ body {
 
 #leftdressregen {
     position: absolute;
-    transform: translate(55vw, 50vh);
+    transform: translate(69vw, 50vh);
     background: transparent;
     color: #4185F3;
     font-size: 2.5vw;
@@ -762,7 +762,7 @@ body {
 
 #rightdressregen {
     position: absolute;
-    transform: translate(80vw, 50vh);
+    transform: translate(89vw, 50vh);
     background: transparent;
     color: #4185F3;
     font-size: 2.5vw;
@@ -774,7 +774,7 @@ body {
 
 #leftvocabregen {
     position: absolute;
-    transform: translate(55vw, 90vh);
+    transform: translate(69vw, 90vh);
     background: transparent;
     color: #4185F3;
     font-size: 2.5vw;
@@ -786,7 +786,7 @@ body {
 
 #rightvocabregen {
     position: absolute;
-    transform: translate(80vw, 90vh);
+    transform: translate(89vw, 90vh);
     background: transparent;
     color: #4185F3;
     font-size: 2.5vw;
@@ -798,7 +798,7 @@ body {
 
 #gamedressregen {
     position: absolute;
-    transform: translate(57vw, 29vh);
+    transform: translate(70vw, 29vh);
 }
 
 #gamedressregen>.dressregen {
@@ -807,7 +807,7 @@ body {
 
 #gamevocabregen {
     position: absolute;
-    transform: translate(58vw, 90vh);
+    transform: translate(70vw, 90vh);
     font-size: 2.5vw;
 }
 
@@ -825,7 +825,7 @@ body {
 }
 
 #regendresspic {
-    width: 40vh;
+    width: 20vw;
 }
 
 .vocabdressregen {
@@ -845,11 +845,103 @@ body {
     width: 25vw;
 }
 
+.dia1{
+    position: absolute;
+    transform: translate(60vw, 70vh);
+    width: 10vw;
+    animation-name: dia1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+@keyframes dia1 {
+    from {
+        transform: translate(65vw, 70vh) rotate(-10deg);
+    }
+    to {
+        transform: translate(65vw, 70vh) rotate(20deg);
+    }
+}
+
+.dia2{
+    position: absolute;
+    width: 10vw;
+    animation-name: dia2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+    z-index: 5;
+}
+
+@keyframes dia2 {
+    from {
+        transform: translate(90vw, 30vh) rotate(20deg);
+    }
+    to {
+        transform: translate(90vw, 30vh) rotate(-10deg);
+    }
+}
+.showdia [data-show="0"]{
+    opacity: 0;
+}
+.showdia [data-show="1"]{
+    opacity: 1;
+}
+.showdia2 [data-show="0"]{
+    opacity: 0;
+}
+.showdia2 [data-show="1"]{
+    opacity: 1;
+}
 .butterfly {
     position: absolute;
     transform: translate(35vw, 12vh);
     width: 25vw;
 }
+#bganswerregenn[data-show="1"] {
+    position: absolute;
+    transition: all 1.5s;
+}
+
+#bganswerregenn[data-show="0"] {
+    transform: translateY(1000px);
+}
+
+#gamedressregen[data-show="1"] {
+    position: absolute;
+    transition: all 4.5s;
+}
+
+#gamedressregen[data-show="0"] {
+    transform: translate(70vw, -600px);
+}
+
+.showall3[data-show="1"] {
+    transition: all 5s;
+    opacity: 1;
+}
+
+.showall3[data-show="0"] {
+    opacity: 0;
+}
+
+.showitem3[data-show="1"] {
+    transition: 4s;
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.showitem3[data-show="0"] {
+    opacity: 0;
+}
+
 
 .bggalleryblack {
     width: 30vw;
