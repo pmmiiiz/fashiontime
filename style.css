@@ -6110,13 +6110,12 @@ body {
 }
 
 .nemework {
-    width: 100vw;
-    height: 100vh;
+
     animation: namewow 2s;
     animation-delay: 7s;
     animation-fill-mode: forwards;
     position: absolute;
-    margin-left: 20vw;
+    margin-left: 50vw;
     top: 40vh;
     color: #000000;
     font-size: 5vw;
@@ -6136,17 +6135,19 @@ body {
 
 .context {
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     position: absolute;
     top: 35vh;
     color: #ffffff;
     font-size: 3vw;
     text-align: center;
+    transform: translate(13vw,0vh);
     opacity: 0;
     transition: 5s;
     z-index: 2;
     font-family: 'Prompt', sans-serif;
+    /* margin-left: 1vw; */
 }
 
 .winkwhite {
@@ -6174,7 +6175,7 @@ body {
 .winkwhite3 {
     position: absolute;
     width: 20vw;
-    margin-left: 80vw;
+    margin-left: 78.5vw;
     top: 3vw;
     transform: rotate(15deg);
     opacity: 0;
