@@ -72,7 +72,7 @@ body {
 /*navbar*/
 
 .navbar {
-    width: 90px;
+    width: 6vw;
     height: 100vh;
     position: fixed;
     background: url(img/bgw.png);
@@ -93,7 +93,7 @@ body {
 .navbar-list {
     font-size:  0.95vw;
     font-family: 'Archivo Black', sans-serif;
-    margin: 22vh 22px;
+    margin: 22vh 1.25vw;
     text-align: center;
     align-items: center;
     position: fixed;
