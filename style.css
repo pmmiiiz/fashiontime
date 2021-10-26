@@ -2877,11 +2877,11 @@ body {
     margin-left: 45vw;
 }
 
-.wink1 {
+.wink1wwi {
     position: absolute;
     top: 5vw;
     margin-left: 10vw;
-    animation-name: wink1;
+    animation-name: wink1wwi;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -2889,7 +2889,7 @@ body {
     animation-direction: alternate;
 }
 
-@keyframes wink1 {
+@keyframes wink1wwi {
     from {
         transform: rotate(-10deg);
     }
@@ -2898,17 +2898,17 @@ body {
     }
 }
 
-#picwink1 {
+#picwink1wwi {
     width: 10vw;
     transform: rotate(-31.58deg);
     filter: brightness(0);
 }
 
-.wink2 {
+.wink2wwi {
     position: absolute;
     top: 30vw;
     margin-left: 38vw;
-    animation-name: wink2;
+    animation-name: wink2wwi;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -2916,7 +2916,7 @@ body {
     animation-direction: alternate;
 }
 
-@keyframes wink2 {
+@keyframes wink2wwi {
     from {
         transform: rotate(-10deg);
     }
@@ -2925,17 +2925,17 @@ body {
     }
 }
 
-#picwink2 {
+#picwink2wwi {
     width: 7vw;
     transform: rotate(6.75deg);
     filter: brightness(0);
 }
 
-.wink3 {
+.wink3wwi {
     position: absolute;
     top: 3vw;
     margin-left: 88vw;
-    animation-name: wink3;
+    animation-name: wink3wwi;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -2943,7 +2943,7 @@ body {
     animation-direction: alternate;
 }
 
-@keyframes wink3 {
+@keyframes wink3wwi {
     from {
         transform: rotate(-20deg);
     }
@@ -2952,7 +2952,7 @@ body {
     }
 }
 
-#picwink3 {
+#picwink3wwi {
     width: 8.5vw;
     transform: rotate(17.48deg);
     filter: brightness(0);
