@@ -20,7 +20,7 @@
     <div class="run"></div>
     <div class="navbar">
         <a href="#">
-            <div class="clock">
+            <div class="clock" id="active0">
                 <img src="img/icon_cl.png" width="60vw" id="clockrot">
             </div>
         </a>
@@ -28,40 +28,40 @@
         </div>
         <div class="navbar-list">
             <a href="#whatis">
-                <div></div>
+                <div id="active1"></div>
             </a>
             <a href="#linkregen">
-                <div></div>
+                <div id="active2"></div>
             </a>
             <a href="#linkroman">
-                <div></div>
+                <div id="active3"></div>
             </a>
             <a href="#linkvicto">
-                <div></div>
+                <div id="active4"></div>
             </a>
             <a href="#linkart">
-                <div></div>
+                <div id="active5"></div>
             </a>
             <a href="#linkwwi">
-                <div></div>
+                <div id="active6"></div>
             </a>
             <a href="#linkflap">
-                <div></div>
+                <div id="active7"></div>
             </a>
             <a href="#linkready">
-                <div></div>
+                <div id="active8"></div>
             </a>
             <a href="#link1940s">
-                <div></div>
+                <div id="active9"></div>
             </a>
             <a href="#link1950s">
-                <div></div>
+                <div id="active10"></div>
             </a>
             <a href="#link1960s">
-                <div></div>
+                <div id="active11"></div>
             </a>
             <a href="#lastpage">
-                <div></div>
+                <div id="active12"></div>
             </a>
         </div>
         <div class="textdown"><span>© 5 Guardians</span>
@@ -911,7 +911,7 @@
                 <!-- ชื่อยุคและปี -->
                 <div class="name1910stoWWI" style="position: absolute;">
                     <p class="s1910stoWWI showall5" data-show="0">WWI</p>
-                    <p class="s1910stoWWIyear showall5" data-show="0">1810–1840</p>
+                    <p class="s1910stoWWIyear showall5" data-show="0">1911-1919</p>
                 </div>
                 <!-- พื้นหลังคำตอบ -->
                 <div class="bganswer1910stoWWI" id="bganswer1910stoWWI" data-show="0">
@@ -2980,6 +2980,223 @@
         document.querySelector(".winkwhite2").style.opacity = "1";
         document.querySelector(".winkwhite3").style.opacity = "1";
     }
+
+
+    //active
+    const active1 = document.getElementById('active1');
+    const active2 = document.getElementById('active2');
+    const active3 = document.getElementById('active3');
+    const active4 = document.getElementById('active4');
+    const active5 = document.getElementById('active5');
+    const active6 = document.getElementById('active6');
+    const active7 = document.getElementById('active7');
+    const active8 = document.getElementById('active8');
+    const active9 = document.getElementById('active9');
+    const active10 = document.getElementById('active10');
+    const active11 = document.getElementById('active11');
+    const active12 = document.getElementById('active12');
+
+
+    active0.addEventListener('click', function() {
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active1.addEventListener('click', function() {
+        active1.style.backgroundColor = "#E01D1D";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active2.addEventListener('click', function() {
+        active2.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active3.addEventListener('click', function() {
+        active3.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active4.addEventListener('click', function() {
+        active4.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active5.addEventListener('click', function() {
+        active5.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active6.addEventListener('click', function() {
+        active6.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+
+    active7.addEventListener('click', function() {
+        active7.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+
+    active8.addEventListener('click', function() {
+        active8.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+
+    active9.addEventListener('click', function() {
+        active9.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+    active10.addEventListener('click', function() {
+        active10.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+
+    active11.addEventListener('click', function() {
+        active11.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active12.style.backgroundColor = "#000000";
+    });
+
+
+    active12.addEventListener('click', function() {
+        active12.style.backgroundColor = "#E01D1D";
+        active1.style.backgroundColor = "#000000";
+        active2.style.backgroundColor = "#000000";
+        active3.style.backgroundColor = "#000000";
+        active4.style.backgroundColor = "#000000";
+        active5.style.backgroundColor = "#000000";
+        active6.style.backgroundColor = "#000000";
+        active7.style.backgroundColor = "#000000";
+        active8.style.backgroundColor = "#000000";
+        active9.style.backgroundColor = "#000000";
+        active10.style.backgroundColor = "#000000";
+        active11.style.backgroundColor = "#000000";
+    });
+
 </script>
 
 </html>
