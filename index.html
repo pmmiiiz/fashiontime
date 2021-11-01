@@ -2133,6 +2133,17 @@
         else{
             document.querySelector("#active12").style.backgroundColor = "black";
         }
+        if (newX + window.innerWidth - 600 >= document.querySelector(".winkwhite").offsetLeft) {
+            document.querySelectorAll(".showall11").forEach((showall11) => {
+                showall11.dataset.show = "1";
+            })
+
+
+            document.querySelector("#active12").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active12").style.backgroundColor = "black";
+        }
         console.log(document.querySelector("#bgroman").offsetLeft)
 
         console.log(document.querySelector("#centerpage").offsetLeft)
