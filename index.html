@@ -1967,12 +1967,17 @@
             document.querySelectorAll(".showitem00").forEach((showitem0) => {
                 showitem0.dataset.show = "1";
             })
+            document.querySelector("#active1").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active1").style.backgroundColor = "black";
         }
 
         if (newX + window.innerWidth - 600 >= document.querySelector("#bgroman").offsetLeft) {
             document.querySelector("#bgroman").dataset.show = "1";
             document.querySelector("#bganswerromann").dataset.show = "1";
             document.querySelector("#gamedressroman").dataset.show = "1";
+            document.querySelector("#active3").style.backgroundColor = "#ff6395";
             document.querySelectorAll(".showall1").forEach((showall1) => {
                 showall1.dataset.show = "1";
             })
@@ -1980,6 +1985,9 @@
                 showitem1.dataset.show = "1";
             })
 
+        }
+        else{
+            document.querySelector("#active3").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#centerpage").offsetLeft) {
             document.querySelector("#bganswervictor").dataset.show = "1";
@@ -1989,8 +1997,11 @@
             })
             document.querySelectorAll(".showitem2").forEach((showitem2) => {
                 showitem2.dataset.show = "1";
-            })
-
+            }) 
+            document.querySelector("#active4").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active4").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocabregen").offsetLeft) {
             document.querySelector("#bganswerregenn").dataset.show = "1";
@@ -2002,6 +2013,10 @@
                 showitem3.dataset.show = "1";
             })
 
+            document.querySelector("#active2").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active2").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocabartnuvo").offsetLeft) {
             document.querySelector("#bganswerartnuvo").dataset.show = "1";
@@ -2012,6 +2027,10 @@
             document.querySelectorAll(".showitem4").forEach((showitem4) => {
                 showitem4.dataset.show = "1";
             })
+            document.querySelector("#active5").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active5").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#bg1910stoWWI").offsetLeft) {
             document.querySelector("#bg1910stoWWI").dataset.show = "1";
@@ -2023,6 +2042,10 @@
             document.querySelectorAll(".showitem5").forEach((showitem5) => {
                 showitem5.dataset.show = "1";
             })
+            document.querySelector("#active6").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active6").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#centerpageflap").offsetLeft) {
             document.querySelector("#bganswerflapper").dataset.show = "1";
@@ -2034,6 +2057,10 @@
                 showitem6.dataset.show = "1";
             })
 
+            document.querySelector("#active7").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active7").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocabRTW").offsetLeft) {
             document.querySelector("#bganswerRTW").dataset.show = "1";
@@ -2045,6 +2072,10 @@
                 showitem7.dataset.show = "1";
             })
 
+            document.querySelector("#active8").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active8").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#bg1940").offsetLeft) {
             document.querySelector("#bg1940").dataset.show = "1";
@@ -2057,6 +2088,10 @@
                 showitem8.dataset.show = "1";
             })
 
+            document.querySelector("#active9").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active9").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#centerpage1950").offsetLeft) {
             document.querySelector("#bganswer1950").dataset.show = "1";
@@ -2068,6 +2103,10 @@
                 showitem9.dataset.show = "1";
             })
 
+            document.querySelector("#active10").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active10").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#leftvocab1960").offsetLeft) {
             document.querySelector("#bganswer1960s").dataset.show = "1";
@@ -2078,6 +2117,10 @@
             document.querySelectorAll(".showitem10").forEach((showitem10) => {
                 showitem10.dataset.show = "1";
             })
+            document.querySelector("#active11").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active11").style.backgroundColor = "black";
         }
         if (newX + window.innerWidth - 600 >= document.querySelector("#picclock").offsetLeft) {
             document.querySelectorAll(".showall11").forEach((showall11) => {
@@ -2085,6 +2128,10 @@
             })
 
 
+            document.querySelector("#active12").style.backgroundColor = "#ff6395";
+        }
+        else{
+            document.querySelector("#active12").style.backgroundColor = "black";
         }
         console.log(document.querySelector("#bgroman").offsetLeft)
 
@@ -2982,220 +3029,7 @@
     }
 
 
-    //active
-    const active1 = document.getElementById('active1');
-    const active2 = document.getElementById('active2');
-    const active3 = document.getElementById('active3');
-    const active4 = document.getElementById('active4');
-    const active5 = document.getElementById('active5');
-    const active6 = document.getElementById('active6');
-    const active7 = document.getElementById('active7');
-    const active8 = document.getElementById('active8');
-    const active9 = document.getElementById('active9');
-    const active10 = document.getElementById('active10');
-    const active11 = document.getElementById('active11');
-    const active12 = document.getElementById('active12');
 
-
-    active0.addEventListener('click', function() {
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active1.addEventListener('click', function() {
-        active1.style.backgroundColor = "#E01D1D";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active2.addEventListener('click', function() {
-        active2.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active3.addEventListener('click', function() {
-        active3.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active4.addEventListener('click', function() {
-        active4.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active5.addEventListener('click', function() {
-        active5.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active6.addEventListener('click', function() {
-        active6.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-
-    active7.addEventListener('click', function() {
-        active7.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-
-    active8.addEventListener('click', function() {
-        active8.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-
-    active9.addEventListener('click', function() {
-        active9.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-    active10.addEventListener('click', function() {
-        active10.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-
-    active11.addEventListener('click', function() {
-        active11.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active12.style.backgroundColor = "#000000";
-    });
-
-
-    active12.addEventListener('click', function() {
-        active12.style.backgroundColor = "#E01D1D";
-        active1.style.backgroundColor = "#000000";
-        active2.style.backgroundColor = "#000000";
-        active3.style.backgroundColor = "#000000";
-        active4.style.backgroundColor = "#000000";
-        active5.style.backgroundColor = "#000000";
-        active6.style.backgroundColor = "#000000";
-        active7.style.backgroundColor = "#000000";
-        active8.style.backgroundColor = "#000000";
-        active9.style.backgroundColor = "#000000";
-        active10.style.backgroundColor = "#000000";
-        active11.style.backgroundColor = "#000000";
-    });
 
 </script>
 

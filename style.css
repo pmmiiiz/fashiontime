@@ -115,10 +115,10 @@ body {
     background-color: #000000;
 }
 
-.navbar-list div:hover {
+/* .navbar-list div:hover {
     background-color: #E01D1D;
     cursor: pointer;
-}
+} */
 
 .texttop {
     display: block;
