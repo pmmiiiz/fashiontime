@@ -92,7 +92,7 @@ body {
 }
 
 .navbar-list {
-    font-size:  0.95vw;
+    font-size: 0.95vw;
     font-family: 'Archivo Black', sans-serif;
     margin: 10vh 1.25vw;
     text-align: center;
@@ -115,6 +115,7 @@ body {
     margin-bottom: 3.7vh;
     background-color: #000000;
 }
+
 
 /* .navbar-list div:hover {
     background-color: #E01D1D;
@@ -608,13 +609,13 @@ body {
 }
 
 .whatregen {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    margin-left: 12vw;
-    top: 26vw;
+    margin-left: 11vw;
+    top: 25vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #4185F3;
@@ -624,7 +625,7 @@ body {
     background-color: #4185F3;
     color: rgb(0, 0, 0);
     margin-left: 30vw;
-    top: 41vw;
+    top: 39vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -1424,7 +1425,7 @@ body {
 .hintroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0);
-    top: 33vw;
+    top: 35vw;
     margin-left: 80vw;
     position: absolute;
     width: 10vw;
@@ -1494,13 +1495,13 @@ body {
 }
 
 .whatroman {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 19vw;
-    margin-left: 60vw;
+    top: 22vw;
+    margin-left: 55vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: hsl(0, 77%, 50%);
@@ -1894,13 +1895,13 @@ body {
 }
 
 .whatvictor {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 22vw;
-    margin-left: 17vw;
+    top: 21vw;
+    margin-left: 14.6vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: hsla(47, 84%, 62%, 1);
@@ -2333,13 +2334,13 @@ body {
 }
 
 .whatartnuvo {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    margin-left: 12vw;
-    top: 26vw;
+    margin-left: 11vw;
+    top: 25vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #935be3;
@@ -2349,7 +2350,7 @@ body {
     background-color: #935be3;
     color: rgb(0, 0, 0);
     margin-left: 30vw;
-    top: 41vw;
+    top: 39vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -3098,7 +3099,7 @@ body {
 .hint1910stoWWI {
     background-color: #fb8b6c;
     color: rgb(0, 0, 0);
-    top: 33vw;
+    top: 35vw;
     margin-left: 80vw;
     position: absolute;
     width: 10vw;
@@ -3168,13 +3169,13 @@ body {
 }
 
 .what1910stoWWI {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 19vw;
-    margin-left: 60vw;
+    top: 22vw;
+    margin-left: 55vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #fb8b6c;
@@ -3568,13 +3569,13 @@ body {
 }
 
 .whatflapper {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 22vw;
-    margin-left: 17vw;
+    top: 21vw;
+    margin-left: 14.6vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: hsla(335, 100%, 65%, 1);
@@ -3986,13 +3987,13 @@ body {
 }
 
 .whatRTW {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    margin-left: 12vw;
-    top: 26vw;
+    margin-left: 11vw;
+    top: 25vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #48d74e;
@@ -4002,7 +4003,7 @@ body {
     background-color: #48d74e;
     color: rgb(0, 0, 0);
     margin-left: 30vw;
-    top: 41vw;
+    top: 39vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -4678,7 +4679,7 @@ body {
 .hint1940 {
     background-color: hsla(32, 100%, 56%, 1);
     color: rgb(0, 0, 0);
-    top: 33vw;
+    top: 35vw;
     margin-left: 80vw;
     position: absolute;
     width: 10vw;
@@ -4748,13 +4749,13 @@ body {
 }
 
 .what1940 {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 19vw;
-    margin-left: 60vw;
+    top: 22vw;
+    margin-left: 55vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: hsla(32, 100%, 56%, 1);
@@ -5185,13 +5186,13 @@ body {
 }
 
 .what1950 {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    top: 22vw;
-    margin-left: 17vw;
+    top: 21vw;
+    margin-left: 14.6vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: hsla(303, 77%, 59%, 1);
@@ -5581,13 +5582,13 @@ body {
 }
 
 .what1960 {
-    width: 30vw;
+    width: 36vw;
     height: 10vw;
-    margin-left: 12vw;
-    top: 26vw;
+    margin-left: 11vw;
+    top: 25vw;
     position: absolute;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.2vw;
     display: block;
     font-family: 'Rubik Mono One', sans-serif;
     color: #49D1B5;
@@ -5597,7 +5598,7 @@ body {
     background-color: #49D1B5;
     color: rgb(0, 0, 0);
     margin-left: 30vw;
-    top: 41vw;
+    top: 39vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -6106,7 +6107,6 @@ body {
 }
 
 .nemework {
-
     animation: namewow 2s;
     animation-delay: 7s;
     animation-fill-mode: forwards;
@@ -6138,7 +6138,7 @@ body {
     color: #ffffff;
     font-size: 3vw;
     text-align: center;
-    transform: translate(13vw,0vh);
+    transform: translate(13vw, 0vh);
     opacity: 0;
     transition: 5s;
     z-index: 2;
