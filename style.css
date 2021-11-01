@@ -78,6 +78,7 @@ body {
     background: url(img/bgw.png);
     border-right: 3px solid black;
     z-index: 6;
+    padding: auto;
 }
 
 .clock {
@@ -93,7 +94,7 @@ body {
 .navbar-list {
     font-size:  0.95vw;
     font-family: 'Archivo Black', sans-serif;
-    margin: 22vh 1.25vw;
+    margin: 10vh 1.25vw;
     text-align: center;
     align-items: center;
     position: fixed;
@@ -123,23 +124,17 @@ body {
 .texttop {
     display: block;
     transform: rotate(-90deg);
-    position: absolute;
     text-align: center;
-    align-items: center;
     white-space: nowrap;
-    top: 18vh;
-    left: -1vw;
+    margin-top: 12vh;
     font-size: 0.6vw;
     font-family: 'Archivo Black', sans-serif;
 }
 
 .textdown {
-    position: absolute;
     text-align: center;
-    align-items: center;
     white-space: nowrap;
-    bottom: 2vh;
-    left: 0.5vw;
+    margin-top: 72vh;
     font-size: 0.6vw;
     font-family: 'Archivo Black', sans-serif;
 }
