@@ -2383,7 +2383,7 @@ body {
     position: absolute;
     text-align: center;
     top: 12vh;
-    margin-left: 8vw;
+    margin-left: 7vw;
     font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
@@ -2852,7 +2852,7 @@ body {
 .s1910stoWWI {
     text-align: center;
     color: #fb8b6c;
-    margin-left: 8vw;
+    margin-left: 1vw;
     font-size: 3.5vw;
     font-family: 'Rubik Mono One';
 }
@@ -2970,7 +2970,7 @@ body {
     position: absolute;
     text-align: center;
     top: 15vh;
-    margin-left: 8vw;
+    margin-left: 10vw;
     font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
@@ -3442,7 +3442,7 @@ body {
     color: hsla(335, 100%, 65%, 1);
     font-size: 4.5vw;
     font-family: 'Rubik Mono One';
-    margin-right: 7vw;
+    margin-right: 9vw;
     margin-top: 2vw;
 }
 
@@ -3516,8 +3516,8 @@ body {
 .infohintflapper {
     position: absolute;
     text-align: center;
-    top: 15vh;
-    margin-left: 8vw;
+    top: 10vh;
+    margin-left: 6vw;
     font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
     color: white;
@@ -4035,7 +4035,7 @@ body {
 .infohintRTW {
     position: absolute;
     text-align: center;
-    top: 15vh;
+    top: 16vh;
     margin-left: 8vw;
     font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
@@ -4055,7 +4055,7 @@ body {
 .closehintRTW {
     background-color: #48d74e;
     color: rgb(255, 255, 255);
-    top: 68vh;
+    top: 64vh;
     margin-left: 35vw;
     position: absolute;
     width: 10vw;
