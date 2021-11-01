@@ -128,7 +128,7 @@ body {
     text-align: center;
     white-space: nowrap;
     margin-top: 12vh;
-    font-size: 0.8vw;
+    font-size: 0.75vw;
     font-family: 'Archivo Black', sans-serif;
 }
 
@@ -2674,12 +2674,13 @@ body {
     position: absolute;
     width: 25vw;
     color: #935be3;
-    transform: translate(2.5vw, 53vh);
+    transform: translate(2.5vw, 50vh);
     font-size: 4.2vw;
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     letter-spacing: -0.5vw;
 }
+
 
 #bganswerartnuvo[data-show="1"] {
     position: absolute;
@@ -3192,14 +3193,14 @@ body {
     height: 100vh;
     background: url(img/peach.png);
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 6vw;
+    font-size: 5.5vw;
     line-height: 87%;
 }
 
 .galltxt1910stoWWI {
-    padding-top: 11vh;
+    transform: translate(0vw, 7vh);
     position: absolute;
-    margin-left: 7vw;
+    margin-left: 8vw;
 }
 
 .bb1910stoWWI1 {
@@ -4777,7 +4778,7 @@ body {
 }
 
 .galltxt1940 {
-    padding-top: 11vh;
+    transform: translate(0vw, 25vh);
     position: absolute;
     margin-left: 7vw;
 }
