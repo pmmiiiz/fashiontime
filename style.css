@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 /* html{
   scroll-behavior: smooth;
 } */
@@ -128,7 +128,7 @@ body {
     text-align: center;
     white-space: nowrap;
     margin-top: 12vh;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     font-family: 'Archivo Black', sans-serif;
 }
 
@@ -446,7 +446,7 @@ body {
 }
 
 .info {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     position: absolute;
     width: 60vw;
     transform: translate(20vw, 35vh);
@@ -661,7 +661,7 @@ body {
     top: 12vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -671,7 +671,7 @@ body {
     top: 28vh;
     margin-left: 4vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -720,7 +720,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
     line-height: 2vw;
 }
@@ -831,7 +831,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressregen:nth-child(1) {
@@ -1299,7 +1299,7 @@ body {
     top: 15vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -1393,7 +1393,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressroman:nth-child(1) {
@@ -1477,7 +1477,7 @@ body {
     text-align: center;
     font-size: 1.3vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -1846,7 +1846,7 @@ body {
     top: 15vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -1854,7 +1854,7 @@ body {
     text-align: left;
     margin-left: 3vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -2020,7 +2020,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressvictor:nth-child(1) {
@@ -2058,7 +2058,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -2386,7 +2386,7 @@ body {
     top: 12vh;
     margin-left: 7vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -2396,7 +2396,7 @@ body {
     top: 28vh;
     margin-left: 4vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -2444,7 +2444,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
     line-height: 2vw;
 }
@@ -2555,7 +2555,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressartnuvo:nth-child(1) {
@@ -2973,7 +2973,7 @@ body {
     top: 15vh;
     margin-left: 10vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -3067,7 +3067,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdress1910stoWWI:nth-child(1) {
@@ -3143,15 +3143,15 @@ body {
 }
 
 .answer1910stoWWI {
-    width: 35vw;
+    width: 40vw;
     height: 15vw;
-    top: 20vw;
-    margin-left: 57vw;
+    top: 22vw;
+    margin-left: 53vw;
     position: absolute;
     text-align: center;
     font-size: 1.3vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -3520,7 +3520,7 @@ body {
     top: 10vh;
     margin-left: 6vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -3528,7 +3528,7 @@ body {
     text-align: left;
     margin-left: 3vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -3694,7 +3694,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressflapper:nth-child(1) {
@@ -3732,7 +3732,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -4039,7 +4039,7 @@ body {
     top: 16vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -4049,7 +4049,7 @@ body {
     top: 28vh;
     margin-left: 4vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -4098,7 +4098,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
     line-height: 2vw;
 }
@@ -4209,7 +4209,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressRTW:nth-child(1) {
@@ -4553,7 +4553,7 @@ body {
     top: 15vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -4647,7 +4647,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdress1940:nth-child(1) {
@@ -4731,7 +4731,7 @@ body {
     text-align: center;
     font-size: 1.3vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5137,7 +5137,7 @@ body {
     top: 15vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5145,7 +5145,7 @@ body {
     text-align: left;
     margin-left: 3vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5311,7 +5311,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdress1950:nth-child(1) {
@@ -5349,7 +5349,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5634,7 +5634,7 @@ body {
     top: 12vh;
     margin-left: 8vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5644,7 +5644,7 @@ body {
     top: 30vh;
     margin-left: 4vw;
     font-size: 1.5vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
 
@@ -5753,7 +5753,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     display: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
     line-height: 2vw;
 }
@@ -5852,7 +5852,7 @@ body {
     opacity: 0;
     text-align: center;
     width: 20vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdress1960:nth-child(1) {
@@ -6142,7 +6142,7 @@ body {
     opacity: 0;
     transition: 5s;
     z-index: 2;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     /* margin-left: 1vw; */
 }
 
