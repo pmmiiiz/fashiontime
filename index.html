@@ -2300,8 +2300,30 @@
     });
 
     // ปุ่มfinish
-    function finishroman() {
-        if (numdressroman == 9 && numvocabroman == 9) {
+    function finishroman() 
+    {
+        if (numdressroman == 9 && numvocabroman != 9) {
+
+            document.querySelector(".whatroman").style.display = "none";
+            document.querySelector(".tryroman").style.display = "block";
+            document.querySelector(".finishroman").style.display = "block";
+            document.querySelector("#rightdressroman").style.display = "none";
+            document.querySelector("#leftdressroman").style.display = "none";
+
+
+        } 
+        else if (numdressroman != 9 && numvocabroman == 9) {
+
+        document.querySelector(".whatroman").style.display = "none";
+        document.querySelector(".tryroman").style.display = "block";
+        document.querySelector(".finishroman").style.display = "block";
+        document.querySelector("#rightvocabroman").style.display = "none";
+        document.querySelector("#leftvocabroman").style.display = "none";
+
+
+   
+        }
+        else if (numdressroman == 9 && numvocabroman == 9) {
             document.querySelector(".answerroman").style.display = "block";
             document.querySelector(".whatroman").style.display = "none";
             document.querySelector(".tryroman").style.display = "none";
@@ -2316,12 +2338,18 @@
             document.querySelector("#leftvocabroman").style.display = "none";
             document.querySelector(".hintroman").style.display = "none";
 
-        } else {
+        } 
+        else {
             document.querySelector(".tryroman").style.display = "block";
             document.querySelector(".whatroman").style.display = "none";
             document.querySelector(".answerroman").style.display = "none";
         }
     }
+
+
+
+
+
     // ปุ่มhint
     function hintroman() {
         document.querySelector(".showhintroman").style.display = "block";
@@ -2386,7 +2414,24 @@
 
     // ปุ่มfinish
     function finishvictor() {
-        if (numdressvictor == 2 && numvocabvictor == 6) {
+        if (numdressvictor == 2 && numvocabvictor != 6) {
+
+            document.querySelector(".whatvictor").style.display = "none";
+            document.querySelector(".tryvictor").style.display = "block";
+            document.querySelector(".finishvictor").style.display = "block";
+            document.querySelector("#rightdressvictor").style.display = "none";
+            document.querySelector("#leftdressvictor").style.display = "none";
+
+        } 
+        else if (numdressvictor != 2 && numvocabvictor == 6) {
+        document.querySelector(".whatvictor").style.display = "none";
+        document.querySelector(".tryvictor").style.display = "block";
+        document.querySelector(".finishvictor").style.display = "block";
+            document.querySelector("#rightvocabvictor").style.display = "none";
+             document.querySelector("#leftvocabvictor").style.display = "none";
+
+} 
+        else if (numdressvictor == 2 && numvocabvictor == 6) {
             document.querySelector(".answervictor").style.display = "block";
             document.querySelector(".whatvictor").style.display = "none";
             document.querySelector(".tryvictor").style.display = "none";
@@ -2405,7 +2450,8 @@
             document.querySelector("#picvic5").style.opacity = "1";
 
 
-        } else {
+        } 
+        else {
             document.querySelector(".tryvictor").style.display = "block";
             document.querySelector(".whatvictor").style.display = "none";
             document.querySelector(".answervictor").style.display = "none";
@@ -2504,7 +2550,7 @@
         document.querySelector(".showhintartnuvo").style.display = "none";
     }
 
-    //// เปลี่ยนชุดและคำยุคโรแมนติก
+    //// เปลี่ยนชุดและคำยุคwwi
     let numdress1910stoWWI = 0;
     let endnumdress1910stoWWI = 10;
     let numvocab1910stoWWI = 0;
