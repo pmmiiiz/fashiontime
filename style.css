@@ -1342,6 +1342,10 @@ body {
 #romandresspic {
     width: 20vw
 }
+.correctroman{
+    width: 20vw;
+    opacity:0;
+}
 
 .dressroman {
     opacity: 0;
@@ -1388,6 +1392,12 @@ body {
     cursor: pointer;
     z-index: 4;
 }
+.correctvocabdressroman{
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
 
 .vocabdressroman {
     opacity: 0;
@@ -1425,8 +1435,8 @@ body {
 .hintroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0);
-    top: 35vw;
-    margin-left: 80vw;
+    top: 32vw;
+    margin-left: 76vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -1439,7 +1449,30 @@ body {
 .hintroman:hover {
     background-color: transparent;
     color: hsl(0, 77%, 50%);
-    ;
+    border: 2px solid hsl(0, 77%, 50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.btnanswerroman {
+    background-color: hsl(0, 77%, 50%);
+    color: rgb(0, 0, 0);
+    top: 32vw;
+    margin-left: 64vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswerroman:hover {
+    background-color: transparent;
+    color: hsl(0, 77%, 50%);
+
     border: 2px solid hsl(0, 77%, 50%);
     transition: 0.5s;
     cursor: pointer;
@@ -1910,8 +1943,8 @@ body {
 .hintvictor {
     background-color: hsla(47, 84%, 62%, 1);
     color: rgb(0, 0, 0);
-    top: 35vw;
-    margin-left: 26vw;
+    top: 32vw;
+    margin-left: 32vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -1922,6 +1955,27 @@ body {
 }
 
 .hintvictor:hover {
+    background-color: transparent;
+    color: hsla(47, 84%, 62%, 1);
+    border: 2px solid hsla(47, 84%, 62%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btnanswervictor {
+    background-color: hsla(47, 84%, 62%, 1);
+    color: rgb(0, 0, 0);
+    top: 32vw;
+    margin-left: 20vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswervictor:hover {
     background-color: transparent;
     color: hsla(47, 84%, 62%, 1);
     border: 2px solid hsla(47, 84%, 62%, 1);
@@ -1968,6 +2022,10 @@ body {
 
 #victordresspic {
     width: 20vw
+}
+#correctvictor{
+    width: 20vw;
+    opacity: 0;
 }
 
 .dressvictor {
@@ -2017,6 +2075,12 @@ body {
 }
 
 .vocabdressvictor {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.correctvocabdressvictor{
     opacity: 0;
     text-align: center;
     width: 20vw;

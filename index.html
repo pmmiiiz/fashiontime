@@ -468,6 +468,9 @@
                     <div class="dressroman">
                         <img src="img/roman.png" id="romandresspic">
                     </div>
+                    <div class="correctdressroman">
+                        <img src="img/roman.png"  class="correctroman">
+                    </div>
                 </div>
                 <button id="rightdressroman" class="showall1" data-show="0">❱</button>
 
@@ -504,6 +507,9 @@
                     <div class="vocabdressroman">
                         นิยมดอกไม้บนหัว
                     </div>
+                    <div class="correctvocabdressroman">
+                        นิยมดอกไม้บนหัว
+                    </div>
                 </div>
                 <button id="rightvocabroman" class="showall1" data-show="0">❱</button>
 
@@ -529,6 +535,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hintroman showall1" data-show="0" onclick="hintroman()"><U><i>HINT</i></U></button>
+                <button class="btnanswerroman showall1" data-show="0" onclick="btnanswerroman()"><U><i>ANSWER</i></U></button>
             </div>
         </div>
         <!-- หน้าคั่นแต่ละยุค(ฟองสบู่) -->
@@ -605,6 +612,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hintvictor showall2" data-show="0" onclick="hintvictor()"><U><i>HINT</i></U></button>
+                <button class="btnanswervictor showall2" data-show="0" onclick="btnanswervictor()"><U><i>ANSWER</i></U></button>
 
                 <!-- เกมเปลี่ยนชุด -->
                 <button id="leftdressvictor" class="showall2" data-show="0">❰</button>
@@ -638,6 +646,9 @@
                     </div>
                     <div class="dressvictor">
                         <img src="img/roman.png" id="victordresspic">
+                    </div>
+                    <div class="correctdressvictor">
+                        <img src="IMG/vic.png" id="correctvictor">
                     </div>
                 </div>
                 <button id="rightdressvictor" class="showall2" data-show="0">❱</button>
@@ -674,6 +685,9 @@
                     </div>
                     <div class="vocabdressvictor">
                         ผ้าฝ้าย มัสลิน
+                    </div>
+                    <div class="correctvocabdressvictor">
+                        ผ้าซาติน กำมะหยี่
                     </div>
                 </div>
                 <button id="rightvocabvictor" class="showall2" data-show="0">❱</button>
@@ -2337,6 +2351,7 @@
             document.querySelector("#rightvocabroman").style.display = "none";
             document.querySelector("#leftvocabroman").style.display = "none";
             document.querySelector(".hintroman").style.display = "none";
+            document.querySelector(".btnanswerroman").style.display = "none";
 
         } 
         else {
@@ -2347,8 +2362,28 @@
     }
 
 
-
-
+    // ปุ่มanswer
+    function btnanswerroman() {
+        document.querySelector(".answerroman").style.display = "block";
+        document.querySelector(".whatroman").style.display = "none";
+        document.querySelector(".tryroman").style.display = "none";
+        document.querySelector(".finishroman").style.display = "none";
+        document.querySelector(".albbroman").style.opacity = "1";
+        document.querySelector("#picwink1").style.filter = "brightness(1)";
+        document.querySelector("#picwink2").style.filter = "brightness(1)";
+        document.querySelector("#picwink3").style.filter = "brightness(1)";
+        document.querySelector("#rightdressroman").style.display = "none";
+        document.querySelector("#leftdressroman").style.display = "none";
+        document.querySelector("#rightvocabroman").style.display = "none";
+        document.querySelector("#leftvocabroman").style.display = "none";
+        document.querySelector(".hintroman").style.display = "none";
+        document.querySelector(".btnanswerroman").style.display = "none";
+        document.querySelector(".correctroman").style.opacity = "1";
+        document.querySelector("#romandresspic").style.opacity = "0";
+        document.querySelector(".correctvocabdressroman").style.opacity = "1";
+        document.querySelector(".vocabdressroman").style.opacity = "0";
+        
+    }
 
     // ปุ่มhint
     function hintroman() {
@@ -2448,6 +2483,9 @@
             document.querySelector("#picvic3").style.opacity = "1";
             document.querySelector("#picvic4").style.opacity = "1";
             document.querySelector("#picvic5").style.opacity = "1";
+            document.querySelector(".btnanswervictor").style.display = "none";
+
+
 
 
         } 
@@ -2457,6 +2495,34 @@
             document.querySelector(".answervictor").style.display = "none";
         }
     }
+    // ปุ่มanswer
+    function btnanswervictor() {
+        document.querySelector(".answervictor").style.display = "block";
+            document.querySelector(".whatvictor").style.display = "none";
+            document.querySelector(".tryvictor").style.display = "none";
+            document.querySelector(".finishvictor").style.display = "none";
+            document.querySelector("#rightdressvictor").style.display = "none";
+            document.querySelector("#leftdressvictor").style.display = "none";
+            document.querySelector("#rightvocabvictor").style.display = "none";
+            document.querySelector("#leftvocabvictor").style.display = "none";
+            document.querySelector(".hintvictor").style.display = "none";
+            document.querySelector("#bgpicflower").style.filter = "brightness(1)";
+            document.querySelector("#bgsandclockvictor").style.filter = "brightness(1)";
+            document.querySelector("#picvic1").style.opacity = "1";
+            document.querySelector("#picvic2").style.opacity = "1";
+            document.querySelector("#picvic3").style.opacity = "1";
+            document.querySelector("#picvic4").style.opacity = "1";
+            document.querySelector("#picvic5").style.opacity = "1";
+            document.querySelector(".btnanswervictor").style.display = "none";
+            document.querySelector(".dressvictor").style.opacity = "0";
+            document.querySelector("#correctvictor").style.opacity = "1";
+            document.querySelector(".correctvocabdressvictor").style.opacity = "1";
+            document.querySelector(".vocabdressvictor").style.opacity = "0";
+            
+            
+
+    }
+    
     // ปุ่มhint
     function hintvictor() {
         document.querySelector(".showhintvictor").style.display = "block";
@@ -2535,7 +2601,8 @@
             document.querySelector(".showdia2art").style.opacity = "1";
 
 
-        } else {
+        } 
+        else {
             document.querySelector(".tryartnuvo").style.display = "block";
             document.querySelector(".whatartnuvo").style.display = "none";
             document.querySelector(".answerartnuvo").style.display = "none";
@@ -2550,7 +2617,7 @@
         document.querySelector(".showhintartnuvo").style.display = "none";
     }
 
-    //// เปลี่ยนชุดและคำยุคwwi
+    //// เปลี่ยนชุดและคำยุคโรแมนติก
     let numdress1910stoWWI = 0;
     let endnumdress1910stoWWI = 10;
     let numvocab1910stoWWI = 0;
