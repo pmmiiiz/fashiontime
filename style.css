@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
 /* html{
   scroll-behavior: smooth;
 } */
@@ -1342,9 +1343,10 @@ body {
 #romandresspic {
     width: 20vw
 }
-.correctroman{
+
+.correctroman {
     width: 20vw;
-    opacity:0;
+    opacity: 0;
 }
 
 .dressroman {
@@ -1392,7 +1394,8 @@ body {
     cursor: pointer;
     z-index: 4;
 }
-.correctvocabdressroman{
+
+.correctvocabdressroman {
     opacity: 0;
     text-align: center;
     width: 20vw;
@@ -1454,7 +1457,6 @@ body {
     cursor: pointer;
 }
 
-
 .btnanswerroman {
     background-color: hsl(0, 77%, 50%);
     color: rgb(0, 0, 0);
@@ -1472,7 +1474,6 @@ body {
 .btnanswerroman:hover {
     background-color: transparent;
     color: hsl(0, 77%, 50%);
-
     border: 2px solid hsl(0, 77%, 50%);
     transition: 0.5s;
     cursor: pointer;
@@ -1961,6 +1962,7 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
 .btnanswervictor {
     background-color: hsla(47, 84%, 62%, 1);
     color: rgb(0, 0, 0);
@@ -2023,7 +2025,8 @@ body {
 #victordresspic {
     width: 20vw
 }
-#correctvictor{
+
+#correctvictor {
     width: 20vw;
     opacity: 0;
 }
@@ -2080,7 +2083,8 @@ body {
     width: 20vw;
     font-family: 'Chakra Petch', sans-serif;
 }
-.correctvocabdressvictor{
+
+.correctvocabdressvictor {
     opacity: 0;
     text-align: center;
     width: 20vw;
@@ -2744,7 +2748,6 @@ body {
     text-align: center;
     letter-spacing: -0.5vw;
 }
-
 
 #bganswerartnuvo[data-show="1"] {
     position: absolute;
@@ -3649,8 +3652,8 @@ body {
 .hintflapper {
     background-color: hsla(335, 100%, 65%, 1);
     color: rgb(0, 0, 0);
-    top: 35vw;
-    margin-left: 26vw;
+    top: 34vw;
+    margin-left: 32vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -3661,6 +3664,28 @@ body {
 }
 
 .hintflapper:hover {
+    background-color: transparent;
+    color: hsla(335, 100%, 65%, 1);
+    border: 2px solid hsla(335, 100%, 65%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btnanswerflapper {
+    background-color: hsla(335, 100%, 65%, 1);
+    color: rgb(0, 0, 0);
+    top: 34vw;
+    margin-left: 20vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswerflapper:hover {
     background-color: transparent;
     color: hsla(335, 100%, 65%, 1);
     border: 2px solid hsla(335, 100%, 65%, 1);
@@ -3707,6 +3732,11 @@ body {
 
 #flapperdresspic {
     width: 20vw
+}
+
+#correctflapper {
+    width: 20vw;
+    opacity: 0;
 }
 
 .dressflapper {
@@ -3756,6 +3786,13 @@ body {
 }
 
 .vocabdressflapper {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.correctvocabdressflapper {
     opacity: 0;
     text-align: center;
     width: 20vw;
