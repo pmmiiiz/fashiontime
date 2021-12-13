@@ -4123,6 +4123,28 @@ body {
     cursor: pointer;
 }
 
+.btnanswerRTW {
+    background-color: #48d74e;
+    color: rgb(0, 0, 0);
+    top: 39vw;
+    margin-left: 15vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswerRTW:hover {
+    background-color: transparent;
+    color: #48d74e;
+    border: 2px solid #48d74e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .showhintRTW {
     width: 60vw;
     height: 85vh;
