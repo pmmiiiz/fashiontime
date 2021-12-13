@@ -3695,8 +3695,8 @@ body {
 
 #gamedressflapper {
     position: absolute;
-    top: 30vh;
-    margin-left: 70vw;
+    top: 27vh;
+    margin-left: 68vw;
 }
 
 #gamedressflapper>.dressflapper {
@@ -3706,7 +3706,7 @@ body {
 #leftdressflapper {
     position: absolute;
     top: 50vh;
-    margin-left: 70vw;
+    margin-left: 65vw;
     background: transparent;
     color: hsla(335, 100%, 65%, 1);
     font-size: 2.5vw;
@@ -3720,7 +3720,7 @@ body {
 #rightdressflapper {
     position: absolute;
     top: 50vh;
-    margin-left: 90vw;
+    margin-left: 86vw;
     background: transparent;
     color: hsla(335, 100%, 65%, 1);
     font-size: 2.5vw;
@@ -3751,7 +3751,7 @@ body {
 #gamevocabflapper {
     position: absolute;
     top: 90vh;
-    margin-left: 71vw;
+    margin-left: 67vw;
     font-size: 2.5vw;
 }
 
@@ -3762,7 +3762,7 @@ body {
 #leftvocabflapper {
     position: absolute;
     top: 90vh;
-    margin-left: 70vw;
+    margin-left: 65vw;
     background: transparent;
     color: hsla(335, 100%, 65%, 1);
     font-size: 2.5vw;
@@ -3775,7 +3775,7 @@ body {
 #rightvocabflapper {
     position: absolute;
     top: 90vh;
-    margin-left: 90vw;
+    margin-left: 86vw;
     background: transparent;
     color: hsla(335, 100%, 65%, 1);
     font-size: 2.5vw;
