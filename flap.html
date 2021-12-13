@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://i.imgur.com/RY3ME8S.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flap.css">
 </head>
 
 <body>
@@ -1287,7 +1287,6 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hintRTW showall7" data-show="0" onclick="hintRTW()"><U><i>HINT</i></U></button>
-                <button class="btnanswerRTW showall7" data-show="0" onclick="btnanswerRTW()"><U><i>ANSWER</i></U></button>
             </div>
 
             <!-- เกมเปลี่ยนชุด -->
@@ -1323,9 +1322,6 @@
                 </div>
                 <div class="dressRTW">
                     <img src="img/roman.png" id="RTWdresspic">
-                </div>
-                <div class="correctdressRTW">
-                    <img src="IMG/ready.png" id="correctRTW">
                 </div>
             </div>
             <!-- ปุ่มขวา -->
@@ -1364,9 +1360,6 @@
                     กระโปรงบาน
                 </div>
                 <div class="vocabdressRTW">
-                    เดรสเข้ารูป
-                </div>
-                <div class="correctvocabdressRTW">
                     เดรสเข้ารูป
                 </div>
             </div>
@@ -2802,9 +2795,6 @@
         document.querySelector("#correctflapper").style.opacity = "1";
         document.querySelector(".correctvocabdressflapper").style.opacity = "1";
         document.querySelector(".vocabdressflapper").style.opacity = "0";
-
-
-
     }
     // ปุ่มhint
     function hintflapper() {
@@ -2889,26 +2879,6 @@
             document.querySelector(".answerRTW").style.display = "none";
         }
     }
-
-    // ปุ่มanswer
-    function btnanswerRTW() {
-        document.querySelector(".answerRTW").style.display = "block";
-        document.querySelector(".whatRTW").style.display = "none";
-        document.querySelector(".tryRTW").style.display = "none";
-        document.querySelector(".finishRTW").style.display = "none";
-        document.querySelector("#rightdressRTW").style.display = "none";
-        document.querySelector("#leftdressRTW").style.display = "none";
-        document.querySelector("#rightvocabRTW").style.display = "none";
-        document.querySelector("#leftvocabRTW").style.display = "none";
-        document.querySelector(".hintRTW").style.display = "none";
-        document.querySelector(".btnanswerRTW").style.display = "none";
-        document.querySelector(".dressRTW").style.opacity = "0";
-        document.querySelector("#correctRTW").style.opacity = "1";
-        document.querySelector(".correctvocabdressRTW").style.opacity = "1";
-        document.querySelector(".vocabdressRTW").style.opacity = "0";
-    }
-
-
     // ปุ่มhint
     function hintRTW() {
         document.querySelector(".showhintRTW").style.display = "block";

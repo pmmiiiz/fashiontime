@@ -4329,7 +4329,19 @@ body {
     width: 20vw;
 }
 
+#correctRTW {
+    width: 20vw;
+    opacity: 0;
+}
+
 .vocabdressRTW {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.correctvocabdressRTW {
     opacity: 0;
     text-align: center;
     width: 20vw;
