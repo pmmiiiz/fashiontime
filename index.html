@@ -1503,6 +1503,9 @@
                     <div class="dress1940">
                         <img src="img/roman.png" id="s1940dresspic">
                     </div>
+                    <div class="correctdress1940">
+                        <img src="img/1940s.png"  id="correct1940">
+                    </div>
                 </div>
                 <button id="rightdress1940" class="showall8" data-show="0">❱</button>
 
@@ -1539,6 +1542,9 @@
                     <div class="vocabdress1940">
                         ผ้าฝ้าย มัสลิน
                     </div>
+                    <div class="correctvocabdress1940">
+                        กระโปรงทรงเอ
+                    </div>
                 </div>
                 <button id="rightvocab1940" class="showall8" data-show="0">❱</button>
 
@@ -1550,9 +1556,7 @@
                     <div class="infohint1940">
                         <h1>ยุค 1940s</h1>
                         <p>
-                            แฟชั่นยุคนี้เน้นความทะมัดทะแมง ผู้หญิงนิยมใส่กระโปรงทรงเอ<br> สูทขนาดพอดีตัว เข้าเอวคอด มีความโดดเด่นด้วยแจ็คเก็ตที่ตัดเย็บ <br> และจับจีบที่มีเอวปลายงุ้ม และpeplum(กระโปรงขนาดเล็กที่เน้นเอวแคบ<br> และสะโพกกว้าง) ที่บานออกความยาวกลางน่อง
-                            มีหลายพับ
-                            <br> เน้นช่วงอกและสะโพกทรงนาฬิกาทราย
+                            แฟชั่นยุคนี้เน้นความทะมัดทะแมง ผู้หญิงนิยมใส่กระโปรงทรงเอ<br> เดรสขนาดพอดีตัว เข้าเอวคอด  เน้นช่วงอกและสะโพกทรงนาฬิกาทราย
                         </p>
                     </div>
                     <!-- ปุ่มปิดในhint -->
@@ -1568,6 +1572,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hint1940 showall8" data-show="0" onclick="hint1940()"><U><i>HINT</i></U></button>
+                <button class="btnanswer1940 showall8" data-show="0" onclick="btnanswer1940()"><U><i>ANSWER</i></U></button>
             </div>
         </div>
         <!-- หน้าคั่นแต่ละยุค(ฟองสบู่) -->
@@ -1642,6 +1647,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hint1950 showall9" data-show="0" onclick="hint1950()"><U><i>HINT</i></U></button>
+                <button class="btnanswer1950 showall9" data-show="0" onclick="btnanswer1950()"><U><i>ANSWER</i></U></button>
 
                 <!-- เกมเปลี่ยนชุด -->
                 <button id="leftdress1950" class="showall9" data-show="0">❰</button>
@@ -1675,6 +1681,9 @@
                     </div>
                     <div class="dress1950">
                         <img src="img/roman.png" id="s1950dresspic">
+                    </div>
+                    <div class="correctdress1950">
+                        <img src="IMG/1950s.png" id="correct1950">
                     </div>
                 </div>
                 <button id="rightdress1950" class="showall9" data-show="0">❱</button>
@@ -1711,6 +1720,9 @@
                     </div>
                     <div class="vocabdress1950">
                         ดูหรูหรา
+                    </div>
+                    <div class="correctvocabdress1950">
+                        กระโปรงบาน
                     </div>
                 </div>
                 <button id="rightvocab1950" class="showall9" data-show="0">❱</button>
@@ -2989,6 +3001,7 @@
             document.querySelector("#rightvocab1940").style.display = "none";
             document.querySelector("#leftvocab1940").style.display = "none";
             document.querySelector(".hint1940").style.display = "none";
+            document.querySelector(".btnanswer1940").style.display = "none";
 
         } else {
             document.querySelector(".try1940").style.display = "block";
@@ -2996,6 +3009,29 @@
             document.querySelector(".answer1940").style.display = "none";
         }
     }
+
+    // ปุ่มanswer
+    function btnanswer1940() {
+        document.querySelector(".answer1940").style.display = "block";
+        document.querySelector(".what1940").style.display = "none";
+        document.querySelector(".try1940").style.display = "none";
+        document.querySelector(".finish1940").style.display = "none";
+        document.querySelector(".albb1940").style.opacity = "1";
+        document.querySelector("#picwink11940").style.filter = "brightness(1)";
+        document.querySelector("#picwink21940").style.filter = "brightness(1)";
+        document.querySelector("#picwink31940").style.filter = "brightness(1)";
+        document.querySelector("#rightdress1940").style.display = "none";
+        document.querySelector("#leftdress1940").style.display = "none";
+        document.querySelector("#rightvocab1940").style.display = "none";
+        document.querySelector("#leftvocab1940").style.display = "none";
+        document.querySelector(".hint1940").style.display = "none";
+        document.querySelector(".btnanswer1940").style.display = "none";
+        document.querySelector(".dress1940").style.opacity = "0";
+        document.querySelector("#correct1940").style.opacity = "1";
+        document.querySelector(".correctvocabdress1940").style.opacity = "1";
+        document.querySelector(".vocabdress1940").style.opacity = "0";
+    }
+
     // ปุ่มhint
     function hint1940() {
         document.querySelector(".showhint1940").style.display = "block";
@@ -3077,6 +3113,7 @@
             document.querySelector("#pic1950s3").style.opacity = "1";
             document.querySelector("#pic1950s4").style.opacity = "1";
             document.querySelector("#pic1950s5").style.opacity = "1";
+            document.querySelector(".btnanswer1950").style.display = "none";
 
 
         } else {
@@ -3085,6 +3122,32 @@
             document.querySelector(".answer1950").style.display = "none";
         }
     }
+
+    // ปุ่มanswer
+    function btnanswer1950() {
+        document.querySelector(".answer1950").style.display = "block";
+        document.querySelector(".what1950").style.display = "none";
+        document.querySelector(".try1950").style.display = "none";
+        document.querySelector(".finish1950").style.display = "none";
+        document.querySelector("#rightdress1950").style.display = "none";
+        document.querySelector("#leftdress1950").style.display = "none";
+        document.querySelector("#rightvocab1950").style.display = "none";
+        document.querySelector("#leftvocab1950").style.display = "none";
+        document.querySelector(".hint1950").style.display = "none";
+        document.querySelector("#bgpicflower1950").style.filter = "brightness(1)";
+        document.querySelector("#bgsandclock1950").style.filter = "brightness(1)";
+        document.querySelector("#pic1950s1").style.opacity = "1";
+        document.querySelector("#pic1950s2").style.opacity = "1";
+        document.querySelector("#pic1950s3").style.opacity = "1";
+        document.querySelector("#pic1950s4").style.opacity = "1";
+        document.querySelector("#pic1950s5").style.opacity = "1";
+        document.querySelector(".btnanswer1950").style.display = "none";
+        document.querySelector(".dress1950").style.opacity = "0";
+        document.querySelector("#correct1950").style.opacity = "1";
+        document.querySelector(".correctvocabdress1950").style.opacity = "1";
+        document.querySelector(".vocabdress1950").style.opacity = "0";
+    }
+    
     // ปุ่มhint
     function hint1950() {
         document.querySelector(".showhint1950").style.display = "block";

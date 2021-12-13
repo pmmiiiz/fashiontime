@@ -4790,6 +4790,18 @@ body {
     opacity: 1;
 }
 
+#correct1940 {
+    width: 20vw;
+    opacity: 0;
+}
+
+.correctvocabdress1940{
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 .finish1940 {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -4815,8 +4827,8 @@ body {
 .hint1940 {
     background-color: hsla(32, 100%, 56%, 1);
     color: rgb(0, 0, 0);
-    top: 35vw;
-    margin-left: 80vw;
+    top: 32vw;
+    margin-left: 76vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -4829,7 +4841,28 @@ body {
 .hint1940:hover {
     background-color: transparent;
     color: hsla(32, 100%, 56%, 1);
-    ;
+    border: 2px solid hsla(32, 100%, 56%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btnanswer1940 {
+    background-color: hsla(32, 100%, 56%, 1);
+    color: rgb(0, 0, 0);
+    top: 32vw;
+    margin-left: 64vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswer1940:hover {
+    background-color: transparent;
+    color: hsla(32, 100%, 56%, 1);
     border: 2px solid hsla(32, 100%, 56%, 1);
     transition: 0.5s;
     cursor: pointer;
@@ -5337,8 +5370,8 @@ body {
 .hint1950 {
     background-color: hsla(303, 77%, 59%, 1);
     color: rgb(0, 0, 0);
-    top: 35vw;
-    margin-left: 26vw;
+    top: 34vw;
+    margin-left: 32vw;
     position: absolute;
     width: 10vw;
     height: 3vw;
@@ -5349,6 +5382,28 @@ body {
 }
 
 .hint1950:hover {
+    background-color: transparent;
+    color: hsla(303, 77%, 59%, 1);
+    border: 2px solid hsla(303, 77%, 59%, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btnanswer1950 {
+    background-color: hsla(303, 77%, 59%, 1);
+    color: rgb(0, 0, 0);
+    top: 34vw;
+    margin-left: 20vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswer1950:hover {
     background-color: transparent;
     color: hsla(303, 77%, 59%, 1);
     border: 2px solid hsla(303, 77%, 59%, 1);
@@ -5454,6 +5509,18 @@ body {
     opacity: 1;
 }
 
+#correct1950 {
+    width: 20vw;
+    opacity: 0;
+}
+
+.correctvocabdress1950{
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 .finish1950 {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -5479,7 +5546,7 @@ body {
 .answer1950 {
     width: 40vw;
     height: 15vw;
-    top: 22vw;
+    top: 24vw;
     margin-left: 12vw;
     position: absolute;
     text-align: center;
