@@ -644,6 +644,28 @@ body {
     cursor: pointer;
 }
 
+.btnanswerregen {
+    background-color: #4185F3;
+    color: rgb(0, 0, 0);
+    top: 39vw;
+    margin-left: 15vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswerregen:hover {
+    background-color: transparent;
+    color: #4185F3;
+    border: 2px solid #4185F3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .showhintregen {
     width: 60vw;
     height: 85vh;
@@ -804,6 +826,10 @@ body {
 #gamedressregen>.dressregen {
     position: absolute;
 }
+#gamedressregen2 {
+    position: absolute;
+    transform: translate(70vw, 25vh);
+}
 
 #gamevocabregen {
     position: absolute;
@@ -813,6 +839,12 @@ body {
 
 #gamevocabregen>.vocabdressregen {
     position: absolute;
+}
+
+#gamevocabregen2 {
+    position: absolute;
+    transform: translate(70vw, 90vh);
+    font-size: 2.5vw;
 }
 
 .dressregen {
@@ -826,6 +858,17 @@ body {
 
 #regendresspic {
     width: 20vw;
+}
+#correctregen{
+    width: 20vw;
+    opacity: 0;
+}
+
+.correctvocabdressregen {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdressregen {
@@ -6025,6 +6068,28 @@ body {
     cursor: pointer;
 }
 
+.btnanswer1960 {
+    background-color: #49D1B5;
+    color: rgb(0, 0, 0);
+    top: 39vw;
+    margin-left: 15vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswer1960:hover {
+    background-color: transparent;
+    color: #49D1B5;
+    border: 2px solid #49D1B5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .showhint1960 {
     width: 60vw;
     height: 85vh;
@@ -6220,6 +6285,10 @@ body {
     position: absolute;
     transform: translate(70vw, 25vh);
 }
+#gamedress19602 {
+    position: absolute;
+    transform: translate(70vw, 25vh);
+}
 
 #gamedress1960>.dress1960 {
     position: absolute;
@@ -6240,6 +6309,12 @@ body {
     font-size: 2.5vw;
 }
 
+#gamevocab19602 {
+    position: absolute;
+    transform: translate(70vw, 90vh);
+    font-size: 2.5vw;
+}
+
 #gamevocab1960>.vocabdress1960 {
     position: absolute;
 }
@@ -6255,6 +6330,17 @@ body {
 
 #s1960dresspic {
     width: 20vw;
+}
+#correct1960{
+    width: 20vw;
+    opacity: 0;
+}
+
+.correctvocabdress1960 {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .vocabdress1960 {

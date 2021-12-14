@@ -258,6 +258,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hintregen showall3" data-show="0" onclick="hintregen()"><U><i>HINT</i></U></button>
+                <button class="btnanswerregen showall3" data-show="0" onclick="btnanswerregen()"><U><i>ANSWER</i></U></button>
             </div>
 
             <!-- เกมเปลี่ยนชุด -->
@@ -295,6 +296,12 @@
                     <img src="img/roman.png" id="regendresspic">
                 </div>
             </div>
+            <div id="gamedressregen2">
+                <div class="correctdressregen">
+                    <img src="IMG/re.png" id="correctregen">
+                </div>
+            </div>
+
             <!-- ปุ่มขวา -->
             <button id="rightdressregen" class="showall3" data-show="0">❱</button>
 
@@ -334,6 +341,12 @@
                     ผ้าฝ้าย มัสลิน
                 </div>
             </div>
+            <div id="gamevocabregen2">
+                <div class="correctvocabdressregen">
+                    ผ้าฝ้าย มัสลิน
+                </div>
+            </div>
+
             <!-- ปุ่มขวา -->
             <button id="rightvocabregen" class="showall3" data-show="0">❱</button>
             <!-- ปุ่มfinish -->
@@ -1895,6 +1908,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hint1960 showall10" data-show="0" onclick="hint1960()"><U><i>HINT</i></U></button>
+                <button class="btnanswer1960 showall10" data-show="0" onclick="btnanswer1960()"><U><i>ANSWER</i></U></button>
                 <!-- เกมเปลี่ยนชุด -->
                 <button id="leftdress1960" class="showall10" data-show="0">❰</button>
                 <div id="gamedress1960" data-show="0">
@@ -1929,6 +1943,12 @@
                         <img src="img/roman.png" id="s1960dresspic">
                     </div>
                 </div>
+                <div id="gamedress19602">
+                    <div class="correctdress1960">
+                        <img src="IMG/1960s.png" id="correct1960">
+                    </div>
+                </div>
+
                 <button id="rightdress1960" class="showall10" data-show="0">❱</button>
 
 
@@ -1966,6 +1986,12 @@
                         เดรสเข้ารูป
                     </div>
                 </div>
+                <div id="gamevocab19602">
+                    <div class="correctvocabdress1960">
+                        มินิสเกิร์ต
+                    </div>
+                </div>
+
                 <button id="rightvocab1960" class="showall10" data-show="0">❱</button>
                 <button class="finish1960 showall10" data-show="0" onclick="finish1960()"><U><i>FINISH</i></U></button>
             </div>
@@ -2312,8 +2338,24 @@
     });
 
     // ปุ่มfinish
-    function finishregen() {
-        if (numdressregen == 3 && numvocabregen == 9) {
+        function finishregen() {
+        if (numdressregen == 3 && numvocabregen != 9) {
+            document.querySelector(".whatregen").style.display = "none";
+            document.querySelector(".tryregen").style.display = "block";
+            document.querySelector(".finishregen").style.display = "block";
+            document.querySelector("#rightdressregen").style.display = "none";
+            document.querySelector("#leftdressregen").style.display = "none";
+        } 
+        
+        else if (numdressregen != 3 && numvocabregen == 9) {
+            document.querySelector(".whatregen").style.display = "none";
+            document.querySelector(".tryregen").style.display = "block";
+            document.querySelector(".finishregen").style.display = "block";
+            document.querySelector("#rightvocabregen").style.display = "none";
+            document.querySelector("#leftvocabregen").style.display = "none";
+        } 
+        
+        else if (numdressregen == 3 && numvocabregen == 9) {
             document.querySelector(".answerregen").style.display = "block";
             document.querySelector(".whatregen").style.display = "none";
             document.querySelector(".tryregen").style.display = "none";
@@ -2326,7 +2368,7 @@
             document.querySelector(".galfilm").style.opacity = "1";
             document.querySelector(".showdia").style.opacity = "1";
             document.querySelector(".showdia2").style.opacity = "1";
-
+            document.querySelector(".btnanswerregen").style.display = "none";
 
         } else {
             document.querySelector(".tryregen").style.display = "block";
@@ -2334,6 +2376,34 @@
             document.querySelector(".answerregen").style.display = "none";
         }
     }
+
+    // ปุ่มanswer
+    function btnanswerregen() {
+        document.querySelector(".answerregen").style.display = "block";
+        document.querySelector(".whatregen").style.display = "none";
+        document.querySelector(".tryregen").style.display = "none";
+        document.querySelector(".finishregen").style.display = "none";
+        document.querySelector(".galfilm").style.opacity = "1";
+        document.querySelector(".showdia").style.opacity = "1";
+        document.querySelector(".showdia2").style.opacity = "1";
+        document.querySelector("#rightdressregen").style.display = "none";
+        document.querySelector("#leftdressregen").style.display = "none";
+        document.querySelector("#rightvocabregen").style.display = "none";
+        document.querySelector("#leftvocabregen").style.display = "none";
+        document.querySelector(".hintregen").style.display = "none";
+        document.querySelector(".btnanswerregen").style.display = "none";
+        document.querySelector("#correctregen").style.opacity = "1";
+        document.querySelector("#regendresspic").style.opacity = "0";
+        document.querySelector(".correctvocabdressregen").style.opacity = "1";
+        document.querySelector(".vocabdressregen").style.opacity = "0";
+        //ตรงนี้4บรรทัดล่าง
+        document.querySelector("#gamedressregen").style.display = "none";
+        document.querySelector("#gamedressregen2").style.display = "block";
+        document.querySelector("#gamevocabregen").style.display = "none";
+        document.querySelector("#gamevocabregen2").style.display = "block";
+
+    }
+
     // ปุ่มhint
     function hintregen() {
         document.querySelector(".showhintregen").style.display = "block";
@@ -3414,7 +3484,23 @@
 
     // ปุ่มfinish
     function finish1960() {
-        if (numdress1960 == 1 && numvocab1960 == 3) {
+        if (numdress1960 == 1 && numvocab1960 != 3) {
+            document.querySelector(".what1960").style.display = "none";
+            document.querySelector(".try1960").style.display = "block";
+            document.querySelector(".finish1960").style.display = "block";
+            document.querySelector("#rightdress1960").style.display = "none";
+            document.querySelector("#leftdress1960").style.display = "none";
+        } 
+        
+        else if (numdress1960 != 1 && numvocab1960 == 3) {
+            document.querySelector(".what1960").style.display = "none";
+            document.querySelector(".try1960").style.display = "block";
+            document.querySelector(".finish1960").style.display = "block";
+            document.querySelector("#rightvocab1960").style.display = "none";
+            document.querySelector("#leftvocab1960").style.display = "none";
+        } 
+        
+        else if (numdress1960 == 1 && numvocab1960 == 3) {
             document.querySelector(".answer1960").style.display = "block";
             document.querySelector(".what1960").style.display = "none";
             document.querySelector(".try1960").style.display = "none";
@@ -3424,9 +3510,10 @@
             document.querySelector("#rightvocab1960").style.display = "none";
             document.querySelector("#leftvocab1960").style.display = "none";
             document.querySelector(".hint1960").style.display = "none";
-            document.querySelector(".galfilm1960").style.opacity = "1";
+            document.querySelector(".galfilm").style.opacity = "1";
             document.querySelector(".showdia60").style.opacity = "1";
             document.querySelector(".showdia260").style.opacity = "1";
+            document.querySelector(".btnanswer1960").style.display = "none";
 
         } else {
             document.querySelector(".try1960").style.display = "block";
@@ -3434,6 +3521,34 @@
             document.querySelector(".answer1960").style.display = "none";
         }
     }
+
+    // ปุ่มanswer
+    function btnanswer1960() {
+        document.querySelector(".answer1960").style.display = "block";
+        document.querySelector(".what1960").style.display = "none";
+        document.querySelector(".try1960").style.display = "none";
+        document.querySelector(".finish1960").style.display = "none";
+        document.querySelector(".galfilm").style.opacity = "1";
+        document.querySelector(".showdia60").style.opacity = "1";
+        document.querySelector(".showdia260").style.opacity = "1";
+        document.querySelector("#rightdress1960").style.display = "none";
+        document.querySelector("#leftdress1960").style.display = "none";
+        document.querySelector("#rightvocab1960").style.display = "none";
+        document.querySelector("#leftvocab1960").style.display = "none";
+        document.querySelector(".hint1960").style.display = "none";
+        document.querySelector(".btnanswer1960").style.display = "none";
+        document.querySelector("#correct1960").style.opacity = "1";
+        document.querySelector("#s1960dresspic").style.opacity = "0";
+        document.querySelector(".correctvocabdress1960").style.opacity = "1";
+        document.querySelector(".vocabdress1960").style.opacity = "0";
+        //ตรงนี้4บรรทัดล่าง
+        document.querySelector("#gamedress1960").style.display = "none";
+        document.querySelector("#gamedress19602").style.display = "block";
+        document.querySelector("#gamevocab1960").style.display = "none";
+        document.querySelector("#gamevocab19602").style.display = "block";
+
+    }
+    
     // ปุ่มhint
     function hint1960() {
         document.querySelector(".showhint1960").style.display = "block";
