@@ -2309,16 +2309,19 @@ body {
 
 
 /* ยุคอาร์ตนูโว */
+
 .correctvocabdressartnuvo {
     opacity: 0;
     text-align: center;
     width: 20vw;
     font-family: 'Chakra Petch', sans-serif;
 }
+
 #correctartnuvo {
     width: 20vw;
     opacity: 0;
 }
+
 .btnanswerartnuvo {
     background-color: #935be3;
     color: rgb(0, 0, 0);
@@ -2340,6 +2343,7 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
 .nameartnuvo {
     width: 100vw;
     position: absolute;
@@ -3074,6 +3078,7 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
+
 .btnanswerwwi {
     background-color: #fb8b6c;
     color: rgb(0, 0, 0);
@@ -3091,7 +3096,6 @@ body {
 .btnanswerwwi:hover {
     background-color: transparent;
     color: #fb8b6c;
-
     border: 2px solid #fb8b6c;
     transition: 0.5s;
     cursor: pointer;
@@ -3193,9 +3197,10 @@ body {
 .vocabdress1910stoWWI:nth-child(1) {
     opacity: 1;
 }
-#correct1910stoWWI{
+
+#correct1910stoWWI {
     width: 20vw;
-    opacity:0;
+    opacity: 0;
 }
 
 .finish1910stoWWI {
@@ -3265,7 +3270,8 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
-.correctvocabdress1910stoWWI{
+
+.correctvocabdress1910stoWWI {
     opacity: 0;
     text-align: center;
     width: 20vw;
@@ -4857,7 +4863,7 @@ body {
     opacity: 0;
 }
 
-.correctvocabdress1940{
+.correctvocabdress1940 {
     opacity: 0;
     text-align: center;
     width: 20vw;
@@ -5576,7 +5582,7 @@ body {
     opacity: 0;
 }
 
-.correctvocabdress1950{
+.correctvocabdress1950 {
     opacity: 0;
     text-align: center;
     width: 20vw;
