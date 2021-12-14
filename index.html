@@ -468,10 +468,13 @@
                     <div class="dressroman">
                         <img src="img/roman.png" id="romandresspic">
                     </div>
-                    <div class="correctdressroman">
+                    </div><!-- ปิดdiv gamedressroman -->
+                    <!-- เปิดdiv gamedressroman2 -->
+                    <div id="gamedressroman2">
+                        <div class="correctdressroman">
                         <img src="img/roman.png" class="correctroman">
+                        </div>
                     </div>
-                </div>
                 <button id="rightdressroman" class="showall1" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
@@ -507,6 +510,11 @@
                     <div class="vocabdressroman">
                         นิยมดอกไม้บนหัว
                     </div>
+                    <div class="correctvocabdressroman">
+                        นิยมดอกไม้บนหัว
+                    </div>
+                </div>
+                <div id="gamevocabroman2">
                     <div class="correctvocabdressroman">
                         นิยมดอกไม้บนหัว
                     </div>
@@ -647,10 +655,15 @@
                     <div class="dressvictor">
                         <img src="img/roman.png" id="victordresspic">
                     </div>
+                </div>
+                <div id="gamedressvictor2">
                     <div class="correctdressvictor">
                         <img src="IMG/vic.png" id="correctvictor">
                     </div>
                 </div>
+
+
+              
                 <button id="rightdressvictor" class="showall2" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
@@ -686,6 +699,8 @@
                     <div class="vocabdressvictor">
                         ผ้าฝ้าย มัสลิน
                     </div>
+                </div>
+                <div id="gamevocabvictor2">
                     <div class="correctvocabdressvictor">
                         ผ้าซาติน กำมะหยี่
                     </div>
@@ -2411,6 +2426,11 @@
         document.querySelector("#romandresspic").style.opacity = "0";
         document.querySelector(".correctvocabdressroman").style.opacity = "1";
         document.querySelector(".vocabdressroman").style.opacity = "0";
+        //ตรงนี้4บรรทัดล่าง
+        document.querySelector("#gamedressroman").style.display = "none";
+        document.querySelector("#gamedressroman2").style.display = "block";
+        document.querySelector("#gamevocabroman").style.display = "none";
+        document.querySelector("#gamevocabroman2").style.display = "block";
 
     }
 
@@ -2544,6 +2564,11 @@
         document.querySelector("#correctvictor").style.opacity = "1";
         document.querySelector(".correctvocabdressvictor").style.opacity = "1";
         document.querySelector(".vocabdressvictor").style.opacity = "0";
+        // แก้
+        document.querySelector("#gamedressvictor").style.display = "none";
+        document.querySelector("#gamedressvictor2").style.display = "block";
+        document.querySelector("#gamevocabvictor").style.display = "none";
+        document.querySelector("#gamevocabvictor2").style.display = "block";
 
 
 

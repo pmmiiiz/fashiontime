@@ -1303,15 +1303,24 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
-
+/* แก้ */
 #gamedressroman {
     position: absolute;
     top: 20vh;
     margin-left: 17vw;
+    display: block;
 }
 
 #gamedressroman>.dressroman {
     position: absolute;
+    display: block;
+
+}
+#gamedressroman2 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 17vw;
+    display: none;
 }
 
 #leftdressroman {
@@ -1357,16 +1366,25 @@ body {
 .dressroman:nth-child(1) {
     opacity: 1;
 }
-
+/* แก้ */
 #gamevocabroman {
     position: absolute;
     top: 85vh;
     margin-left: 16vw;
     font-size: 2.5vw;
+    display: block;
 }
 
 #gamevocabroman>.vocabdressroman {
     position: absolute;
+}
+
+#gamevocabroman2 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocabroman {
@@ -1989,10 +2007,17 @@ body {
     position: absolute;
     top: 30vh;
     margin-left: 72vw;
+    display: block;
 }
 
 #gamedressvictor>.dressvictor {
     position: absolute;
+}
+#gamedressvictor2 {
+    position: absolute;
+    top: 30vh;
+    margin-left: 72vw;
+    display: none;
 }
 
 #leftdressvictor {
@@ -2039,17 +2064,28 @@ body {
 .dressvictor:nth-child(1) {
     opacity: 1;
 }
-
+/* แก้ */
 #gamevocabvictor {
     position: absolute;
     top: 90vh;
     margin-left: 71vw;
     font-size: 2.5vw;
+    display: block;
 }
 
 #gamevocabvictor>.vocabdressvictor {
     position: absolute;
 }
+#gamevocabvictor2 {
+    position: absolute;
+    top: 90vh;
+    margin-left: 71vw;
+    font-size: 2.5vw;
+    display: none;
+}
+
+
+
 
 #leftvocabvictor {
     position: absolute;
