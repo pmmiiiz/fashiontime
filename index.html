@@ -934,8 +934,12 @@
                 </div>
                 <!-- คำตอบของแต่ละยุคที่พอกดปุ่มfinishแล้วคำตอบถูกขึ้นมา -->
                 <div class="answer1910stoWWI">
-                    เกิดการเปลี่ยนแปลงทางสังคมขนานใหญ่ เกิดสงครามโลกครั้งที่ 1<br> ทำให้ผู้หญิงต้องมาทำหน้าที่หลายอย่างแทนผู้ชาย
-                    <br> ด้วยกระแสสงครามโลก ทำให้ชุดมีลักษณะของแนวทหาร เข้ามาผสมผสาน<br> สังเกตจากคอเสื้อและปกเสื้อแบบทหาร กระโปรงสั้นลงเล็กน้อย<br> ต่อมากระโปรงเริ่มแคบลง ๆ ตามเวลาที่ผ่านไป <br> เครื่องประดับไม่ค่อยใส่ เรียกว่าเน้นการใช้งานมากกว่า
+                    เกิดการเปลี่ยนแปลงทางสังคมขนานใหญ่ เกิดสงครามโลกครั้งที่ 1<br>
+                    ทำให้ผู้หญิงต้องมาทำหน้าที่หลายอย่างแทนผู้ชาย<br>
+                    ด้วยกระแสสงครามโลก ทำให้ชุดมีลักษณะของแนวทหาร เข้ามาผสมผสาน<br>
+                    สังเกตจากคอเสื้อและปกเสื้อแบบทหาร กระโปรงสั้นลงเล็กน้อย<br>
+                    ต่อมากระโปรงเริ่มแคบลง ๆ ตามเวลาที่ผ่านไป <br>
+                    เครื่องประดับไม่ค่อยใส่ เรียกว่าเน้นการใช้งานมากกว่า
                 </div>
                 <!-- ตกแต่งที่เอียงซ้ายขวา -->
                 <div class="wink1wwi">
@@ -984,6 +988,9 @@
                     <div class="dress1910stoWWI">
                         <img src="img/roman.png" id="s1910stoWWIdresspic">
                     </div>
+                    <div class="correctdress1910stoWWI">
+                        <img src="img/wwi.png" id="correct1910stoWWI">
+                    </div>
                 </div>
                 <button id="rightdress1910stoWWI" class="showall5" data-show="0">❱</button>
 
@@ -1020,11 +1027,15 @@
                     <div class="vocabdress1910stoWWI">
                         เดรสเข้ารูป
                     </div>
+                    <div class="correctvocabdress1910stoWWI">
+                        เสื้อโค้ททหาร
+                    </div>
                 </div>
                 <button id="rightvocab1910stoWWI" class="showall5" data-show="0">❱</button>
 
                 <!-- ปุ่มfinish -->
                 <button class="finish1910stoWWI showall5" data-show="0" onclick="finish1910stoWWI()"><U><i>FINISH</i></U></button>
+                
 
                 <!-- ข้อมูลhint -->
                 <div class="showhint1910stoWWI">
@@ -1045,6 +1056,7 @@
                 </div>
                 <!-- ปุ่มhint -->
                 <button class="hint1910stoWWI showall5" data-show="0" onclick="hint1910stoWWI()"><U><i>HINT</i></U></button>
+                <button class="btnanswerwwi showall5" data-show="0" onclick="btnanswerwwi()"><U><i>ANSWER</i></U></button>
             </div>
         </div>
         <!-- หน้าคั่นแต่ละยุค(ฟองสบู่) -->
@@ -2681,7 +2693,36 @@
 
     // ปุ่มfinish
     function finish1910stoWWI() {
-        if (numdress1910stoWWI == 5 && numvocab1910stoWWI == 5) {
+        if (numdress1910stoWWI == 5 && numvocab1910stoWWI != 5) {
+            document.querySelector(".what1910stoWWI").style.display = "none";
+            document.querySelector(".try1910stoWWI").style.display = "block";
+            document.querySelector(".finish1910stoWWI").style.display = "block";
+            document.querySelector("#rightdress1910stoWWI").style.display = "none";
+            document.querySelector("#leftdress1910stoWWI").style.display = "none";
+            // document.querySelector(".answer1910stoWWI").style.display = "block";
+            // document.querySelector(".what1910stoWWI").style.display = "none";
+            // document.querySelector(".try1910stoWWI").style.display = "none";
+            // document.querySelector(".finish1910stoWWI").style.display = "none";
+            // document.querySelector(".albb1910stoWWI").style.opacity = "1";
+            // document.querySelector("#picwink1wwi").style.filter = "brightness(1)";
+            // document.querySelector("#picwink2wwi").style.filter = "brightness(1)";
+            // document.querySelector("#picwink3wwi").style.filter = "brightness(1)";
+            // document.querySelector("#rightdress1910stoWWI").style.display = "none";
+            // document.querySelector("#leftdress1910stoWWI").style.display = "none";
+            // document.querySelector("#rightvocab1910stoWWI").style.display = "none";
+            // document.querySelector("#leftvocab1910stoWWI").style.display = "none";
+            // document.querySelector(".hint1910stoWWI").style.display = "none";
+        } 
+        else if (numdress1910stoWWI !=5 && numvocab1910stoWWI == 5) {
+
+            document.querySelector(".what1910stoWWI").style.display = "none";
+            document.querySelector(".try1910stoWWI").style.display = "block";
+            document.querySelector(".finish1910stoWWI").style.display = "block";
+            document.querySelector("#rightvocab1910stoWWI").style.display = "none";
+            document.querySelector("#leftvocab1910stoWWI").style.display = "none";
+
+        }
+        else if (numdress1910stoWWI ==5 && numvocab1910stoWWI == 5) {
             document.querySelector(".answer1910stoWWI").style.display = "block";
             document.querySelector(".what1910stoWWI").style.display = "none";
             document.querySelector(".try1910stoWWI").style.display = "none";
@@ -2695,12 +2736,34 @@
             document.querySelector("#rightvocab1910stoWWI").style.display = "none";
             document.querySelector("#leftvocab1910stoWWI").style.display = "none";
             document.querySelector(".hint1910stoWWI").style.display = "none";
-
-        } else {
+            document.querySelector(".btnanswerwwi").style.display = "none";
+        }
+        else {
             document.querySelector(".try1910stoWWI").style.display = "block";
             document.querySelector(".what1910stoWWI").style.display = "none";
             document.querySelector(".answer1910stoWWI").style.display = "none";
         }
+    }
+    function btnanswerwwi() {
+        document.querySelector(".answer1910stoWWI").style.display = "block";
+        document.querySelector(".what1910stoWWI").style.display = "none";
+        document.querySelector(".try1910stoWWI").style.display = "none";
+        document.querySelector(".finish1910stoWWI").style.display = "none";
+        document.querySelector(".albb1910stoWWI").style.opacity = "1";
+        document.querySelector("#picwink1wwi").style.filter = "brightness(1)";
+        document.querySelector("#picwink2wwi").style.filter = "brightness(1)";
+        document.querySelector("#picwink3wwi").style.filter = "brightness(1)";
+        document.querySelector("#rightdress1910stoWWI").style.display = "none";
+        document.querySelector("#leftdress1910stoWWI").style.display = "none";
+        document.querySelector("#rightvocab1910stoWWI").style.display = "none";
+        document.querySelector("#leftvocab1910stoWWI").style.display = "none";
+        document.querySelector(".hint1910stoWWI").style.display = "none";
+        document.querySelector(".btnanswerwwi").style.display = "none";
+        document.querySelector(".dress1910stoWWI").style.opacity = "0";
+        document.querySelector("#correct1910stoWWI").style.opacity = "1";
+        document.querySelector(".correctvocabdress1910stoWWI").style.opacity = "1";
+        document.querySelector(".vocabdress1910stoWWI").style.opacity = "0";
+        
     }
     // ปุ่มhint
     function hint1910stoWWI() {

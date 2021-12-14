@@ -3044,6 +3044,28 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
+.btnanswerwwi {
+    background-color: #fb8b6c;
+    color: rgb(0, 0, 0);
+    top: 32vw;
+    margin-left: 64vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnanswerwwi:hover {
+    background-color: transparent;
+    color: #fb8b6c;
+
+    border: 2px solid #fb8b6c;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 #gamedress1910stoWWI {
     position: absolute;
@@ -3141,6 +3163,10 @@ body {
 .vocabdress1910stoWWI:nth-child(1) {
     opacity: 1;
 }
+#correct1910stoWWI{
+    width: 20vw;
+    opacity:0;
+}
 
 .finish1910stoWWI {
     background-color: rgb(0, 0, 0);
@@ -3167,7 +3193,7 @@ body {
 .hint1910stoWWI {
     background-color: #fb8b6c;
     color: rgb(0, 0, 0);
-    top: 35vw;
+    top: 32vw;
     margin-left: 80vw;
     position: absolute;
     width: 10vw;
@@ -3208,6 +3234,12 @@ body {
     border: 2px solid #fb8b6c;
     transition: 0.5s;
     cursor: pointer;
+}
+.correctvocabdress1910stoWWI{
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .answer1910stoWWI {
