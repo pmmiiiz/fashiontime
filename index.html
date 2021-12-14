@@ -2063,7 +2063,10 @@
                 </div>
                 <div class="nemework showall11" data-show="0">DRESS<br>TIMEMACHINE</div>
                 <div id="nextid" class="next showall11" data-show="0" onclick="next()"><i>»click HERE«</i></div>
-                <div class="context">ทุกสิ่งทุกอย่างล้วนมีอิทธิพลต่อแฟชั่น<br> ไม่ว่าจะเป็นเรื่องของการเมือง ศาสนา <br> หรือเศรษฐกิจ และแฟชั่นยังเป็นตัวแทนการแสดงออก<br> ถึงค่านิยมในยุคนั้นๆ อีกด้วย<br></div>
+               
+                <div class="context">ทุกสิ่งทุกอย่างล้วนมีอิทธิพลต่อแฟชั่น<br> ไม่ว่าจะเป็นเรื่องของการเมือง ศาสนา <br> หรือเศรษฐกิจ และแฟชั่นยังเป็นตัวแทนการแสดงออก<br> ถึงค่านิยมในยุคนั้นๆ<br></div>
+                <div id="nexttext" onclick="nexttext()"><i>»NEXT«</i></div>
+                <div class="context2">แล้วคุณคิดว่าแฟชั่นในยุคของคุณ<br>แสดงให้เห็นถึงค่านิยมอะไร</div>
                 <div class="winkwhite"><img src="img/winkwhite.png"></div>
                 <div class="winkwhite2"><img src="img/winkwhite.png"></div>
                 <div class="winkwhite3"><img src="img/winkwhite.png"></div>
@@ -3565,9 +3568,16 @@
         document.querySelector(".next").style.display = "none";
         document.querySelector(".conclusion").style.backgroundImage = "url(img/black55.png)";
         document.querySelector(".context").style.opacity = "1";
+        document.querySelector("#nexttext").style.display = "block";
         document.querySelector(".winkwhite").style.opacity = "1";
         document.querySelector(".winkwhite2").style.opacity = "1";
         document.querySelector(".winkwhite3").style.opacity = "1";
+    }
+
+    function nexttext(){
+        document.querySelector(".context2").style.opacity = "1"; 
+        document.querySelector("#nexttext").style.display = "none";
+        document.querySelector(".context").style.opacity = "0";
     }
 </script>
 

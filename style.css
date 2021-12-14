@@ -6600,7 +6600,26 @@ body {
     cursor: pointer;
     margin-left: -10vw;
 }
-
+#nexttext{
+    color: rgb(255, 255, 255);
+    transform: translate(89vw, 98vh);
+    position: absolute;
+    width: 20vw;
+    height: 3vw;
+    font-size: 2vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    margin-left: -9vw;
+    top: -10.5vw;
+    opacity: 1;
+    z-index: 3;
+    display: none;
+}
+#nexttext:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: -10vw;
+}
 .nemework {
     animation: namewow 2s;
     animation-delay: 7s;
@@ -6627,7 +6646,7 @@ body {
 .context {
     position: absolute;
     width: 80vw;
-    height: 100vh;
+    /* height: 100vh; */
     position: absolute;
     top: 35vh;
     color: #ffffff;
@@ -6640,7 +6659,22 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     /* margin-left: 1vw; */
 }
+.context2 {
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    top: 35vh;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    text-align: center;
+    transform: translate(13vw, 10vh);
+    opacity: 0;
+    transition: 5s;
+    z-index: 2;
+    font-family: 'Chakra Petch', sans-serif;
+  
 
+}
 .winkwhite {
     position: absolute;
     width: 20vw;
