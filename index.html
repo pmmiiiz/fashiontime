@@ -763,8 +763,12 @@
                     <img src="img/Butterflypurple.gif" width="100%">
                 </div>
                 <div class="answerartnuvo">
-                    แฟชั่นอาร์ตนูโว ถือเป็นยุคที่สตรีเริ่มมีบทบาทมากขึ้น <br> เริ่มรู้จักทำงานหาเงินเลี้ยงดูตัวเองได้ สไตล์การแต่งตัวจึงปลี่ยนแปลงไปจากเดิม <br> เริ่มกล้าจะเปิดเผยเนื้อหนังหรือร่างกายบ้าง เน้นสวมใส่เสื้อผ้าที่รัดสัดส่วน<br> และทันสมัยมากขึ้นซึ่งความเปลี่ยนแปลงที่ผิดเพี้ยนไปจากวัฒธรรมเดิม
-                    ๆ นั้น <br> ส่งผลให้เกิดการต่อต้านจากกลุ่มแฟชั่นอนุรักษ์นิยม หรือกลุ่มคนที่ไม่พึงพอใจ<br> ที่สตรียุคนี้เริ่มมีอิสระในการแต่งกายมากขึ้นจนอาจเกินขอบเขตที่เคยมีมา
+                    แฟชั่นอาร์ตนูโว ถือเป็นยุคที่สตรีเริ่มมีบทบาทมากขึ้น <br>
+                    เริ่มรู้จักทำงานหาเงินเลี้ยงดูตัวเองได้ สไตล์การแต่งตัวจึงปลี่ยนแปลงไปจากเดิม <br>
+                    เริ่มกล้าจะเปิดเผยเนื้อหนังหรือร่างกายบ้าง เน้นสวมใส่เสื้อผ้าที่รัดสัดส่วน<br>
+                    และทันสมัยมากขึ้นซึ่งความเปลี่ยนแปลงที่ผิดเพี้ยนไปจากวัฒธรรมเดิม ๆ นั้น <br>
+                    ส่งผลให้เกิดการต่อต้านจากกลุ่มแฟชั่นอนุรักษ์นิยม หรือกลุ่มคนที่ไม่พึงพอใจ<br>
+                    ที่สตรียุคนี้เริ่มมีอิสระในการแต่งกายมากขึ้นจนอาจเกินขอบเขตที่เคยมีมา 
                     <br>
                 </div>
                 <div class="showhintartnuvo">
@@ -784,6 +788,7 @@
                     Try Agian<br>
                 </div>
                 <button class="hintartnuvo showall4" data-show="0" onclick="hintartnuvo()"><U><i>HINT</i></U></button>
+                <button class="btnanswerartnuvo showall4" data-show="0" onclick="btnanswerartnuvo()"><U><i>ANSWER</i></U></button>
             </div>
 
             <!-- เกมเปลี่ยนชุด -->
@@ -818,6 +823,9 @@
                 </div>
                 <div class="dressartnuvo">
                     <img src="img/roman.png" id="artnuvodresspic">
+                </div>
+                <div class="correctdressartnuvo">
+                    <img src="img/art.png" id="correctartnuvo">
                 </div>
             </div>
             <button id="rightdressartnuvo" class="showall4" data-show="0">❱</button>
@@ -855,6 +863,9 @@
                 </div>
                 <div class="vocabdressartnuvo">
                     ผ้าซาติน กำมะหยี่
+                </div>
+                <div class="correctvocabdressartnuvo">
+                    ดูหรูหรา
                 </div>
             </div>
             <button id="rightvocabartnuvo" class="showall4" data-show="0">❱</button>
@@ -907,8 +918,8 @@
                     <img src="img/wheart.png" width="100%">
                 </div>
                 <div class="texth_ar">
-                    <p>ART NOUVEAU<br> DRESS
-                    </p>
+                    <p>ART NOUVEAU<br>
+                    DRESS</p>
                 </div>
                 <!-- <div class="textd_ar">
                     <p>DRESS</p>
@@ -2624,11 +2635,28 @@
             document.querySelector(".showdia2art").style.opacity = "1";
 
 
-        } else {
+        } 
+        else {
             document.querySelector(".tryartnuvo").style.display = "block";
             document.querySelector(".whatartnuvo").style.display = "none";
             document.querySelector(".answerartnuvo").style.display = "none";
         }
+    }
+    function btnanswerartnuvo() {
+        document.querySelector(".answerartnuvo").style.display = "block";
+        document.querySelector(".whatartnuvo").style.display = "none";
+        document.querySelector(".tryartnuvo").style.display = "none";
+        document.querySelector(".finishartnuvo").style.display = "none";
+        document.querySelector("#rightdressartnuvo").style.display = "none";
+        document.querySelector("#leftdressartnuvo").style.display = "none";
+        document.querySelector("#rightvocabartnuvo").style.display = "none";
+        document.querySelector("#leftvocabartnuvo").style.display = "none";
+        document.querySelector(".hintartnuvo").style.display = "none";
+        document.querySelector(".btnanswerartnuvo").style.display = "none";
+        document.querySelector(".dressartnuvo").style.opacity = "0";
+        document.querySelector("#correctartnuvo").style.opacity = "1";
+        document.querySelector(".correctvocabdressartnuvo").style.opacity = "1";
+        document.querySelector(".vocabdressartnuvo").style.opacity = "0";
     }
     // ปุ่มhint
     function hintartnuvo() {

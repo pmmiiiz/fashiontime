@@ -2309,7 +2309,37 @@ body {
 
 
 /* ยุคอาร์ตนูโว */
+.correctvocabdressartnuvo {
+    opacity: 0;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#correctartnuvo {
+    width: 20vw;
+    opacity: 0;
+}
+.btnanswerartnuvo {
+    background-color: #935be3;
+    color: rgb(0, 0, 0);
+    top: 39vw;
+    margin-left: 15vw;
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
+.btnanswerartnuvo:hover {
+    background-color: transparent;
+    color: #935be3;
+    border: 2px solid #935be3;
+    transition: 0.5s;
+    cursor: pointer;
+}
 .nameartnuvo {
     width: 100vw;
     position: absolute;
