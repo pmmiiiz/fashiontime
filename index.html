@@ -1533,10 +1533,14 @@
                     <div class="dress1940">
                         <img src="img/roman.png" id="s1940dresspic">
                     </div>
-                    <div class="correctdress1940">
-                        <img src="img/1940s.png" id="correct1940">
-                    </div>
                 </div>
+
+                    <div id="gamedress19402">
+                        <div class="correctdress1940">
+                            <img src="img/1940s.png" id="correct1940">
+                        </div>
+                    </div>
+                
                 <button id="rightdress1940" class="showall8" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
@@ -1572,10 +1576,13 @@
                     <div class="vocabdress1940">
                         ผ้าฝ้าย มัสลิน
                     </div>
-                    <div class="correctvocabdress1940">
-                        กระโปรงทรงเอ
-                    </div>
                 </div>
+                    <div id="gamevocab19402">
+                        <div class="correctvocabdress1940">
+                            กระโปรงทรงเอ
+                        </div>
+                    </div>
+                
                 <button id="rightvocab1940" class="showall8" data-show="0">❱</button>
 
                 <!-- ปุ่มfinish -->
@@ -1712,10 +1719,13 @@
                     <div class="dress1950">
                         <img src="img/roman.png" id="s1950dresspic">
                     </div>
-                    <div class="correctdress1950">
-                        <img src="IMG/1950s.png" id="correct1950">
-                    </div>
                 </div>
+                    <div id="gamedress19502">
+                        <div class="correctdress1950">
+                            <img src="IMG/1950s.png" id="correct1950">
+                        </div>
+                    </div>
+                
                 <button id="rightdress1950" class="showall9" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
@@ -1751,10 +1761,13 @@
                     <div class="vocabdress1950">
                         ดูหรูหรา
                     </div>
-                    <div class="correctvocabdress1950">
-                        กระโปรงบาน
-                    </div>
                 </div>
+                    <div id="gamevocab19502">
+                        <div class="correctvocabdress1950">
+                            กระโปรงบาน
+                        </div>
+                    </div>
+                
                 <button id="rightvocab1950" class="showall9" data-show="0">❱</button>
                 <!-- ปุ่มfinish -->
                 <button id="centerpage1950" class="finish1950 showall9" data-show="0" onclick="finish1950()"><U><i>FINISH</i></U></button>
@@ -3095,7 +3108,21 @@
 
     // ปุ่มfinish
     function finish1940() {
-        if (numdress1940 == 6 && numvocab1940 == 5) {
+        if (numdress1940 == 6 && numvocab1940 != 5) {
+            document.querySelector(".what1940").style.display = "none";
+            document.querySelector(".try1940").style.display = "block";
+            document.querySelector(".finish1940").style.display = "block";
+            document.querySelector("#rightdress1940").style.display = "none";
+            document.querySelector("#leftdress1940").style.display = "none";
+
+        } else if (numdress1940 != 6 && numvocab1940 == 5) {
+            document.querySelector(".what1940").style.display = "none";
+            document.querySelector(".try1940").style.display = "block";
+            document.querySelector(".finish1940").style.display = "block";
+            document.querySelector("#rightvocab1940").style.display = "none";
+            document.querySelector("#leftvocab1940").style.display = "none";
+
+        } else if (numdress1940 == 6 && numvocab1940 == 5) {
             document.querySelector(".answer1940").style.display = "block";
             document.querySelector(".what1940").style.display = "none";
             document.querySelector(".try1940").style.display = "none";
@@ -3110,7 +3137,7 @@
             document.querySelector("#leftvocab1940").style.display = "none";
             document.querySelector(".hint1940").style.display = "none";
             document.querySelector(".btnanswer1940").style.display = "none";
-
+            
         } else {
             document.querySelector(".try1940").style.display = "block";
             document.querySelector(".what1940").style.display = "none";
@@ -3138,8 +3165,13 @@
         document.querySelector("#correct1940").style.opacity = "1";
         document.querySelector(".correctvocabdress1940").style.opacity = "1";
         document.querySelector(".vocabdress1940").style.opacity = "0";
+        // แก้
+        document.querySelector("#gamedress1940").style.display = "none";
+        document.querySelector("#gamedress19402").style.display = "block";
+        document.querySelector("#gamevocab1940").style.display = "none";
+        document.querySelector("#gamevocab19402").style.display = "block";
     }
-
+    
     // ปุ่มhint
     function hint1940() {
         document.querySelector(".showhint1940").style.display = "block";
@@ -3204,7 +3236,21 @@
 
     // ปุ่มfinish
     function finish1950() {
-        if (numdress1950 == 4 && numvocab1950 == 2) {
+        if (numdress1950 == 4 && numvocab1950 != 2) {
+            document.querySelector(".what1950").style.display = "none";
+            document.querySelector(".try1950").style.display = "block";
+            document.querySelector(".finish1950").style.display = "block";
+            document.querySelector("#rightdress1950").style.display = "none";
+            document.querySelector("#leftdress1950").style.display = "none";
+
+        } else if (numdress1950 != 4 && numvocab1950 == 2) {
+            document.querySelector(".what1950").style.display = "none";
+            document.querySelector(".try1950").style.display = "block";
+            document.querySelector(".finish1950").style.display = "block";
+            document.querySelector("#rightvocab1950").style.display = "none";
+            document.querySelector("#leftvocab1950").style.display = "none";
+
+        } else if (numdress1950 == 4 && numvocab1950 == 2) {
             document.querySelector(".answer1950").style.display = "block";
             document.querySelector(".what1950").style.display = "none";
             document.querySelector(".try1950").style.display = "none";
@@ -3222,7 +3268,6 @@
             document.querySelector("#pic1950s4").style.opacity = "1";
             document.querySelector("#pic1950s5").style.opacity = "1";
             document.querySelector(".btnanswer1950").style.display = "none";
-
 
         } else {
             document.querySelector(".try1950").style.display = "block";
@@ -3254,6 +3299,12 @@
         document.querySelector("#correct1950").style.opacity = "1";
         document.querySelector(".correctvocabdress1950").style.opacity = "1";
         document.querySelector(".vocabdress1950").style.opacity = "0";
+        // แก้
+        document.querySelector("#gamedress1950").style.display = "none";
+        document.querySelector("#gamedress19502").style.display = "block";
+        document.querySelector("#gamevocab1950").style.display = "none";
+        document.querySelector("#gamevocab19502").style.display = "block";
+        
     }
 
     // ปุ่มhint

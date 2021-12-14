@@ -4801,10 +4801,18 @@ body {
     position: absolute;
     top: 20vh;
     margin-left: 16vw;
+    display: block;
 }
 
 #gamedress1940>.dress1940 {
     position: absolute;
+}
+
+#gamedress19402 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 16vw;
+    display: none;
 }
 
 #leftdress1940 {
@@ -4851,10 +4859,19 @@ body {
     top: 85vh;
     margin-left: 16vw;
     font-size: 2.5vw;
+    display: block;
 }
 
 #gamevocab1940>.vocabdress1940 {
     position: absolute;
+}
+
+#gamevocab19402 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocab1940 {
@@ -5519,10 +5536,18 @@ body {
     position: absolute;
     top: 30vh;
     margin-left: 72vw;
+    display: block;
 }
 
 #gamedress1950>.dress1950 {
     position: absolute;
+}
+
+#gamedress19502 {
+    position: absolute;
+    top: 30vh;
+    margin-left: 72vw;
+    display: none;
 }
 
 #leftdress1950 {
@@ -5570,10 +5595,19 @@ body {
     top: 90vh;
     margin-left: 71vw;
     font-size: 2.5vw;
+    display: block;
 }
 
 #gamevocab1950>.vocabdress1950 {
     position: absolute;
+}
+
+#gamevocab19502 {
+    position: absolute;
+    top: 90vh;
+    margin-left: 71vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocab1950 {
