@@ -836,10 +836,13 @@
                 <div class="dressartnuvo">
                     <img src="img/roman.png" id="artnuvodresspic">
                 </div>
+            </div>
+            <div id="gamedressartnuvo2">
                 <div class="correctdressartnuvo">
                     <img src="img/art.png" id="correctartnuvo">
                 </div>
             </div>
+
             <button id="rightdressartnuvo" class="showall4" data-show="0">❱</button>
 
 
@@ -876,10 +879,13 @@
                 <div class="vocabdressartnuvo">
                     ผ้าซาติน กำมะหยี่
                 </div>
+            </div>
+            <div id="gamevocabartnuvo2">
                 <div class="correctvocabdressartnuvo">
                     ดูหรูหรา
                 </div>
             </div>
+
             <button id="rightvocabartnuvo" class="showall4" data-show="0">❱</button>
             <button class="finishartnuvo showall4" data-show="0" onclick="finishartnuvo()"><U><i>FINISH</i></U></button>
         </div>
@@ -1007,10 +1013,13 @@
                     <div class="dress1910stoWWI">
                         <img src="img/roman.png" id="s1910stoWWIdresspic">
                     </div>
+                </div>
+                <div id="gamedress1910stoWWI2">
                     <div class="correctdress1910stoWWI">
                         <img src="img/wwi.png" id="correct1910stoWWI">
                     </div>
                 </div>
+
                 <button id="rightdress1910stoWWI" class="showall5" data-show="0">❱</button>
 
                 <!-- เกมเปลี่ยนศัพท์ชุดแต่ละยุค -->
@@ -1046,10 +1055,13 @@
                     <div class="vocabdress1910stoWWI">
                         เดรสเข้ารูป
                     </div>
+                </div>
+                <div id="gamevocab1910stoWWI2">
                     <div class="correctvocabdress1910stoWWI">
                         เสื้อโค้ททหาร
                     </div>
                 </div>
+
                 <button id="rightvocab1910stoWWI" class="showall5" data-show="0">❱</button>
 
                 <!-- ปุ่มfinish -->
@@ -2676,6 +2688,7 @@
             document.querySelector(".galfilmartnuvo").style.opacity = "1";
             document.querySelector(".showdiaart").style.opacity = "1";
             document.querySelector(".showdia2art").style.opacity = "1";
+            document.querySelector(".btnanswerartnuvo").style.display = "none";
 
 
         } else {
@@ -2701,6 +2714,11 @@
         document.querySelector(".correctvocabdressartnuvo").style.opacity = "1";
         document.querySelector(".vocabdressartnuvo").style.opacity = "0";
         document.querySelector(".galfilmartnuvo").style.opacity = "1";
+        // แก้
+        document.querySelector("#gamedressartnuvo").style.display = "none";
+        document.querySelector("#gamedressartnuvo2").style.display = "block";
+        document.querySelector("#gamevocabartnuvo").style.display = "none";
+        document.querySelector("#gamevocabartnuvo2").style.display = "block";
     }
     // ปุ่มhint
     function hintartnuvo() {
@@ -2711,7 +2729,7 @@
         document.querySelector(".showhintartnuvo").style.display = "none";
     }
 
-    //// เปลี่ยนชุดและคำยุคโรแมนติก
+    //// เปลี่ยนชุดและคำยุคอาร์ตนูโว
     let numdress1910stoWWI = 0;
     let endnumdress1910stoWWI = 10;
     let numvocab1910stoWWI = 0;
@@ -2833,6 +2851,11 @@
         document.querySelector("#correct1910stoWWI").style.opacity = "1";
         document.querySelector(".correctvocabdress1910stoWWI").style.opacity = "1";
         document.querySelector(".vocabdress1910stoWWI").style.opacity = "0";
+        // แก้
+        document.querySelector("#gamedress1910stoWWI").style.display = "none";
+        document.querySelector("#gamedress1910stoWWI2").style.display = "block";
+        document.querySelector("#gamevocab1910stoWWI").style.display = "none";
+        document.querySelector("#gamevocab1910stoWWI2").style.display = "block";
 
     }
     // ปุ่มhint

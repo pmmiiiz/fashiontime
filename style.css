@@ -2616,6 +2616,13 @@ body {
     cursor: pointer;
 }
 
+#gamedressartnuvo2 {
+    position: absolute;
+    top: 27vh;
+    margin-left: 70vw;
+    display: none;
+}
+
 #leftdressartnuvo {
     position: absolute;
     transform: translate(69vw, 50vh);
@@ -2639,6 +2646,14 @@ body {
     outline: 0;
     cursor: pointer;
     z-index: 4;
+}
+
+#gamevocabartnuvo2 {
+    position: absolute;
+    top: 90vh;
+    margin-left: 71vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocabartnuvo {
@@ -3148,11 +3163,18 @@ body {
 #gamedress1910stoWWI {
     position: absolute;
     top: 20vh;
-    margin-left: 15vw;
+    margin-left: 17vw;
 }
 
 #gamedress1910stoWWI>.dress1910stoWWI {
     position: absolute;
+}
+
+#gamedress1910stoWWI2 {
+    position: absolute;
+    top: 20vh;
+    margin-left: 17vw;
+    display: none;
 }
 
 #leftdress1910stoWWI {
@@ -3203,6 +3225,14 @@ body {
 
 #gamevocab1910stoWWI>.vocabdress1910stoWWI {
     position: absolute;
+}
+
+#gamevocab1910stoWWI2 {
+    position: absolute;
+    top: 85vh;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocab1910stoWWI {
