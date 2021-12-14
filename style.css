@@ -1303,7 +1303,10 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     color: white;
 }
+
+
 /* แก้ */
+
 #gamedressroman {
     position: absolute;
     top: 20vh;
@@ -1314,8 +1317,8 @@ body {
 #gamedressroman>.dressroman {
     position: absolute;
     display: block;
-
 }
+
 #gamedressroman2 {
     position: absolute;
     top: 20vh;
@@ -1366,7 +1369,10 @@ body {
 .dressroman:nth-child(1) {
     opacity: 1;
 }
+
+
 /* แก้ */
+
 #gamevocabroman {
     position: absolute;
     top: 85vh;
@@ -2013,6 +2019,7 @@ body {
 #gamedressvictor>.dressvictor {
     position: absolute;
 }
+
 #gamedressvictor2 {
     position: absolute;
     top: 30vh;
@@ -2064,7 +2071,10 @@ body {
 .dressvictor:nth-child(1) {
     opacity: 1;
 }
+
+
 /* แก้ */
+
 #gamevocabvictor {
     position: absolute;
     top: 90vh;
@@ -2076,6 +2086,7 @@ body {
 #gamevocabvictor>.vocabdressvictor {
     position: absolute;
 }
+
 #gamevocabvictor2 {
     position: absolute;
     top: 90vh;
@@ -2083,9 +2094,6 @@ body {
     font-size: 2.5vw;
     display: none;
 }
-
-
-
 
 #leftvocabvictor {
     position: absolute;
@@ -3807,6 +3815,13 @@ body {
     position: absolute;
 }
 
+#gamedressflapper2 {
+    position: absolute;
+    top: 30vh;
+    margin-left: 68vw;
+    display: none;
+}
+
 #leftdressflapper {
     position: absolute;
     top: 50vh;
@@ -3861,6 +3876,14 @@ body {
 
 #gamevocabflapper>.vocabdressflapper {
     position: absolute;
+}
+
+#gamevocabflapper2 {
+    position: absolute;
+    top: 90vh;
+    margin-left: 67vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocabflapper {
@@ -4352,6 +4375,13 @@ body {
     cursor: pointer;
 }
 
+#gamedressRTW2 {
+    position: absolute;
+    top: 30vh;
+    margin-left: 72vw;
+    display: none;
+}
+
 #leftdressRTW {
     position: absolute;
     transform: translate(69vw, 50vh);
@@ -4375,6 +4405,14 @@ body {
     outline: 0;
     cursor: pointer;
     z-index: 4;
+}
+
+#gamevocabRTW2 {
+    position: absolute;
+    top: 90vh;
+    margin-left: 71vw;
+    font-size: 2.5vw;
+    display: none;
 }
 
 #leftvocabRTW {
