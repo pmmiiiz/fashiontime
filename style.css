@@ -1463,7 +1463,7 @@ body {
 }
 
 .correctvocabdressroman {
-    opacity: 1;
+    opacity: 0;
     text-align: center;
     width: 20vw;
     font-family: 'Chakra Petch', sans-serif;
